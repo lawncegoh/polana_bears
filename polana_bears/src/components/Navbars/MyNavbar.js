@@ -1,4 +1,6 @@
 import React from "react";
+// import '@fontsource/staatliches.css';
+
 import {
   AppBar,
   Toolbar,
@@ -10,7 +12,10 @@ import {
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 
 // import { Link, Router } from "react-router-dom";
-import { NavItem } from "reactstrap";
+import { NavItem,
+         NavLink,
+         UncontrolledTooltip
+} from "reactstrap";
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {
@@ -18,16 +23,17 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
   },
  logo: {
-    flexGrow: "1",
+    fontSize:"20px",
+    flexGrow: "2",
     cursor: "pointer",
   },
   link: {
     textDecoration: "none",
     color: "white",
-    fontSize: "20px",
+    fontSize: "10px",
     marginLeft: theme.spacing(20),
     "&:hover": {
-      color: "yellow",
+      color: "green",
       borderBottom: "1px solid white",
     },
   },
@@ -46,27 +52,55 @@ function ElevationScroll(props) {
   });
 }
 
-function Navbar() {
+function MyNavbar() {
   const classes = useStyles();
+  const [navbarColor] = React.useState("navbar-transparent");
 
   return (
     <React.Fragment>
       <ElevationScroll>
-        <AppBar>
+        <AppBar className={navbarColor}>
           <CssBaseline />
           <Toolbar>
             <Typography variant="h4" className={classes.logo}>
-              Navbar
+              (here put logo can already)
             </Typography>
               <div className={classes.navlinks}>
-                <NavItem className="nav-item">
-                  Discord
+              <NavItem className={classes.link}>
+                  <NavLink 
+                    href="https://twitter.com/CreativeTim?ref=creativetim"
+                    target="_blank"
+                    id="twitter-tooltip">
+                    <i className="fab fa-twitter"></i>
+                    <p className="d-lg-none d-xl-none">Discord</p>
+                  </NavLink>
+                  <UncontrolledTooltip target="#twitter-tooltip">
+                    Follow us on Discord
+                  </UncontrolledTooltip>
                 </NavItem>
-                <NavItem className="nav-item">
-                  Instagram
+                <NavItem className={classes.link}>
+                  <NavLink 
+                    href="https://twitter.com/CreativeTim?ref=creativetim"
+                    target="_blank"
+                    id="twitter-tooltip">
+                    <i className="fab fa-twitter"></i>
+                    <p className="d-lg-none d-xl-none">Instagram</p>
+                  </NavLink>
+                  <UncontrolledTooltip target="#twitter-tooltip">
+                    Follow us on Instagram
+                  </UncontrolledTooltip>
                 </NavItem>
-                <NavItem className="nav-item">
-                  Twitter
+                <NavItem className={classes.link}>
+                  <NavLink 
+                    href="https://twitter.com/CreativeTim?ref=creativetim"
+                    target="_blank"
+                    id="twitter-tooltip">
+                    <i className="fab fa-twitter"></i>
+                    <p className="d-lg-none d-xl-none">Twitter</p>
+                  </NavLink>
+                  <UncontrolledTooltip target="#twitter-tooltip">
+                    Follow us on Twitter
+                  </UncontrolledTooltip>
                 </NavItem>
               </div>
           </Toolbar>
@@ -75,4 +109,4 @@ function Navbar() {
     </React.Fragment>
   );
 }
-export default Navbar;
+export default MyNavbar;
