@@ -9,7 +9,7 @@ import {
 
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 
-import { Link, Router } from "react-router-dom";
+// import { Link, Router } from "react-router-dom";
 import { NavItem } from "reactstrap";
 
 const useStyles = makeStyles((theme) => ({
