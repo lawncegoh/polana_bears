@@ -12,10 +12,17 @@ import {
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 
 // import { Link, Router } from "react-router-dom";
-import { NavItem,
-         NavLink,
-         UncontrolledTooltip
+import { 
+  NavItem
 } from "reactstrap";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import {
+  faDiscord,
+  faTwitter,
+  faInstagram
+} from "@fortawesome/free-brands-svg-icons";
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {
@@ -54,53 +61,41 @@ function ElevationScroll(props) {
 
 function MyNavbar() {
   const classes = useStyles();
-  const [navbarColor] = React.useState("navbar-transparent");
+  // const [navbarColor] = React.useState("navbar-transparent");
 
   return (
     <React.Fragment>
       <ElevationScroll>
-        <AppBar className={navbarColor}>
+        <AppBar>
           <CssBaseline />
-          <Toolbar>
+          <Toolbar className="navbar">
             <Typography variant="h4" className={classes.logo}>
               (here put logo can already)
             </Typography>
               <div className={classes.navlinks}>
               <NavItem className={classes.link}>
-                  <NavLink 
+                  <a
+                    className="discord social" 
                     href="https://twitter.com/CreativeTim?ref=creativetim"
-                    target="_blank"
                     id="twitter-tooltip">
-                    <i className="fab fa-twitter"></i>
-                    <p className="d-lg-none d-xl-none">Discord</p>
-                  </NavLink>
-                  <UncontrolledTooltip target="#twitter-tooltip">
-                    Follow us on Discord
-                  </UncontrolledTooltip>
+                    <FontAwesomeIcon icon={faDiscord} size="2x"/>
+                  </a>
                 </NavItem>
                 <NavItem className={classes.link}>
-                  <NavLink 
+                  <a
+                    className="instagram social" 
                     href="https://twitter.com/CreativeTim?ref=creativetim"
-                    target="_blank"
                     id="twitter-tooltip">
-                    <i className="fab fa-twitter"></i>
-                    <p className="d-lg-none d-xl-none">Instagram</p>
-                  </NavLink>
-                  <UncontrolledTooltip target="#twitter-tooltip">
-                    Follow us on Instagram
-                  </UncontrolledTooltip>
+                    <FontAwesomeIcon icon={faInstagram} size="2x"/>
+                  </a>
                 </NavItem>
                 <NavItem className={classes.link}>
-                  <NavLink 
+                  <a
+                    className="twitter social" 
                     href="https://twitter.com/CreativeTim?ref=creativetim"
-                    target="_blank"
                     id="twitter-tooltip">
-                    <i className="fab fa-twitter"></i>
-                    <p className="d-lg-none d-xl-none">Twitter</p>
-                  </NavLink>
-                  <UncontrolledTooltip target="#twitter-tooltip">
-                    Follow us on Twitter
-                  </UncontrolledTooltip>
+                    <FontAwesomeIcon icon={faTwitter} size="2x"/>
+                  </a>
                 </NavItem>
               </div>
           </Toolbar>
