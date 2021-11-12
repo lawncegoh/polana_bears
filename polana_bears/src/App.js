@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
 
 //views
@@ -9,6 +10,7 @@ import Team from "./views/Team";
 import FAQ from "./views/FAQ";
 import Rarity from "./views/Rarity";
 import Examples from "./views/Examples";
+import Marketing from "./views/Marketing";
 
 //components
 import MyNavbar from "./components/Navbars/MyNavbar";
@@ -29,18 +31,20 @@ function App() {
             <Information/>
           </Row>
           <Row className="component-row">
+            <Rarity/>
+          </Row>
+          <Row className="component-row">
             <Roadmap/>
           </Row>
           <Row className="component-row">
             <Story/>
           </Row>
           <Row className="component-row">
-            <FAQ/>
+            <Marketing/>
           </Row>
           <Row className="component-row">
-            <Rarity/>
+            <FAQ/>
           </Row>
-          <noscript> You need to enable JavaScript to run this app. </noscript>
           <Row className="component-row">
             <Examples />
           </Row>

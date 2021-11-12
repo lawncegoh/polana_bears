@@ -12,12 +12,17 @@ function BearyInformation() {
     <>
       <Container>
       <h1>Beary Information</h1>
-        <Card>
-          <CardBody>
-            <h2>Rarity Explanation</h2>
-          </CardBody>
-        </Card>
-      </Container>
+        <h2>Rarity Explanation</h2>
+        <Container className="rarity-container">
+            <div class="gallery-wrap">
+                <div class="item item-1"></div>
+                <div class="item item-2"></div>
+                <div class="item item-3"></div>
+                <div class="item item-4"></div>
+                <div class="item item-5"></div>
+            </div>
+        </Container>
+        </Container>
     </>
   );
 }

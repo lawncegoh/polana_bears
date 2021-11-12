@@ -68,7 +68,7 @@ function MyNavbar() {
       <ElevationScroll>
         <AppBar>
           <CssBaseline />
-          <Toolbar className="navbar">
+          <Toolbar fluid className="navbar">
             <Typography variant="h4" className={classes.logo}>
               (here put logo can already)
             </Typography>
