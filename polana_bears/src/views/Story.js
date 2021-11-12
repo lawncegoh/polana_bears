@@ -13,20 +13,24 @@ function Story() {
             backgroundColor:"#222",
             width:"80vw",
             display:"flex",
-            alignContent:"center",
-            flexWrap:"wrap"
+            alignItems:"center",
+            flexWrap:"wrap",
+            display:"flex",
+            justifyContent:"center",
+            
         },
         div: {
-            width:"1500px",
-            height:"500px",
-            backgroundColor:"black",
+            width:"100%",
+            height:"100%",
+            backgroundColor:"#647C90",
             boxSizing:"bordex-box",
             borderRadius:"2px",
             margin:"15px 15px",
             color:"#fff",
             padding:"40px",
+            justifyContent:"center"
         }, line: {
-            width:"1410px",
+            width:"100%",
             height:"5px",
             marginTop:"10px",
             backgroundColor:"#0ebeff",

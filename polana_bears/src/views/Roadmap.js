@@ -10,13 +10,14 @@ function Roadmap() {
   return (
     <>
     <Container>
+      <h1>Roadmap</h1>
       <VerticalTimeline className="time-line">
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(0, 0, 77)' }}
+            contentStyle={{ background: '#647C90', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #647C90' }}
             date="Phase 1"
-            iconStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
+            iconStyle={{ background: '#647C90', color: '#fff' }}
             // icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">The Beginnings</h3>
@@ -28,10 +29,10 @@ function Roadmap() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(0, 0, 77)' }}
+            contentStyle={{ background: '#647C90', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #647C90' }}
             date="Phase 1"
-            iconStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
+            iconStyle={{ background: '#647C90', color: '#fff' }}
             // icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">After a century</h3>
@@ -45,10 +46,10 @@ function Roadmap() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(0, 0, 77)' }}
+            contentStyle={{ background: '#647C90', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #647C90' }}
             date="Phase 2"
-            iconStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
+            iconStyle={{ background: '#647C90', color: '#fff' }}
             // icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">Humans attack PolanaLand</h3>
@@ -62,10 +63,10 @@ function Roadmap() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(0, 0, 77)' }}
+            contentStyle={{ background: '#647C90', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #647C90' }}
             date="2008 - 2010"
-            iconStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
+            iconStyle={{ background: '#647C90', color: '#fff' }}
             // icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">First contact made</h3>
@@ -80,10 +81,10 @@ function Roadmap() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(0, 0, 77)' }}
+            contentStyle={{ background: '#647C90', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #647C90' }}
             date="2006 - 2008"
-            iconStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
+            iconStyle={{ background: '#647C90', color: '#fff' }}
             // icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">First Peaceful Contact</h3>
@@ -96,10 +97,10 @@ function Roadmap() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            contentStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(0, 0, 77)' }}
+            contentStyle={{ background: '#647C90', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #647C90' }}
             date="April 2013"
-            iconStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
+            iconStyle={{ background: '#647C90', color: '#fff' }}
             // icon={<SchoolIcon />}
           >
             <h3 className="vertical-timeline-element-title">Rewarding #PolanaSeekers</h3>
@@ -110,10 +111,10 @@ function Roadmap() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            contentStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(0, 0, 77)' }}
+            contentStyle={{ background: '#647C90', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #647C90' }}
             date="November 2012"
-            iconStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
+            iconStyle={{ background: '#647C90', color: '#fff' }}
             // icon={<SchoolIcon />}
           >
             <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
@@ -124,10 +125,10 @@ function Roadmap() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            contentStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(0, 0, 77)' }}
+            contentStyle={{ background: '#647C90', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #647C90' }}
             date="2002 - 2006"
-            iconStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
+            iconStyle={{ background: '#647C90', color: '#fff' }}
             // icon={<SchoolIcon />}
           >
             <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
