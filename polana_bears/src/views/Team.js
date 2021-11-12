@@ -15,12 +15,10 @@ function Team() {
                 <Row>
                     <Col md="4">
                     <div className="team-player">
-                    {/* <img
-                        alt="..."
-                        className="rounded-circle img-fluid img-raised"
-                        src={require("assets/img/avatar.jpg").default}
-                    ></img> */}
-                    <h4 className="title">Bearylicious</h4>
+                    <div className="player-img">
+                        <img src="" alt="bearzinga"/>
+                    </div>
+                    <h4 className="title">Bearzinga</h4>
                     <p className="category text-info">Developer</p>
                     <p className="description">
                         Software Engineer with a major in Computer Science and specialisation of Artificial intelligence
@@ -29,11 +27,9 @@ function Team() {
                     </Col>
                     <Col md="4">
                     <div className="team-player">
-                    {/* <img
-                        alt="..."
-                        className="rounded-circle img-fluid img-raised"
-                        src={require("assets/img/ryan.jpg").default}
-                    ></img> */}
+                    <div className="player-img">
+                        <img src="" alt="bearzinga"/>
+                    </div>
                     <h4 className="title">Bearybombibi</h4>
                     <p className="category text-info">Business Development</p>
                     <p className="description">
@@ -42,12 +38,10 @@ function Team() {
                     </div>
                     </Col>
                     <Col md="4">
+                    <div className="player-img">
+                        <img src="" alt="bearzinga"/>
+                    </div>
                     <div className="team-player">
-                    {/* <img
-                        alt="..."
-                        className="rounded-circle img-fluid img-raised"
-                        src={require("assets/img/eva.jpg").default}
-                    ></img> */}
                     <h4 className="title">Eva Jenner</h4>
                     <p className="category text-info">Fashion</p>
                     <p className="description">
@@ -61,11 +55,9 @@ function Team() {
             <Row>
                 <Col md="6">
                 <div className="team-player">
-                {/* <img
-                    alt="..."
-                    className="rounded-circle img-fluid img-raised"
-                    // src={require("assets/img/eva.jpg").default}
-                ></img> */}
+                <div className="player-img">
+                    <img src="" alt="bearzinga"/>
+                </div>
                 <h4 className="title">Eva Jenner</h4>
                 <p className="category text-info">Fashion</p>
                 <p className="description">
@@ -76,11 +68,9 @@ function Team() {
                 </Col>
                 <Col md="6">
                 <div className="team-player">
-                {/* <img
-                    alt="..."
-                    className="rounded-circle img-fluid img-raised"
-                    // src={require("assets/img/eva.jpg").default}
-                ></img> */}
+                <div className="player-img">
+                    <img src="" alt="bearzinga"/>
+                </div>
                 <h4 className="title">Eva Jenner</h4>
                 <p className="category text-info">Fashion</p>
                 <p className="description">

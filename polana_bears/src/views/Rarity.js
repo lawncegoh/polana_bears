@@ -11,8 +11,8 @@ function BearyInformation() {
   return (
     <>
       <Container>
-      <h1>Beary Information</h1>
-        <h2>Rarity Explanation</h2>
+      <h1>Our collection of bears</h1>
+        <h2>Learn more about rarities here</h2>
         <Container className="rarity-container">
             <div class="gallery-wrap">
                 <div class="item item-1"></div>

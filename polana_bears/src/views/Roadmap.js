@@ -19,7 +19,22 @@ function Roadmap() {
             iconStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
             // icon={<WorkIcon />}
           >
-            <h3 className="vertical-timeline-element-title">Polana was spotted</h3>
+            <h3 className="vertical-timeline-element-title">The Beginnings</h3>
+            <h4 className="vertical-timeline-element-subtitle">Before the Phases</h4>
+            <ul>
+              <li>Human hunters infiltrated PolanaLand and massacred several elderly Polana bears</li>
+              <li>Polana Bears go into isolation</li>
+            </ul>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(0, 0, 77)' }}
+            date="Phase 1"
+            iconStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
+            // icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">After a century</h3>
             <h4 className="vertical-timeline-element-subtitle">Phase 1</h4>
             <ul>
               <li>Birth of 10,000 Polana Bears</li>
@@ -87,10 +102,10 @@ function Roadmap() {
             iconStyle={{ background: 'rgb(0, 0, 77)', color: '#fff' }}
             // icon={<SchoolIcon />}
           >
-            <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-            <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+            <h3 className="vertical-timeline-element-title">Rewarding #PolanaSeekers</h3>
+            <h4 className="vertical-timeline-element-subtitle">Phase 5</h4>
             <p>
-              Strategy, Social Media
+              How many % of secondary-market royalties are dedicated to marketing and floor sweeps
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement

@@ -15,6 +15,7 @@ import Marketing from "./views/Marketing";
 //components
 import MyNavbar from "./components/Navbars/MyNavbar";
 import MyHeader from "./components/Headers/MyHeader";
+import MyFooter from './components/Footers/MyFooter';
 
 import {
   Row,
@@ -34,25 +35,20 @@ function App() {
             <Rarity/>
           </Row>
           <Row className="component-row">
-            <Roadmap/>
-          </Row>
-          <Row className="component-row">
             <Story/>
           </Row>
           <Row className="component-row">
-            <Marketing/>
+            <Roadmap/>
           </Row>
           <Row className="component-row">
             <FAQ/>
-          </Row>
-          <Row className="component-row">
-            <Examples />
           </Row>
           <Row className="component-row">
             <Team/>
           </Row>
         </div>
     </div>
+    <MyFooter/>
   </>
   );
 }
