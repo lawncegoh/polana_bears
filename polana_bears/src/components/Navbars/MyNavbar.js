@@ -73,14 +73,14 @@ function MyNavbar() {
               (here put logo can already)
             </Typography>
               <div className={classes.navlinks}>
-              {/* <NavItem className={classes.link}>
+              <NavItem className={classes.link}>
                   <a
                     className="discord social" 
                     href="https://twitter.com/CreativeTim?ref=creativetim"
                     id="twitter-tooltip">
                     <FontAwesomeIcon icon={faDiscord} size="2x"/>
                   </a>
-                </NavItem> */}
+                </NavItem>
                 <NavItem className={classes.link}>
                   <a
                     className="instagram social" 
