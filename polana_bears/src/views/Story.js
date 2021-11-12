@@ -29,7 +29,7 @@ function Story() {
             width:"1410px",
             height:"5px",
             marginTop:"10px",
-            backgroundColor:"yellow",
+            backgroundColor:"#0ebeff",
             alignContent:"center",
             flexWrap:"wrap"
         }, p: {
@@ -38,16 +38,25 @@ function Story() {
             marginTop:"15px",
         }
     }
+
+    const titleStyling = {
+        title:{
+            alignContent:"center"
+        }
+    }
+
     return (
         <>
         <Container>
-            <div style={cardStyling.container}>
-                <h1>This is the bear story</h1>
+            <div>
+                <div style={titleStyling.title}>
+                    <h1>The Story of our Bears</h1>
+                </div>
                 <div style={cardStyling.div}>
                     <div style={cardStyling.line}></div>
-                    <p style={cardStyling.p}>
+                    {/* <p style={cardStyling.p}>
                     On November 8 2021, 8 members of the isolated Polana Bear tribe finally made their first appearance in a century, hunting for fish in a village near the PolanaLand border. In 1921, a group of hunters infiltrated the tribe and massacred several elderly Polana Bears. Ever since then, the Polana Bears were never seen again as they grew aggressive to fend off further attacks on their home, building walls and fences to isolate themselves from the outside world.
-                    </p>
+                    </p> */}
                     <p style={cardStyling.p}>
                     This recent encounter has kickstarted a brand new investigation into the lives of the Polana Bears. We need to know more about the Polana Bears. This isn't just a zoology research study. This is us wanting to know more about one of the most profound breeds of lifeform in the entire history of the world.
                     </p>
