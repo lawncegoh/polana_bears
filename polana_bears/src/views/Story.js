@@ -1,9 +1,6 @@
 import React from "react";
 // import PolarBear from "../assets/img/polar_bear.jpeg";
 
-// import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 
 import {
     Container

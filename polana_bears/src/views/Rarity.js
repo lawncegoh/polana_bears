@@ -2,9 +2,7 @@ import React from "react";
 
 // reactstrap components
 import {
-    Container,
-    Card,
-    CardBody,
+    Container
   } from "reactstrap";
 
 function BearyInformation() {

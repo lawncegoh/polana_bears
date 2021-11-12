@@ -15,7 +15,6 @@ function MyFooter() {
               <li>
                 <a
                   href="https://www.creative-tim.com?ref=nukr-default-footer"
-                  target="_blank"
                 >
                   Polana Bears
                 </a>
@@ -23,7 +22,6 @@ function MyFooter() {
               <li>
                 <a
                   href="http://presentation.creative-tim.com?ref=nukr-default-footer"
-                  target="_blank"
                 >
                   About Us
                 </a>
@@ -31,7 +29,6 @@ function MyFooter() {
               <li>
                 <a
                   href="http://blog.creative-tim.com?ref=nukr-default-footer"
-                  target="_blank"
                 >
                   Blog
                 </a>

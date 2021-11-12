@@ -9,8 +9,6 @@ import Story from "./views/Story";
 import Team from "./views/Team";
 import FAQ from "./views/FAQ";
 import Rarity from "./views/Rarity";
-import Examples from "./views/Examples";
-import Marketing from "./views/Marketing";
 
 //components
 import MyNavbar from "./components/Navbars/MyNavbar";
