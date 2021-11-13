@@ -1,8 +1,6 @@
 import React from "react";
 
 // reactstrap components
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 
 import {
     Container
@@ -17,7 +15,6 @@ function Information() {
         display:"flex",
         alignItems:"center",
         flexWrap:"wrap",
-        display:"flex",
         justifyContent:"center",
         
     },

@@ -15,7 +15,6 @@ function Story() {
             display:"flex",
             alignItems:"center",
             flexWrap:"wrap",
-            display:"flex",
             justifyContent:"center",
             
         },
