@@ -1,46 +1,30 @@
 import React from "react";
 
-// reactstrap components
-import { Container } from "reactstrap";
-
 // core components
 
 function MyFooter() {
+
+  const cardStyling = {
+    container: {
+      backgroundColor: "#647C90",
+      borderradius: "0 !important",
+      marginbottom: "0px",
+      height: "30px",
+    }, copyright: {
+      float: "right",
+      marginRight: "20px",
+      fontSize: "15px",
+      textAlignVertical: "center",
+      color: "#FFFFFF"
+    }
+  }
+
   return (
-    <>
-      <footer className="footer">
-        <Container>
-          <nav>
-            <ul>
-              <li>
-                <a
-                  href="https://www.creative-tim.com?ref=nukr-default-footer"
-                >
-                  Polana Bears
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://presentation.creative-tim.com?ref=nukr-default-footer"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://blog.creative-tim.com?ref=nukr-default-footer"
-                >
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div className="copyright" id="copyright">
-            © {new Date().getFullYear()}, Designed by Polana Bears Dev Team
+      <footer className="footer" style={cardStyling.container}>
+          <div className="copyright" id="copyright" style={cardStyling.copyright}>
+            © {new Date().getFullYear()}, Designed by Polana Bears Dev Team. All Rights Reserved.
           </div>
-        </Container>
       </footer>
-    </>
   );
 }
 

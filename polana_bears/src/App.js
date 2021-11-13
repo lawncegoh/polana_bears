@@ -11,7 +11,7 @@ import FAQ from "./views/FAQ";
 import Rarity from "./views/Rarity";
 
 //components
-import MyNavbar from "./components/Navbars/MyNavbar";
+// import MyNavbar from "./components/Navbars/MyNavbar";
 import MyHeader from "./components/Headers/MyHeader";
 import MyFooter from './components/Footers/MyFooter';
 
@@ -22,32 +22,32 @@ import {
 function App() {
   return (
     <>
-    <MyNavbar />
+      {/* <MyNavbar /> */}
       <MyHeader />
       <div className="wrapper">
         <div className="main">
           <Row className="component-row">
-            <Information/>
+            <Information />
           </Row>
           <Row className="component-row">
-            <Rarity/>
+            <Rarity />
           </Row>
           <Row className="component-row">
-            <Story/>
+            <Story />
           </Row>
           <Row className="component-row">
-            <Roadmap/>
+            <Roadmap />
           </Row>
           <Row className="component-row">
-            <FAQ/>
+            <FAQ />
           </Row>
           <Row className="component-row">
-            <Team/>
+            <Team />
           </Row>
         </div>
-    </div>
-    <MyFooter/>
-  </>
+      </div>
+      <MyFooter />
+    </>
   );
 }
 
