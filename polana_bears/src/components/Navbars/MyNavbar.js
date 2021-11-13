@@ -13,15 +13,15 @@ import React from "react";
 
 // import { Link, Router } from "react-router-dom";
 import {
-  NavItem,
+  // NavItem,
   Container
 } from "reactstrap";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
-  faDiscord,
-  faTwitter,
+  // faDiscord,
+  // faTwitter,
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -29,12 +29,12 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
+// import Typography from '@mui/material/Typography';
 import Badge from '@mui/material/Badge';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import MailIcon from '@mui/icons-material/Mail';
+// import AccountCircle from '@mui/icons-material/AccountCircle';
+// import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import MoreIcon from '@mui/icons-material/MoreVert';
+// import MoreIcon from '@mui/icons-material/MoreVert';
 
 // const useStyles = makeStyles((theme) => ({
 //   navlinks: {
@@ -82,6 +82,27 @@ function MyNavbar() {
       marginbottom: "0px",
       zindex: "2",
     },
+    div: {
+      width: "1500px",
+      height: "400px",
+      backgroundColor: "black",
+      boxSizing: "bordex-box",
+      borderRadius: "2px",
+      margin: "15px 15px",
+      color: "#fff",
+      padding: "40px",
+    }, line: {
+      width: "1410px",
+      height: "5px",
+      marginTop: "10px",
+      backgroundColor: "yellow",
+      alignContent: "center",
+      flexWrap: "wrap"
+    }, p: {
+      color: "white",
+      fontSize: "25px",
+      marginTop: "15px",
+    }
   }
 
   return (
