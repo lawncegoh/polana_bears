@@ -16,9 +16,12 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Countdown from 'react-countdown';
+import Clocks from '../Clock/Clocks';
+
 
 // core components
 function MyHeader() {
+
   var Snow = require('react-snow-effect');
 
   const cardStyling = {
@@ -53,43 +56,43 @@ function MyHeader() {
   const headerStyling = {
     header: {
       backgroundImage:
-            "url(" + require("../../assets/img/northernlights.jpeg").default + ")"
+        "url(" + require("../../assets/img/northernlights.jpeg").default + ")"
     }
   }
 
   return (
     <div className="page-header clear-filter" filter-color="blue">
       <div className="page-header-image"
-        // style={headerStyling.header}
+      // style={headerStyling.header}
       ></div>
       <Snow />
       <AppBar position="static" style={cardStyling.appBar}>
         <div style={cardStyling.container}>
           <Toolbar style={cardStyling.appBar}>
             <Box sx={{ flexGrow: 1 }} />
-              <div class="row" style={cardStyling.row}>
-                <div class="col-xl">
-                  <a
-                    style={cardStyling.discord}
-                    href="https://discord.gg/tZbXWZFG">
-                    <FontAwesomeIcon icon={faDiscord} size="2x" />
-                  </a>
-                </div>
-                <div class="col-xl">
-                  <a
-                    style={cardStyling.instagram}
-                    href="https://www.instagram.com/polanabears/">
-                    <FontAwesomeIcon icon={faInstagram} size="2x" />
-                  </a>
-                </div>
-                <div class="col-xl">
-                  <a
-                    style={cardStyling.twitter}
-                    href="https://twitter.com/PolanaBears">
-                    <FontAwesomeIcon icon={faTwitter} size="2x" />
-                  </a>
-                </div>
+            <div class="row" style={cardStyling.row}>
+              <div class="col-xl">
+                <a
+                  style={cardStyling.discord}
+                  href="https://discord.gg/tZbXWZFG">
+                  <FontAwesomeIcon icon={faDiscord} size="2x" />
+                </a>
               </div>
+              <div class="col-xl">
+                <a
+                  style={cardStyling.instagram}
+                  href="https://www.instagram.com/polanabears/">
+                  <FontAwesomeIcon icon={faInstagram} size="2x" />
+                </a>
+              </div>
+              <div class="col-xl">
+                <a
+                  style={cardStyling.twitter}
+                  href="https://twitter.com/PolanaBears">
+                  <FontAwesomeIcon icon={faTwitter} size="2x" />
+                </a>
+              </div>
+            </div>
           </Toolbar>
         </div>
       </AppBar>
@@ -98,14 +101,15 @@ function MyHeader() {
           <h1 style={cardStyling.fontSizeHeader}>Polana Bears</h1>
           <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>
             In 1921, a group of hunters infiltrated PolanaLand and massacred several elderly Polana Bears. Ever since then, the Polana Bears were never seen again. A brand new investigation was recently launched and UAV footage found that the Polana Bears have developed as a civilization and have biologically evolved to develop human-like features.
-It is estimated that there resides 10,000 Polana Bears in PolanaLand.  On December 28th 2021, we will release highly classified information on each of these 10,000 creatures in an attempt to gain a deeper understanding of the Polana civilization.
-Join our movement. Join our search. Join the #PolanaSeekers.</h5>
+            It is estimated that there resides 10,000 Polana Bears in PolanaLand.  On December 28th 2021, we will release highly classified information on each of these 10,000 creatures in an attempt to gain a deeper understanding of the Polana civilization.
+            Join our movement. Join our search. Join the #PolanaSeekers.</h5>
           <Button style={cardStyling.mintButton}>Mint Now</Button>
-          <br/>
+          <br />
           <div style={cardStyling.mintWords}>
-          <h6>Mint Countdown: </h6> &nbsp; &nbsp;
-          <Countdown date={Date.now() + 3110400000} />
+            <h6>Mint Countdown: </h6> &nbsp; &nbsp;
+            <Countdown date={Date.now() + 3110400000} />
           </div>
+          <Clocks style="display: inline-flex"/>
         </div>
       </Container>
     </div>
