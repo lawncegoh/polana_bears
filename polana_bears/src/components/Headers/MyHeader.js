@@ -46,14 +46,17 @@ function MyHeader() {
     }
   }
 
+  const headerStyling = {
+    header: {
+      backgroundImage:
+            "url(" + require("../../assets/img/northernlights.jpeg").default + ")"
+    }
+  }
+
   return (
     <div className="page-header clear-filter" filter-color="blue">
-      <div
-        className="page-header-image"
-        style={{
-          backgroundImage:
-            "url(" + require("../../assets/img/header.jpg").default + ")",
-        }}
+      <div className="page-header-image"
+        // style={headerStyling.header}
       ></div>
       <Snow />
       <AppBar position="static" style={cardStyling.appBar}>

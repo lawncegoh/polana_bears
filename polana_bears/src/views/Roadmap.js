@@ -16,12 +16,11 @@ function Roadmap() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: '#061133', color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid  #061133' }}
-            date="Phase 1"
+            date="Before the phases"
             iconStyle={{ background: '#061133', color: '#fff' }}
             // icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">The Beginnings</h3>
-            <h4 className="vertical-timeline-element-subtitle">Before the Phases</h4>
             <ul>
               <li>Human hunters infiltrated PolanaLand and massacred several elderly Polana bears</li>
               <li>Polana Bears go into isolation</li>
@@ -36,7 +35,6 @@ function Roadmap() {
             // icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">After a century</h3>
-            <h4 className="vertical-timeline-element-subtitle">Phase 1</h4>
             <ul>
               <li>Birth of 10,000 Polana Bears</li>
               <li>Discord, Instagram and Twitter channels set up properly</li>
@@ -53,7 +51,6 @@ function Roadmap() {
             // icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">Humans attack PolanaLand</h3>
-            <h4 className="vertical-timeline-element-subtitle">Phase 2</h4>
             <ul>
               <li>Adding bears to Candy Machine</li>
               <li>Instagram and Twitter giveaways</li>
@@ -65,12 +62,11 @@ function Roadmap() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: '#061133', color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid  #061133' }}
-            date="2008 - 2010"
+            date="Phase 3"
             iconStyle={{ background: '#061133', color: '#fff' }}
             // icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">First contact made</h3>
-            <h4 className="vertical-timeline-element-subtitle">Phase 3</h4>
             <ul>
               <li>Public sale of Polana Bears through our mint site</li>
               <li>Unsold bears would be burnt</li>
@@ -83,12 +79,11 @@ function Roadmap() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: '#061133', color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid  #061133' }}
-            date="2006 - 2008"
+            date="Phase 4"
             iconStyle={{ background: '#061133', color: '#fff' }}
             // icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">First Peaceful Contact</h3>
-            <h4 className="vertical-timeline-element-subtitle">Phase 4</h4>
             <ul>
               <li>Low tier bears to be bought off the secondary markets</li>
               <li>Possible DAO continuation for holders of bears</li>
@@ -99,17 +94,16 @@ function Roadmap() {
             className="vertical-timeline-element--education"
             contentStyle={{ background: '#061133', color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid  #061133' }}
-            date="April 2013"
+            date="Phase 5"
             iconStyle={{ background: '#061133', color: '#fff' }}
             // icon={<SchoolIcon />}
           >
             <h3 className="vertical-timeline-element-title">Rewarding #PolanaSeekers</h3>
-            <h4 className="vertical-timeline-element-subtitle">Phase 5</h4>
             <p>
               How many % of secondary-market royalties are dedicated to marketing and floor sweeps
             </p>
           </VerticalTimelineElement>
-          <VerticalTimelineElement
+          {/* <VerticalTimelineElement
             className="vertical-timeline-element--education"
             contentStyle={{ background: '#061133', color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid  #061133' }}
@@ -136,7 +130,7 @@ function Roadmap() {
             <p>
               Creative Direction, Visual Design
             </p>
-          </VerticalTimelineElement>
+          </VerticalTimelineElement> */}
         </VerticalTimeline>
       </Container>
     </>
