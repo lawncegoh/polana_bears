@@ -24,7 +24,7 @@ function MyHeader() {
   const cardStyling = {
     fontSizeHeader: {
       fontSize: "100px",
-      marginTop: "100px"
+      marginTop: "250px"
     }, fontSizeBody: {
       fontSize: "20px",
     }, discord: {
@@ -41,8 +41,12 @@ function MyHeader() {
       marginTop: "20px",
     }, mintButton: {
       background: "#647C90",
+      marginTop: "20px",
     }, mintWords: {
       display: "inline-flex",
+      marginTop: "10px",
+    }, container: {
+      textAlignVertical: "center",
     }
   }
 
@@ -89,7 +93,7 @@ function MyHeader() {
           </Toolbar>
         </div>
       </AppBar>
-      <Container>
+      <Container style={cardStyling.container}>
         <div className="content-center brand">
           <h1 style={cardStyling.fontSizeHeader}>Polana Bears</h1>
           <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>
