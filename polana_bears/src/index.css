@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-  background-color:aliceblue;
+  background-color:#274b69;
 }
 
 /* Navbar */
@@ -76,7 +76,7 @@ a.discord {
   height: 100%;
   z-index: -1;
   background-image:linear-gradient(
-    to bottom, transparent, aliceblue
+    to bottom, transparent, #274b69
   ), url("./assets/img/northernlights.jpeg");
 }
 .page-header .content-center {
