@@ -89,10 +89,10 @@ function MyHeader() {
       <Container>
         <div className="content-center brand">
           <h1 style={cardStyling.fontSizeHeader}>Polana Bears</h1>
-          <h3>#insert something here</h3>
-          <h6 className="category category-absolute" style={cardStyling.fontSizeBody}>
-            Designed and coded by the Polana Bears Dev Team
-          </h6>
+          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>
+            In 1921, a group of hunters infiltrated PolanaLand and massacred several elderly Polana Bears. Ever since then, the Polana Bears were never seen again. A brand new investigation was recently launched and UAV footage found that the Polana Bears have developed as a civilization and have biologically evolved to develop human-like features.
+It is estimated that there resides 10,000 Polana Bears in PolanaLand.  On December 28th 2021, we will release highly classified information on each of these 10,000 creatures in an attempt to gain a deeper understanding of the Polana civilization.
+Join our movement. Join our search. Join the #PolanaSeekers.</h5>
           <Button style={cardStyling.mintButton}>Mint Now</Button>
           <br/>
           <div style={cardStyling.mintWords}>

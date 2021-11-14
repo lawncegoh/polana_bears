@@ -19,7 +19,7 @@ function FAQ() {
         div: {
             width:"100%",
             height:"80%",
-            backgroundColor:"#647C90",
+            backgroundColor:"#061133",
             boxSizing:"bordex-box",
             borderRadius:"2px",
             margin:"15px 15px",

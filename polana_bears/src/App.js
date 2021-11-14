@@ -30,10 +30,10 @@ function App() {
             <Information />
           </Row>
           <Row className="component-row">
-            <Rarity />
-          </Row>
-          <Row className="component-row">
             <Story />
+          </Row>
+          <Row>
+            <Rarity />
           </Row>
           <Row className="component-row">
             <Roadmap />
