@@ -106,7 +106,7 @@ a.discord {
 }
 .page-header .category,
 .page-header .description {
-  color: rgba(255, 255, 255, 0.8); 
+  color: rgba(255, 255, 255); 
 }
 .page-header:after, .page-header:before {
   position: absolute;
@@ -118,6 +118,7 @@ a.discord {
   top: 0;
   content: ""; 
 }
+
 
 .clear-filter:after, .clear-filter:before {
   display: none; }
@@ -259,4 +260,53 @@ code {
     clear: both;
     content: " "; }
 
-  
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.btn-5 {
+  background: #c86208;
+  color: #fff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-5:hover {
+  background: #c86220;
+  color: #000;
+   box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #000;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}

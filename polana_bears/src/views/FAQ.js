@@ -74,6 +74,7 @@ function FAQ() {
                 </div>
             </Col>
         </Row>
+        <br/>
         <Row>
             <Col>
                 <div style={cardStyling.div}>
