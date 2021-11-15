@@ -14,8 +14,11 @@ function MyFooter() {
       float: "right",
       marginRight: "20px",
       fontSize: "15px",
-      textAlignVertical: "center",
-      color: "#FFFFFF"
+      // textAlignVertical: "center",
+      color: "#FFFFFF",
+      verticalAlign: "center",
+      minheight: "10em",
+      display: "table-cell",
     }
   }
 
