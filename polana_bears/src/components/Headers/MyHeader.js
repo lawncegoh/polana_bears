@@ -109,7 +109,7 @@ function MyHeader() {
             <h6>Mint Countdown: </h6> &nbsp; &nbsp;
             <Countdown date={Date.now() + 3110400000} />
           </div>
-          <Clocks style="display: inline-flex"/>
+          <Clocks/>
         </div>
       </Container>
     </div>
