@@ -43,9 +43,20 @@ function FAQ() {
             marginTop:"15px",
         }
     }
+
+    const titleStyling = {
+        title:{
+            color:"white",
+            alignContent:"center",
+            justifyContent:"center",
+            display:"flex"
+        }
+    }
   return (
       <div>
-        <h1>Frequently Asked Questions</h1>
+        <div style={titleStyling.title}>
+            <h1>Frequently Asked Questions</h1>
+        </div>
         <Row>
             <Col>
                 <div style={cardStyling.div}>

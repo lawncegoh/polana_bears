@@ -46,7 +46,10 @@ function Story() {
 
     const titleStyling = {
         title:{
-            alignContent:"center"
+            color:"white",
+            alignContent:"center",
+            justifyContent:"center",
+            display:"flex"
         }
     }
 

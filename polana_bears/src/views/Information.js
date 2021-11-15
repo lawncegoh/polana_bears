@@ -8,15 +8,15 @@ import {
 
 function Information() {
   const cardStyling = {
-    container: {
-        height:"100vh",
-        backgroundColor:"#222",
-        width:"80vw",
-        display:"flex",
-        alignItems:"center",
-        flexWrap:"wrap",
-        justifyContent:"center",
-        
+      container: {
+          height:"100vh",
+          backgroundColor:"#222",
+          width:"80vw",
+          display:"flex",
+          alignItems:"center",
+          flexWrap:"wrap",
+          justifyContent:"center",
+          
     },
     div: {
         width:"100%",
@@ -42,7 +42,7 @@ function Information() {
         fontSize:"130%",
         marginTop:"15px",
     }
-}
+  }
   return (
     <>
       <Container>
