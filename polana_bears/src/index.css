@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
 
 * {
-  font-family: 'Staatliches', cursive;
+  font-family: 'Eczar', serif;
+}
+
+.h1 {
+  color:honeydew;
 }
 
 .wrapper {

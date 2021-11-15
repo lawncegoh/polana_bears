@@ -19,6 +19,9 @@ import {
   Row,
 } from "reactstrap";
 
+import ReactRain from 'react-rain-animation';
+import "react-rain-animation/lib/style.css";
+
 function App() {
   return (
     <>
@@ -26,6 +29,9 @@ function App() {
       <MyHeader />
       <div className="wrapper">
         <div className="main">
+        <ReactRain
+          numDrops="500"
+        />
           <Row className="component-row">
             <Information />
           </Row>

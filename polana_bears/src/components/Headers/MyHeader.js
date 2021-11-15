@@ -58,7 +58,6 @@ function MyHeader() {
       <div className="page-header-image"
         // style={headerStyling.header}
       ></div>
-      <Snow />
       <AppBar position="static" style={cardStyling.appBar}>
         <div style={cardStyling.container}>
           <Toolbar style={cardStyling.appBar}>
