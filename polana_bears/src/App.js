@@ -8,7 +8,7 @@ import Roadmap from "./views/Roadmap";
 import Story from "./views/Story";
 import Team from "./views/Team";
 import FAQ from "./views/FAQ";
-import Rarity from "./views/Rarity";
+import Examples from "./views/Examples";
 
 //components
 // import MyNavbar from "./components/Navbars/MyNavbar";
@@ -19,6 +19,9 @@ import {
   Row,
 } from "reactstrap";
 
+import ReactRain from 'react-rain-animation';
+import "react-rain-animation/lib/style.css";
+
 function App() {
   return (
     <>
@@ -26,6 +29,9 @@ function App() {
       <MyHeader />
       <div className="wrapper">
         <div className="main">
+        <ReactRain
+          numDrops="500"
+        />
           <Row className="component-row">
             <Information />
           </Row>
@@ -33,7 +39,7 @@ function App() {
             <Story />
           </Row>
           <Row>
-            <Rarity />
+            <Examples />
           </Row>
           <Row className="component-row">
             <Roadmap />

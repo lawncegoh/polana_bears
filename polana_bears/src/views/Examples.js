@@ -1,26 +1,25 @@
 import React from "react";
 
-
 // reactstrap components
 import {
-    Container,
-    Card,
-    CardBody,
+    Container
   } from "reactstrap";
 
 function Examples() {
   return (
     <>
       <Container>
-      <h1>NFT Cards Stack</h1>
-        <Card>
-          <CardBody>
-            <h2>
-              See whether can animate a stack of cards here
-            </h2>
-          </CardBody>
-        </Card>
-      </Container>
+        <Container className="rarity-container">
+            {/* <a href="">Link to Rarity page</a> */}
+            <div class="gallery-wrap">
+                <div class="item item-1"></div>
+                <div class="item item-2"></div>
+                <div class="item item-3"></div>
+                <div class="item item-4"></div>
+                <div class="item item-5"></div>
+            </div>
+        </Container>
+        </Container>
     </>
   );
 }

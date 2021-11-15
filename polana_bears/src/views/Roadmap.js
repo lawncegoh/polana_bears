@@ -6,11 +6,23 @@ import {
   Container,
 } from "reactstrap";
 
+const titleStyling = {
+  title:{
+      color:"white",
+      alignContent:"center",
+      justifyContent:"center",
+      display:"flex"
+  }
+}
+
 function Roadmap() {
   return (
     <>
     <Container>
-      <h1>Roadmap</h1>
+      <div style={titleStyling.title}>
+        <h1>Roadmap</h1>
+      </div>
+      <br />
       <VerticalTimeline className="time-line">
           <VerticalTimelineElement
             className="vertical-timeline-element--work"

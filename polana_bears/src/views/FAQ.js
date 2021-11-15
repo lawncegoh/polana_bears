@@ -13,39 +13,50 @@ function FAQ() {
             backgroundColor:"#222",
             width:"80vw",
             display:"flex",
-            alignContent:"center",
-            flexWrap:"wrap"
+            alignItems:"center",
+            flexWrap:"wrap",
+            justifyContent:"center",
+            
         },
         div: {
             width:"100%",
-            height:"80%",
+            height:"100%",
             backgroundColor:"#061133",
             boxSizing:"bordex-box",
+            border:"solid",
+            borderColor:"#05080f",
             borderRadius:"2px",
             margin:"15px 15px",
             color:"#fff",
             padding:"40px",
+            justifyContent:"center"
         }, line: {
             width:"100%",
             height:"5px",
-            marginTop:"5px",
-            marginBottom:"15px",
-            backgroundColor:"#0ebeff",
+            marginTop:"10px",
+            backgroundColor:"#b5cae1",
             alignContent:"center",
             flexWrap:"wrap"
         }, p: {
             color:"white",
-            fontSize:"25px",
+            fontSize:"130%",
             marginTop:"15px",
-        }, li: {
+        }
+    }
+
+    const titleStyling = {
+        title:{
             color:"white",
-            fontSize:"25px",
-            marginTop:"15px",
+            alignContent:"center",
+            justifyContent:"center",
+            display:"flex"
         }
     }
   return (
       <div>
-        <h1>Frequently Asked Questions</h1>
+        <div style={titleStyling.title}>
+            <h1>Frequently Asked Questions</h1>
+        </div>
         <Row>
             <Col>
                 <div style={cardStyling.div}>
@@ -74,6 +85,7 @@ function FAQ() {
                 </div>
             </Col>
         </Row>
+        <br/>
         <Row>
             <Col>
                 <div style={cardStyling.div}>
