@@ -8,7 +8,7 @@ import Roadmap from "./views/Roadmap";
 import Story from "./views/Story";
 import Team from "./views/Team";
 import FAQ from "./views/FAQ";
-import Rarity from "./views/Rarity";
+import Examples from "./views/Examples";
 
 //components
 // import MyNavbar from "./components/Navbars/MyNavbar";
@@ -39,7 +39,7 @@ function App() {
             <Story />
           </Row>
           <Row>
-            <Rarity />
+            <Examples />
           </Row>
           <Row className="component-row">
             <Roadmap />

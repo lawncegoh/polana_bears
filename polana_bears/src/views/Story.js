@@ -23,6 +23,8 @@ function Story() {
             height:"100%",
             backgroundColor:"#061133",
             boxSizing:"bordex-box",
+            border:"solid",
+            borderColor:"#05080f",
             borderRadius:"2px",
             margin:"15px 15px",
             color:"#fff",
@@ -32,12 +34,12 @@ function Story() {
             width:"100%",
             height:"5px",
             marginTop:"10px",
-            backgroundColor:"#0ebeff",
+            backgroundColor:"#b5cae1",
             alignContent:"center",
             flexWrap:"wrap"
         }, p: {
             color:"white",
-            fontSize:"25px",
+            fontSize:"130%",
             marginTop:"15px",
         }
     }
@@ -59,6 +61,8 @@ function Story() {
                     <div style={cardStyling.line}></div>
                     <p style={cardStyling.p}>
                     It seems like the Polana Bears have formed their own governance systems. 10 mighty Royal Polana Bears rule PolanaLand, leading the Polana effort to fend off further attacks on their home. Which one of us #PolanaSeekers will receive top-secret information about these 10 Royal creatures?
+                    </p>
+                    <p style={cardStyling.p}>
                     Take your shot. Get your own Polana Bear on December 28th, 2021.
                     </p>
                     
