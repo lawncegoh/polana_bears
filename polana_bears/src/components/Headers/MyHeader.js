@@ -27,7 +27,7 @@ function MyHeader() {
   const cardStyling = {
     fontSizeHeader: {
       fontSize: "500%",
-      marginTop: "70%"
+      marginTop: "5%"
     }, fontSizeBody: {
       fontSize: "110%",
     }, discord: {
