@@ -2,7 +2,7 @@
 import React from "react";
 
 // reactstrap components
-import { Button, Container } from "reactstrap";
+import { Button, Container, Media } from "reactstrap";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -50,6 +50,9 @@ function MyHeader() {
       marginTop: "10px",
     }, container: {
       textAlignVertical: "center",
+      "@media (max-width: 900px)": {
+        marginTop: "100%",
+      },
     }
   }
 
@@ -65,27 +68,27 @@ function MyHeader() {
       <div className="page-header-image"
       // style={headerStyling.header}
       ></div>
-      <Snow/>
+      <Snow />
       <AppBar position="static" style={cardStyling.appBar}>
         <div style={cardStyling.container}>
           <Toolbar style={cardStyling.appBar}>
             <Box sx={{ flexGrow: 1 }} />
             <div class="row" style={cardStyling.row}>
-              <div class="col-xl">
+              <div class="col">
                 <a
                   style={cardStyling.discord}
                   href="https://discord.gg/tZbXWZFG">
                   <FontAwesomeIcon icon={faDiscord} size="2x" />
                 </a>
               </div>
-              <div class="col-xl">
+              <div class="col">
                 <a
                   style={cardStyling.instagram}
                   href="https://www.instagram.com/polanabears/">
                   <FontAwesomeIcon icon={faInstagram} size="2x" />
                 </a>
               </div>
-              <div class="col-xl">
+              <div class="col">
                 <a
                   style={cardStyling.twitter}
                   href="https://twitter.com/PolanaBears">
@@ -113,7 +116,7 @@ function MyHeader() {
             <h6>Mint Countdown: </h6> &nbsp; &nbsp;
             <Countdown date={Date.now() + 3110400000} />
           </div>
-          <Clocks/>
+          <Clocks />
         </div>
       </Container>
     </div>
