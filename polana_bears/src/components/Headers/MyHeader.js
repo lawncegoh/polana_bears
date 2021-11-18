@@ -27,7 +27,7 @@ function MyHeader() {
   const cardStyling = {
     fontSizeHeader: {
       fontSize: "500%",
-      marginTop: "15%"
+      marginTop: "15%",
     }, fontSizeBody: {
       fontSize: "110%",
     }, discord: {
@@ -60,7 +60,7 @@ function MyHeader() {
       height: "30px",
       left: "36px",
       top: "36px",
-    }
+    },
   }
 
   const [state, setState] = useState({
@@ -144,7 +144,7 @@ function MyHeader() {
       <AppBar position="static" style={cardStyling.appBar}>
         {mobileView ? displayMobile() : displayDesktop()}
       </AppBar>
-      {/* <Container style={cardStyling.container}> */}
+      <Container style={cardStyling.container}>
         <div className="content-center brand">
           <h1 style={cardStyling.fontSizeHeader}>Polana Bears</h1>
           <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>In 1921, a group of hunters infiltrated PolanaLand and massacred several elderly Polana Bears. Ever since then, the Polana Bears were never seen again. </h5>
@@ -163,7 +163,7 @@ function MyHeader() {
           </div>
           <Clocks />
         </div>
-      {/* </Container> */}
+      </Container>
     </div>
   );
 }
