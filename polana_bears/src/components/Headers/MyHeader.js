@@ -2,9 +2,11 @@
 import React, { useState, useEffect } from "react";
 
 // reactstrap components
-import { Button, Container } from "reactstrap";
+import { Container } from "reactstrap";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { slide as Menu } from 'react-burger-menu';
 
 import {
   faDiscord,
@@ -27,7 +29,10 @@ function MyHeader() {
   const cardStyling = {
     fontSizeHeader: {
       fontSize: "500%",
-      marginTop: "5%"
+      marginTop: "5%",
+      "@media (max-width: 1199px)": {
+        marginTop: "5px",
+       }
     }, fontSizeBody: {
       fontSize: "110%",
     }, discord: {
@@ -40,7 +45,7 @@ function MyHeader() {
     }, appBar: {
       background: "transparent",
       boxShadow: "none",
-      "@media (max-width: 768px)": {
+      "@media (max-width: 1199px)": {
         paddingLeft: 0,
       },
     }, row: {
@@ -64,7 +69,7 @@ function MyHeader() {
 
   useEffect(() => {
     const setResponsiveness = () => {
-      return window.innerWidth < 768
+      return window.innerWidth < 1199
         ? setState((prevState) => ({ ...prevState, mobileView: true }))
         : setState((prevState) => ({ ...prevState, mobileView: false }));
     };
@@ -79,8 +84,11 @@ function MyHeader() {
 
   const displayMobile = () => {
     return (
-      <Toolbar style={cardStyling.appBar}>
-      </Toolbar>
+      <div style={cardStyling.container}>
+        <Toolbar style={cardStyling.appBar}>
+          <Menu></Menu>
+        </Toolbar>
+      </div>
     );
   };
 
@@ -138,11 +146,11 @@ function MyHeader() {
           <h1 style={cardStyling.fontSizeHeader}>Polana Bears</h1>
           <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>4,888 exclusively created Polana Bears</h5>
           <br />
-          <button className="custom-btn btn-5">Mint Now</button>
+          <button type="button" class="custom-btn btn-5" disabled='disabled'>Mint Now</button>
           <br />
           <div style={cardStyling.mintWords}>
-            <h6>Mint Countdown: </h6> &nbsp; &nbsp;
-            <Countdown date={Date.now() + 3110400000} />
+            <h6>Mint Countdown: TBC</h6>
+            {/* <Countdown date={Date.now() + 3110400000} /> */}
           </div>
           <br/>
           {/* <Clocks style="display: inline-flex" /> */}

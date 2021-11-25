@@ -16,7 +16,6 @@ function Story() {
             alignItems:"center",
             flexWrap:"wrap",
             justifyContent:"center",
-            
         },
         div: {
             width:"100%",
