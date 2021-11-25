@@ -48,10 +48,11 @@ function Roadmap() {
           >
             <h3 className="vertical-timeline-element-title">After a century</h3>
             <ul>
-              <li>Birth of 10,000 Polana Bears</li>
+              
               <li>Discord, Instagram and Twitter channels set up properly</li>
               <li>Website coded and backend linkage to Solana chain set up</li>
-              <li>Rarity tool developed internally</li>
+              <li>UAV footage found a 4,888 strong Polana Bears civilization</li>
+              <li>Rarity tool developed internally to gather further intelligence of this group of bears</li>
             </ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -62,12 +63,13 @@ function Roadmap() {
             iconStyle={{ background: '#061133', color: '#fff' }}
             // icon={<WorkIcon />}
           >
-            <h3 className="vertical-timeline-element-title">Humans attack PolanaLand</h3>
+            <h3 className="vertical-timeline-element-title">The return of the Polana Bears</h3>
             <ul>
-              <li>Adding bears to Candy Machine</li>
-              <li>Instagram and Twitter giveaways</li>
+              <li>#seekweshall, we need to know more about the bears</li>
+              <li>The bears make their first appearance on Instagram, Twitter and Discord channels</li>
+              <li>Giveaways will commence</li>
+              <li>Onboarding influencers to #PolanaSeekers</li>
               <li>Rollout of referral programs to join whitelist</li>
-              <li>Community giveaways as well as influencers' marketing</li>
             </ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -81,8 +83,7 @@ function Roadmap() {
             <h3 className="vertical-timeline-element-title">First contact made</h3>
             <ul>
               <li>Public sale of Polana Bears through our mint site</li>
-              <li>Unsold bears would be burnt</li>
-              <li>Move on to listing on secondary trading markets</li>
+              <li>Move on to listing on secondary trading markets, likely MagicEden or Digital Eyes</li>
               <li>Statistics of bears sold to be tracked and reviewed</li>
             </ul>
 
@@ -95,54 +96,14 @@ function Roadmap() {
             iconStyle={{ background: '#061133', color: '#fff' }}
             // icon={<WorkIcon />}
           >
-            <h3 className="vertical-timeline-element-title">First Peaceful Contact</h3>
+            <h3 className="vertical-timeline-element-title">Rewarding #PolanaSeekers</h3>
             <ul>
               <li>Low tier bears to be bought off the secondary markets</li>
+              <li>85% of secondary-market royalties dedicated to further marketing and floor sweeps</li>
               <li>Possible DAO continuation for holders of bears</li>
               <li>Further community giveaways and future project suggestions</li>
             </ul>
           </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            contentStyle={{ background: '#061133', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  #061133' }}
-            date="Phase 5"
-            iconStyle={{ background: '#061133', color: '#fff' }}
-            // icon={<SchoolIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">Rewarding #PolanaSeekers</h3>
-            <p>
-              How many % of secondary-market royalties are dedicated to marketing and floor sweeps
-            </p>
-          </VerticalTimelineElement>
-          {/* <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            contentStyle={{ background: '#061133', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  #061133' }}
-            date="November 2012"
-            iconStyle={{ background: '#061133', color: '#fff' }}
-            // icon={<SchoolIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-            <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            contentStyle={{ background: '#061133', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  #061133' }}
-            date="2002 - 2006"
-            iconStyle={{ background: '#061133', color: '#fff' }}
-            // icon={<SchoolIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-            <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-            <p>
-              Creative Direction, Visual Design
-            </p>
-          </VerticalTimelineElement> */}
         </VerticalTimeline>
       </Container>
     </>

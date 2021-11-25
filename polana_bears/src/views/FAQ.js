@@ -71,8 +71,8 @@ function FAQ() {
                     <div style={cardStyling.line}></div>
                     <h4>What secondary markets are we listing on?</h4>
                     <ul>
-                        <li>Opensea</li>
-                        <li>Solanart.io</li>
+                        <li>magiceden.io</li>
+                        <li>digitaleyes.market</li>
                     </ul>
                 </div>
             </Col>
