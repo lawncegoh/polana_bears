@@ -68,17 +68,15 @@ function Story() {
                     <br />
                     <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>A brand new investigation was recently launched and UAV footage found that the Polana Bears have developed as a civilization and have biologically evolved to develop human-like features. </h5>
                     <br />
-                    <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>It is estimated that there resides 4,888 Polana Bears in PolanaLand.</h5>
+                    <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>It is estimated that there resides 4,888 Polana Bears in PolanaLand. We will release highly classified information on each of these 4,888 creatures in an attempt to gain a deeper understanding of the Polana civilization.</h5>
                     <br />
-                    <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>We will release highly classified information on each of these 4,888 creatures in an attempt to gain a deeper understanding of the Polana civilization.</h5>
+                    <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>Each bear is 100% uniquely created by combining different traits from different body categories to create unique NFTs. We have over xxx unique traits, that algorithmically forms over 70 million unique combinations</h5>
                     <br />
-                    <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>Join our movement. </h5>
+                    <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>Join our movement. Join our search. </h5>
                     <br />
-                    <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>Join our search. Join the #PolanaSeekers.</h5>
-                    <p style={cardStyling.p}>
-                    Take your shot. Get your own Polana Bear in <u><b>January 2022</b></u>
-                    </p>
-                    
+                    <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>Join the #PolanaSeekers.</h5>
+                    <br />
+                    <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>Take your shot. Get your own Polana Bear in <u><b>January 2022</b></u></h5>                   
                 </div>
             </div>
         </Container>
