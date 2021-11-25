@@ -24,7 +24,7 @@ import "react-rain-animation/lib/style.css";
 function App() {
   return (
     <>
-      {/* <MyNavbar /> */}
+      <meta property="og:title" content="Polana Bears"/>
       <MyHeader />
       <div className="wrapper">
         <div className="main">
