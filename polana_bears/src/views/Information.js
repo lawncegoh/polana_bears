@@ -50,7 +50,7 @@ function Information() {
           <div style={cardStyling.div}>
           <div style={cardStyling.line}></div>
               <p>
-                  <h3>10,000 deflationary Polana Bears breaking dawn on the 28th of December 2021</h3>
+                  <h3>10,000 deflationary Polana Bears breaking dawn in January 2021</h3>
               </p>
           </div>
       </Container>

@@ -67,7 +67,7 @@ function Story() {
                     It seems like the Polana Bears have formed their own governance systems. 10 mighty Royal Polana Bears rule PolanaLand, leading the Polana effort to fend off further attacks on their home. Which one of us #PolanaSeekers will receive top-secret information about these 10 Royal creatures?
                     </p>
                     <p style={cardStyling.p}>
-                    Take your shot. Get your own Polana Bear on December 28th, 2021.
+                    Take your shot. Get your own Polana Bear in January 2021.
                     </p>
                     
                 </div>
