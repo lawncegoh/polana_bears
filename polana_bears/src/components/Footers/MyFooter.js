@@ -14,15 +14,14 @@ function MyFooter() {
       float: "right",
       marginRight: "20px",
       fontSize: "15px",
-      // textAlignVertical: "center",
+      textAlignVertical: "center",
       color: "#FFFFFF",
-      verticalAlign: "middle",
     }
   }
 
   return (
       <footer className="footer" style={cardStyling.container}>
-          <div className="copyright" id="copyright" style={cardStyling.copyright}>
+          <div id="copyright" style={cardStyling.copyright}>
             © {new Date().getFullYear()}, Designed by Polana Bears Dev Team. All Rights Reserved.
           </div>
       </footer>
