@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
 
 //views
-import Information from "./views/Information";
+// import Information from "./views/Information";
 import Roadmap from "./views/Roadmap";
 import Story from "./views/Story";
 import Team from "./views/Team";
