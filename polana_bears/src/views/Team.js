@@ -29,8 +29,8 @@ function Team() {
                                 <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" class="img-fluid" alt=""/>
                             </div>
                                 <div class="member-info">
-                                    <h4>Emma White</h4>
-                                    <span>Web Designer</span>
+                                    <h4>PolarDots</h4>
+                                    <span>Developer</span>
                                 </div>
                             </div>
                         </Col>
@@ -41,8 +41,8 @@ function Team() {
                                 <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t3.jpg" class="img-fluid" alt=""/>
                             </div>
                                 <div class="member-info">
-                                    <h4>Bobby Robins</h4>
-                                    <span>Web Developer</span>
+                                    <h4>PolaRoids</h4>
+                                    <span>Developer</span>
                                 </div>
                             </div>
                         </Col>

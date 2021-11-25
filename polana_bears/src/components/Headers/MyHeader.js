@@ -1,12 +1,10 @@
 /*eslint-disable*/
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 // reactstrap components
-import { Button, Container, Media } from "reactstrap";
+import { Button, Container } from "reactstrap";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { slide as Menu } from 'react-burger-menu'
 
 import {
   faDiscord,
@@ -24,10 +22,12 @@ import Clocks from '../Clock/Clocks';
 // core components
 function MyHeader() {
 
+  var Snow = require('react-snow-effect');
+
   const cardStyling = {
     fontSizeHeader: {
       fontSize: "500%",
-      marginTop: "15%",
+      marginTop: "5%"
     }, fontSizeBody: {
       fontSize: "110%",
     }, discord: {
@@ -40,9 +40,6 @@ function MyHeader() {
     }, appBar: {
       background: "transparent",
       boxShadow: "none",
-      "@media (max-width: 768px)": {
-        paddingLeft: 0,
-      },
     }, row: {
       marginTop: "20px",
     }, mintButton: {
@@ -53,80 +50,8 @@ function MyHeader() {
       marginTop: "10px",
     }, container: {
       textAlignVertical: "center",
-    }, burgerMenu: {
-      background: "#FFFFFF",
-      position: "fixed",
-      width: "36px",
-      height: "30px",
-      left: "36px",
-      top: "36px",
-    },
-  }
-
-  const [state, setState] = useState({
-    mobileView: false,
-  });
-
-  const { mobileView } = state;
-
-  useEffect(() => {
-    const setResponsiveness = () => {
-      console.log(window.innerWidth)
-      return window.innerWidth < 900
-        ? setState((prevState) => ({ ...prevState, mobileView: true }))
-        : setState((prevState) => ({ ...prevState, mobileView: false }));
-    };
-
-    setResponsiveness();
-    window.addEventListener("resize", () => setResponsiveness());
-
-    return () => {
-      window.removeEventListener("resize", () => setResponsiveness());
     }
-  }, []);
-
-  const displayMobile = () => {
-    return (
-      <Menu right style={cardStyling.burgerMenu}>
-        <a id="home" className="menu-item" href="/">Home</a>
-        <a id="about" className="menu-item" href="/about">About</a>
-        <a id="contact" className="menu-item" href="/contact">Contact</a>
-      </Menu>
-    );
-  };
-
-  const displayDesktop = () => {
-    return (
-      <Toolbar style={cardStyling.appBar}>
-        <Box sx={{ flexGrow: 1 }} />
-        <div class="row" style={cardStyling.row}>
-          <div class="col">
-            <a
-              style={cardStyling.discord}
-              href="https://discord.gg/tZbXWZFG">
-              <FontAwesomeIcon icon={faDiscord} size="2x" />
-            </a>
-          </div>
-          <div class="col">
-            <a
-              style={cardStyling.instagram}
-              href="https://www.instagram.com/polanabears/">
-              <FontAwesomeIcon icon={faInstagram} size="2x" />
-            </a>
-          </div>
-          <div class="col">
-            <a
-              style={cardStyling.twitter}
-              href="https://twitter.com/PolanaBears">
-              <FontAwesomeIcon icon={faTwitter} size="2x" />
-            </a>
-          </div>
-        </div>
-      </Toolbar>
-    );
-  };
-
-  var Snow = require('react-snow-effect');
+  }
 
   const headerStyling = {
     header: {
@@ -140,20 +65,41 @@ function MyHeader() {
       <div className="page-header-image"
       // style={headerStyling.header}
       ></div>
-      <Snow />
+      <Snow/>
       <AppBar position="static" style={cardStyling.appBar}>
-        {mobileView ? displayMobile() : displayDesktop()}
+        <div style={cardStyling.container}>
+          <Toolbar style={cardStyling.appBar}>
+            <Box sx={{ flexGrow: 1 }} />
+            <div class="row" style={cardStyling.row}>
+              <div class="col-xl">
+                <a
+                  style={cardStyling.discord}
+                  href="https://discord.gg/tZbXWZFG">
+                  <FontAwesomeIcon icon={faDiscord} size="2x" />
+                </a>
+              </div>
+              <div class="col-xl">
+                <a
+                  style={cardStyling.instagram}
+                  href="https://www.instagram.com/polanabears/">
+                  <FontAwesomeIcon icon={faInstagram} size="2x" />
+                </a>
+              </div>
+              <div class="col-xl">
+                <a
+                  style={cardStyling.twitter}
+                  href="https://twitter.com/PolanaBears">
+                  <FontAwesomeIcon icon={faTwitter} size="2x" />
+                </a>
+              </div>
+            </div>
+          </Toolbar>
+        </div>
       </AppBar>
       <Container style={cardStyling.container}>
         <div className="content-center brand">
           <h1 style={cardStyling.fontSizeHeader}>Polana Bears</h1>
-          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>In 1921, a group of hunters infiltrated PolanaLand and massacred several elderly Polana Bears. Ever since then, the Polana Bears were never seen again. </h5>
-          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>A brand new investigation was recently launched and UAV footage found that the Polana Bears have developed as a civilization and have biologically evolved to develop human-like features. </h5>
-          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>It is estimated that there resides 10,000 Polana Bears in PolanaLand.</h5>
-          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>On December 28th 2021, we will release highly classified information on each of these 10,000 creatures in an attempt to gain a deeper understanding of the Polana civilization.</h5>
-          <br />
-          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>Join our movement. </h5>
-          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>Join our search. Join the #PolanaSeekers.</h5>
+          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>4,888 exclusively created Polana Bears</h5>
           <br />
           <button className="custom-btn btn-5">Mint Now</button>
           <br />
@@ -161,7 +107,7 @@ function MyHeader() {
             <h6>Mint Countdown: </h6> &nbsp; &nbsp;
             <Countdown date={Date.now() + 3110400000} />
           </div>
-          <Clocks />
+          <Clocks style="display: inline-flex"/>
         </div>
       </Container>
     </div>

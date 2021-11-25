@@ -3,15 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
 
 //views
-import Information from "./views/Information";
+// import Information from "./views/Information";
 import Roadmap from "./views/Roadmap";
 import Story from "./views/Story";
 import Team from "./views/Team";
 import FAQ from "./views/FAQ";
-import Examples from "./views/Examples";
+import Allocation from "./views/Allocation";
 
 //components
-// import MyNavbar from "./components/Navbars/MyNavbar";
 import MyHeader from "./components/Headers/MyHeader";
 import MyFooter from './components/Footers/MyFooter';
 
@@ -19,23 +18,21 @@ import {
   Row,
 } from "reactstrap";
 
-import "react-rain-animation/lib/style.css";
-
 function App() {
   return (
     <>
-      {/* <MyNavbar /> */}
+      <meta property="og:title" content="Polana Bears"/>
       <MyHeader />
       <div className="wrapper">
         <div className="main">
-          <Row className="component-row">
+          {/* <Row className="component-row">
             <Information />
-          </Row>
+          </Row> */}
           <Row className="component-row">
             <Story />
           </Row>
           <Row>
-            <Examples />
+            <Allocation />
           </Row>
           <Row className="component-row">
             <Roadmap />
