@@ -27,7 +27,7 @@ function MyHeader() {
   const cardStyling = {
     fontSizeHeader: {
       fontSize: "500%",
-      marginTop: "15%",
+      marginTop: "5%",
     }, fontSizeBody: {
       fontSize: "110%",
     }, discord: {
@@ -147,13 +147,7 @@ function MyHeader() {
       <Container style={cardStyling.container}>
         <div className="content-center brand">
           <h1 style={cardStyling.fontSizeHeader}>Polana Bears</h1>
-          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>In 1921, a group of hunters infiltrated PolanaLand and massacred several elderly Polana Bears. Ever since then, the Polana Bears were never seen again. </h5>
-          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>A brand new investigation was recently launched and UAV footage found that the Polana Bears have developed as a civilization and have biologically evolved to develop human-like features. </h5>
-          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>It is estimated that there resides 10,000 Polana Bears in PolanaLand.</h5>
-          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>On December 28th 2021, we will release highly classified information on each of these 10,000 creatures in an attempt to gain a deeper understanding of the Polana civilization.</h5>
-          <br />
-          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>Join our movement. </h5>
-          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>Join our search. Join the #PolanaSeekers.</h5>
+
           <br />
           <button className="custom-btn btn-5">Mint Now</button>
           <br />

@@ -63,11 +63,20 @@ function Story() {
                 </div>
                 <div style={cardStyling.div}>
                     <div style={cardStyling.line}></div>
+                    <br />
+                    <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>In 1921, a group of hunters infiltrated PolanaLand and massacred several elderly Polana Bears. Ever since then, the Polana Bears were never seen again. </h5>
+                    <br />
+                    <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>A brand new investigation was recently launched and UAV footage found that the Polana Bears have developed as a civilization and have biologically evolved to develop human-like features. </h5>
+                    <br />
+                    <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>It is estimated that there resides 4,888 Polana Bears in PolanaLand.</h5>
+                    <br />
+                    <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>We will release highly classified information on each of these 4,888 creatures in an attempt to gain a deeper understanding of the Polana civilization.</h5>
+                    <br />
+                    <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>Join our movement. </h5>
+                    <br />
+                    <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>Join our search. Join the #PolanaSeekers.</h5>
                     <p style={cardStyling.p}>
-                    It seems like the Polana Bears have formed their own governance systems. 10 mighty Royal Polana Bears rule PolanaLand, leading the Polana effort to fend off further attacks on their home. Which one of us #PolanaSeekers will receive top-secret information about these 10 Royal creatures?
-                    </p>
-                    <p style={cardStyling.p}>
-                    Take your shot. Get your own Polana Bear on January 8th, 2022.
+                    Take your shot. Get your own Polana Bear in <u><b>January 2022</b></u>
                     </p>
                     
                 </div>

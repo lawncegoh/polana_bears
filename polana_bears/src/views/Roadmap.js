@@ -82,7 +82,7 @@ function Roadmap() {
           >
             <h3 className="vertical-timeline-element-title">First contact made</h3>
             <ul>
-              <li>Public sale of Polana Bears through our mint site</li>
+              <li>Public sale of Polana Bears through our mint site in <u><b>January 2022</b></u></li>
               <li>Move on to listing on secondary trading markets, likely MagicEden or Digital Eyes</li>
               <li>Statistics of bears sold to be tracked and reviewed</li>
             </ul>
