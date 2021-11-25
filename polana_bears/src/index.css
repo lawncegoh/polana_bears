@@ -5,6 +5,14 @@
   overflow-x:none;
 }
 
+@media screen and (max-width: 768px) {
+  * {
+    font-family: 'Mate SC', serif;
+    overflow-x:none;
+    font-size:small;
+  }
+}
+
 .wrapper {
   background-color:#040C25;
 }

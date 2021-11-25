@@ -22,10 +22,10 @@ class Clocks extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{display:'inline-flex', justifyContent: 'space-between'}}>
         {this.state.timezones.map(({ zone }, index) => (
           <div className="time" key={index}>
-            <div className="value" style={{flexwrap:'nowrap'}}>
+            <div className="value" >
               {zone.split('/')[1].replace('_', ' ')}
               <br />
               {moment()
