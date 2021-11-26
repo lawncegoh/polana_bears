@@ -6,7 +6,7 @@ import {
     Container
 } from "reactstrap";
 
-function Story() {
+function RoyalPolanas() {
     const cardStyling = {
         container: {
             height:"100vh",
@@ -58,20 +58,16 @@ function Story() {
         <Container>
             <div>
                 <div style={titleStyling.title}>
-                    <h1>The Story of the Polana Bears</h1>
+                    <h1>Royal Polana Bears</h1>
                 </div>
                 <div style={cardStyling.div}>
                     <div style={cardStyling.line}></div>
                     <p style={cardStyling.p}>
-                    In 1921, a group of hunters infiltrated PolanaLand and massacred several elderly Polana Bears. Ever since then, the Polana Bears were never seen again. 
-                    A brand new investigation was recently launched and UAV footage found that the Polana Bears have developed as a civilization and have biologically evolved to develop human-like features.
+                    It seems like the Polana Bears have formed their own governance systems. 10 mighty Royal Polana Bears rule PolanaLand, 
+                    leading the Polana effort to fend off further attacks on their home. Which one of us #PolanaSeekers will receive top-secret information about these 10 Royal creatures?
                     </p>
                     <p style={cardStyling.p}>
-                    It is estimated that there resides 10,000 Polana Bears in PolanaLand.  On December 28th 2021, 
-                    we will release highly classified information on each of these 10,000 creatures in an attempt to gain a deeper understanding of the Polana civilization.
-                    </p>
-                    <p style={cardStyling.p}>
-                    Join our movement. Join our search. Join the #PolanaSeekers.
+                    These 10 Royal Polana Bears are in the works, so stay tuned to have a look at these mighty creatures!
                     </p>
                     
                 </div>
@@ -81,4 +77,4 @@ function Story() {
     );
 }
 
-export default Story;
+export default RoyalPolanas;
