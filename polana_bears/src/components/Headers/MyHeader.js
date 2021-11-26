@@ -2,7 +2,11 @@
 import React, { useState, useEffect } from "react";
 
 // reactstrap components
-import { Container } from "reactstrap";
+import { 
+  Container,
+  Row,
+  Col
+} from "reactstrap";
 import { CgMenuRound } from "react-icons/cg"
 import { RiCloseCircleFill } from "react-icons/ri"
 
@@ -38,7 +42,6 @@ function MyHeader() {
       fontSize: "110%",
     }, discord: {
       color: "#7289da",
-      paddingright: "72px !important",
     }, twitter: {
       color: "#49a1eb",
     }, instagram: {
@@ -67,22 +70,22 @@ function MyHeader() {
       backgroundImage:
         "url(" + require("../../assets/img/northernlights.jpeg").default + ")"
     }, 
-    hamburger: {
-      position:"absolute",
-      margin: "5%",
-      cursor:"pointer"
-    },
-    ul: {
+    div: {
       display:"flex",
-      flexDirection:"column",
-      position:"absolute",
-      top:"80px",
-      right:"0",
-      width:"100%",
-      background:"#181818",
-      borderTop:"2px solid black"
+      backgroundColor:"black",
+      alignItems:"center"
     },
-    li: {
+    hamburger: {
+      display: "flex",
+      right:"0",
+      position:"absolute",
+      cursor:"pointer",
+    },
+    row: {
+      display:"flex",
+    },
+    col: {
+      display:"flex",
       paddingLeft:"15%",
       opacity:"1"
     }
@@ -110,11 +113,11 @@ function MyHeader() {
   }, []);
 
   const displayMobile = (open) => {
-    const hamIcon = <CgMenuRound className={headerStyling.hamburger} size='40px' color='white'
-    onClick={() => setOpen(!open)}
+    const hamIcon = <CgMenuRound className={headerStyling.hamburger} size="25px"
+    onClick={() => setOpen(!open)} 
     />
 
-    const closeIcon = <RiCloseCircleFill className={headerStyling.hamburger} size='40px' color='white'
+    const closeIcon = <RiCloseCircleFill className={headerStyling.hamburger} size="25px"
     onClick={() => setOpen(!open)}
     />
 
@@ -123,11 +126,29 @@ function MyHeader() {
         {open ? closeIcon : hamIcon}
         {open &&
           <div>
-            <ul style={headerStyling.ul}>
-              <li>Discord</li>
-              <li>Instagram</li>
-              <li>Twitter</li>
-            </ul>
+            <Row style={headerStyling.row}>
+              <Col style={headerStyling.col}>
+              <a
+                style={cardStyling.discord}
+                href="https://discord.gg/tZbXWZFG">
+                <FontAwesomeIcon icon={faDiscord} size="2x" />
+              </a>
+              </Col>
+              <Col style={headerStyling.col}>
+              <a
+                style={cardStyling.instagram}
+                href="https://www.instagram.com/polanabears/">
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
+              </a>
+              </Col>
+              <Col style={headerStyling.col}>
+              <a
+                style={cardStyling.twitter}
+                href="https://twitter.com/PolanaBears">
+                <FontAwesomeIcon icon={faTwitter} size="2x" />
+              </a>
+              </Col>
+              </Row>
           </div>
         } 
       </nav>
