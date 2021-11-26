@@ -80,8 +80,7 @@ function FAQ() {
                 <div style={cardStyling.div}>
                     <div style={cardStyling.line}></div>
                     <h4>Will there be a whitelist and how do I join it?</h4>
-                    <p>Yes! There will be a whitelist. To join it, there are a couple of steps to follow:
-                write steps here...</p>
+                    <p>Yes! There will be a whitelist. The steps will be released as we get closer to launch date. Stay tuned.</p>
                 </div>
             </Col>
         </Row>

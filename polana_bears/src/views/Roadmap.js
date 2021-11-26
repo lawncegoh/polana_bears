@@ -101,7 +101,22 @@ function Roadmap() {
               <li>Low tier bears to be bought off the secondary markets</li>
               <li>85% of secondary-market royalties dedicated to further marketing and floor sweeps</li>
               <li>Possible DAO continuation for holders of bears</li>
-              <li>Further community giveaways and future project suggestions</li>
+              <li>Further community giveaways</li>
+            </ul>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: '#061133', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #061133' }}
+            date="Phase 4"
+            iconStyle={{ background: '#061133', color: '#fff' }}
+            // icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">Expanding Polana Land</h3>
+            <ul>
+              <li>Introduction of growth serums in <u><b>Feb 2022</b></u></li>
+              <li>Bears can take in serums to increase in rarity</li>
+              <li>This is dependent on community's opinions</li>
             </ul>
           </VerticalTimelineElement>
         </VerticalTimeline>

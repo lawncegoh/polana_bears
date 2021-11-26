@@ -31,7 +31,7 @@ function App() {
       // Wait for 3 seconds
       setTimeout(() => {
         setIsLoading(false);
-      }, 5000);
+      }, 1000);
     }, []);
     
   return isLoading 

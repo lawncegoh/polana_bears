@@ -3,10 +3,10 @@ import React, { useState, useEffect } from "react";
 
 // reactstrap components
 import { Container } from "reactstrap";
+import { CgMenuRound } from "react-icons/cg"
+import { RiCloseCircleFill } from "react-icons/ri"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { slide as Menu } from 'react-burger-menu';
 
 import {
   faDiscord,
@@ -17,8 +17,9 @@ import {
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Countdown from 'react-countdown';
-import Clocks from '../Clock/Clocks';
+// import { ClassNames } from "@emotion/react";
+// import Countdown from 'react-countdown';
+// import Clocks from '../Clock/Clocks';
 
 
 // core components
@@ -61,6 +62,32 @@ function MyHeader() {
     }
   }
 
+  const headerStyling = {
+    header: {
+      backgroundImage:
+        "url(" + require("../../assets/img/northernlights.jpeg").default + ")"
+    }, 
+    hamburger: {
+      position:"absolute",
+      margin: "5%",
+      cursor:"pointer"
+    },
+    ul: {
+      display:"flex",
+      flexDirection:"column",
+      position:"absolute",
+      top:"80px",
+      right:"0",
+      width:"100%",
+      background:"#181818",
+      borderTop:"2px solid black"
+    },
+    li: {
+      paddingLeft:"15%",
+      opacity:"1"
+    }
+  }
+
   const [state, setState] = useState({
     mobileView: false,
   });
@@ -82,15 +109,30 @@ function MyHeader() {
     }
   }, []);
 
-  const displayMobile = () => {
+  const displayMobile = (open) => {
+    const hamIcon = <CgMenuRound className={headerStyling.hamburger} size='40px' color='white'
+    onClick={() => setOpen(!open)}
+    />
+
+    const closeIcon = <RiCloseCircleFill className={headerStyling.hamburger} size='40px' color='white'
+    onClick={() => setOpen(!open)}
+    />
+
     return (
-      <div style={cardStyling.container}>
-        <Toolbar style={cardStyling.appBar}>
-          <Menu></Menu>
-        </Toolbar>
-      </div>
+      <nav>
+        {open ? closeIcon : hamIcon}
+        {open &&
+          <div>
+            <ul style={headerStyling.ul}>
+              <li>Discord</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+            </ul>
+          </div>
+        } 
+      </nav>
     );
-  };
+  }
 
   const displayDesktop = () => {
     return (
@@ -123,14 +165,9 @@ function MyHeader() {
         </Toolbar>
       </div>
     );
-  };
-
-  const headerStyling = {
-    header: {
-      backgroundImage:
-        "url(" + require("../../assets/img/northernlights.jpeg").default + ")"
-    }
   }
+
+  const [open, setOpen] = useState(false)
 
   return (
     <div className="page-header clear-filter" filter-color="blue">
@@ -139,12 +176,12 @@ function MyHeader() {
       ></div>
       <Snow />
       <AppBar position="static" style={cardStyling.appBar}>
-        {mobileView ? displayMobile() : displayDesktop()}
+        {mobileView ? displayMobile(open) : displayDesktop()}
       </AppBar>
       <Container style={cardStyling.container}>
         <div className="content-center brand">
           <h1 style={cardStyling.fontSizeHeader}>Polana Bears</h1>
-          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>4,888 exclusively created Polana Bears</h5>
+          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>4,888 exclusively hand-drawn bears</h5>
           <br />
           <button type="button" class="custom-btn btn-5" disabled='disabled'>Mint Now</button>
           <br />
