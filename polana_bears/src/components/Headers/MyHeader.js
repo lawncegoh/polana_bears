@@ -144,12 +144,12 @@ function MyHeader() {
       <Container style={cardStyling.container}>
         <div className="content-center brand">
           <h1 style={cardStyling.fontSizeHeader}>Polana Bears</h1>
-          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>4,888 exclusively created Polana Bears</h5>
+          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>4,888 Hand-Drawn and Unique Polana Bears</h5>
           <br />
           <button type="button" class="custom-btn btn-5" disabled='disabled'>Mint Now</button>
           <br />
           <div style={cardStyling.mintWords}>
-            <h6>Mint Countdown: TBC</h6>
+            <h6>Minting in January 2022. Stay tuned for more!</h6>
             {/* <Countdown date={Date.now() + 3110400000} /> */}
           </div>
           <br/>

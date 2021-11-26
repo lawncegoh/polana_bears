@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 // reactstrap components
 import {
@@ -6,23 +6,27 @@ import {
 } from "reactstrap";
 
 function Allocation() {
-  const containerStyle = {
+  const containerStyleGeneral= {
     container: {
       display: "flex",
       flexDirection: "column",
       gap: "10px",
-      padding: "15rem",
-      "@media (max-width: 768px)": {
-        padding: "3rem",
-      },
     }
   }
+
+  const containerStyleMobile = {
+    container: {
+      padding: "3rem",
+    }
+  }
+
   const tableStyle = {
     table: {
       boxShadow: "rgba(255,255,255, 0.4) 5px 5px, rgba(255,255,255, 0.3) 10px 10px, rgba(255,255,255, 0.2) 15px 15px, rgba(255,255,255, 0.1) 20px 20px, rgba(255,255,255, 0.05) 25px 25px",
       width: "100%",
       border: "solid",
-      borderCollapse: "collapse"
+      borderCollapse: "collapse",
+      padding: "40px"
     },
     th: {
       border: "1px solid grey",
@@ -30,7 +34,8 @@ function Allocation() {
       padding: "4px",
       fontSize: "22px",
       color: "white",
-      backgroundColor: "#061133"
+      backgroundColor: "#061133",
+      width: "50%",
     },
     td: {
       border: "1px solid grey",
@@ -48,38 +53,115 @@ function Allocation() {
       display: "flex"
     }
   }
+
+  const [state, setState] = useState({
+    mobileView: false,
+  });
+
+  const { mobileView } = state;
+
+  useEffect(() => {
+    const setResponsiveness = () => {
+      return window.innerWidth < 1199
+        ? setState((prevState) => ({ ...prevState, mobileView: true }))
+        : setState((prevState) => ({ ...prevState, mobileView: false }));
+    };
+
+    setResponsiveness();
+    window.addEventListener("resize", () => setResponsiveness());
+
+    return () => {
+      window.removeEventListener("resize", () => setResponsiveness());
+    }
+  }, []);
+
+  const displayMobile = () => {
+    return (
+      <div>
+        <Container style={containerStyleMobile.container}>
+          <table style={tableStyle.table}>
+            <thead>
+              <tr>
+                <th style={tableStyle.th}>Stakeholder</th>
+                <th style={tableStyle.th}>Units</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style={tableStyle.td}>Giveaway</td>
+                <td style={tableStyle.td}>20</td>
+
+              </tr>
+              <tr>
+                <td style={tableStyle.td}>OG Polana Seekers [Whitelisted]</td>
+                <td style={tableStyle.td}>100</td>
+              </tr>
+              <tr>
+                <td style={tableStyle.td}>Whitelist Event</td>
+                <td style={tableStyle.td}>200</td>
+              </tr>
+              <tr>
+                <td style={tableStyle.td}>Dev Team</td>
+                <td style={tableStyle.td}>5</td>
+              </tr>
+              <tr>
+                <td style={tableStyle.td}>Public Sale</td>
+                <td style={tableStyle.td}>4563</td>
+              </tr>
+            </tbody>
+          </table>
+        </Container>
+      </div>
+    );
+  };
+
+  const displayDesktop = () => {
+    return (
+      <div>
+        <Container>
+          <table style={tableStyle.table}>
+            <thead>
+              <tr>
+                <th style={tableStyle.th}>Stakeholder</th>
+                <th style={tableStyle.th}>Units</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style={tableStyle.td}>Giveaway</td>
+                <td style={tableStyle.td}>20</td>
+
+              </tr>
+              <tr>
+                <td style={tableStyle.td}>OG Polana Seekers [Whitelisted]</td>
+                <td style={tableStyle.td}>100</td>
+              </tr>
+              <tr>
+                <td style={tableStyle.td}>Whitelist Event</td>
+                <td style={tableStyle.td}>200</td>
+              </tr>
+              <tr>
+                <td style={tableStyle.td}>Dev Team</td>
+                <td style={tableStyle.td}>5</td>
+              </tr>
+              <tr>
+                <td style={tableStyle.td}>Public Sale</td>
+                <td style={tableStyle.td}>4563</td>
+              </tr>
+            </tbody>
+          </table>
+        </Container>
+      </div>
+    );
+  };
+
   return (
     <>
-      <Container style={containerStyle.container}>
+      <Container style={containerStyleGeneral.container}>
         <div style={titleStyling.title}>
           <h1>Allocation Pool</h1>
         </div>
-        <table style={tableStyle.table}>
-          <thead>
-            <tr>
-              <th style={tableStyle.th}>Stakeholder</th>
-              <th style={tableStyle.th}>Percentage</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style={tableStyle.td}>Influencers</td>
-              <td style={tableStyle.td}>100</td>
-            </tr>
-            <tr>
-              <td style={tableStyle.td}>Giveaway</td>
-              <td style={tableStyle.td}>20</td>
-            </tr>
-            <tr>
-              <td style={tableStyle.td}>Whitelist</td>
-              <td style={tableStyle.td}>100</td>
-            </tr>
-            <tr>
-              <td style={tableStyle.td}>Public Sale</td>
-              <td style={tableStyle.td}>4668</td>
-            </tr>
-          </tbody>
-        </table>
+        {mobileView ? displayMobile() : displayDesktop()}
       </Container>
     </>
   );

@@ -9,6 +9,7 @@ import Story from "./views/Story";
 import Team from "./views/Team";
 import FAQ from "./views/FAQ";
 import Allocation from "./views/Allocation";
+import RoyalPolanas from "./views/RoyalPolanas";
 
 //components
 import MyHeader from "./components/Headers/MyHeader";
@@ -30,6 +31,9 @@ function App() {
           </Row> */}
           <Row className="component-row">
             <Story />
+          </Row>
+          <Row className="component-row">
+            <RoyalPolanas />
           </Row>
           <Row>
             <Allocation />

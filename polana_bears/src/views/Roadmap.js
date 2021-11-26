@@ -28,7 +28,7 @@ function Roadmap() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: '#061133', color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid  #061133' }}
-            date="Before the phases"
+            date="Phase 0"
             iconStyle={{ background: '#061133', color: '#fff' }}
             // icon={<WorkIcon />}
           >
@@ -49,10 +49,10 @@ function Roadmap() {
             <h3 className="vertical-timeline-element-title">After a century</h3>
             <ul>
               
-              <li>Discord, Instagram and Twitter channels set up properly</li>
+              <li>Social Media platforms established</li>
               <li>Website coded and backend linkage to Solana chain set up</li>
               <li>UAV footage found a 4,888 strong Polana Bears civilization</li>
-              <li>Rarity tool developed internally to gather further intelligence of this group of bears</li>
+              <li>Rarity tool developed internally to gather further intelligence on this group of bears</li>
             </ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -80,11 +80,11 @@ function Roadmap() {
             iconStyle={{ background: '#061133', color: '#fff' }}
             // icon={<WorkIcon />}
           >
-            <h3 className="vertical-timeline-element-title">First contact made</h3>
+            <h3 className="vertical-timeline-element-title">The Launch</h3>
             <ul>
               <li>Public sale of the Hand Drawn Polana Bears through our mint site in <u><b>January 2022</b></u></li>
-              <li>Verification on secondary trading markets, likely MagicEden or Digital Eyes</li>
-              <li>Discrod sales bot</li>
+              <li>Verification on secondary trading markets, either on MagicEden or Digital Eyes</li>
+              <li>Discord sales bot</li>
             </ul>
 
           </VerticalTimelineElement>
