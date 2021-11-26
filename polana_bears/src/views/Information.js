@@ -1,4 +1,5 @@
 import React from "react";
+import Gif from "../assets/img/teaser.gif";
 
 // reactstrap components
 
@@ -42,6 +43,12 @@ function Information() {
         color:"white",
         fontSize:"130%",
         marginTop:"15px",
+    }, img: {
+        width:"400px",
+        height:"400px",
+        justifyContent:"center",
+        margin:"10px 10px",
+        flexWrap:"wrap"
     }
   }
   return (
@@ -52,6 +59,7 @@ function Information() {
               <p>
                   <h3>10,000 deflationary Polana Bears breaking dawn in January 2021</h3>
               </p>
+              <img style={cardStyling.img} src={Gif} alt="teaser"/>
           </div>
       </Container>
     </>
