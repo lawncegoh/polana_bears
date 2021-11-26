@@ -79,7 +79,7 @@ function Allocation() {
     return (
       <div>
         <Container style={containerStyleMobile.container}>
-          <table style={tableStyle.table}>
+        <table style={tableStyle.table}>
             <thead>
               <tr>
                 <th style={tableStyle.th}>Stakeholder</th>
@@ -89,24 +89,16 @@ function Allocation() {
             <tbody>
               <tr>
                 <td style={tableStyle.td}>Giveaway</td>
-                <td style={tableStyle.td}>20</td>
+                <td style={tableStyle.td}>30</td>
 
               </tr>
               <tr>
-                <td style={tableStyle.td}>OG Polana Seekers [Whitelisted]</td>
-                <td style={tableStyle.td}>100</td>
-              </tr>
-              <tr>
-                <td style={tableStyle.td}>Whitelist Event</td>
-                <td style={tableStyle.td}>200</td>
-              </tr>
-              <tr>
-                <td style={tableStyle.td}>Dev Team</td>
-                <td style={tableStyle.td}>5</td>
+                <td style={tableStyle.td}>Whitelist</td>
+                <td style={tableStyle.td}>300</td>
               </tr>
               <tr>
                 <td style={tableStyle.td}>Public Sale</td>
-                <td style={tableStyle.td}>4563</td>
+                <td style={tableStyle.td}>4558</td>
               </tr>
             </tbody>
           </table>
@@ -129,24 +121,16 @@ function Allocation() {
             <tbody>
               <tr>
                 <td style={tableStyle.td}>Giveaway</td>
-                <td style={tableStyle.td}>20</td>
+                <td style={tableStyle.td}>30</td>
 
               </tr>
               <tr>
-                <td style={tableStyle.td}>OG Polana Seekers [Whitelisted]</td>
-                <td style={tableStyle.td}>100</td>
-              </tr>
-              <tr>
-                <td style={tableStyle.td}>Whitelist Event</td>
-                <td style={tableStyle.td}>200</td>
-              </tr>
-              <tr>
-                <td style={tableStyle.td}>Dev Team</td>
-                <td style={tableStyle.td}>5</td>
+                <td style={tableStyle.td}>Whitelist</td>
+                <td style={tableStyle.td}>300</td>
               </tr>
               <tr>
                 <td style={tableStyle.td}>Public Sale</td>
-                <td style={tableStyle.td}>4563</td>
+                <td style={tableStyle.td}>4558</td>
               </tr>
             </tbody>
           </table>
