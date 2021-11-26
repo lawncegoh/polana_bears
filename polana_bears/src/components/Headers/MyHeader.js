@@ -113,11 +113,11 @@ function MyHeader() {
   }, []);
 
   const displayMobile = (open) => {
-    const hamIcon = <CgMenuRound className={headerStyling.hamburger} size="25px"
+    const hamIcon = <CgMenuRound className={headerStyling.hamburger} size="40px"
     onClick={() => setOpen(!open)} 
     />
 
-    const closeIcon = <RiCloseCircleFill className={headerStyling.hamburger} size="25px"
+    const closeIcon = <RiCloseCircleFill className={headerStyling.hamburger} size="40px"
     onClick={() => setOpen(!open)}
     />
 
