@@ -58,7 +58,7 @@ function Story() {
         <Container>
             <div>
                 <div style={titleStyling.title}>
-                    <h1>The Story of the Polana Bears</h1>
+                    <h1>How it all came about</h1>
                 </div>
                 <div style={cardStyling.div}>
                     <div style={cardStyling.line}></div>

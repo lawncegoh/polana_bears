@@ -1,4 +1,9 @@
 import React from "react";
+import Bear1 from "../assets/img/13.png";
+import Bear2 from "../assets/img/14.jpg";
+import Bear3 from "../assets/img/16.png";
+import Bear4 from "../assets/img/23.png";
+import Bear5 from "../assets/img/26.png";
 
 import {
     Row,
@@ -26,11 +31,11 @@ function Team() {
                         <Col>
                             <div class="member">
                             <div class="member-img">
-                                <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" class="img-fluid" alt=""/>
+                                <img src={Bear1} class="img-fluid" alt=""/>
                             </div>
                                 <div class="member-info">
-                                    <h4>PolarDots</h4>
-                                    <span>Developer</span>
+                                    <h4>POLARCapt</h4>
+                                    <span>Lead Developer</span>
                                 </div>
                             </div>
                         </Col>
@@ -38,11 +43,11 @@ function Team() {
                         <Col>
                             <div class="member">
                             <div class="member-img">
-                                <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t3.jpg" class="img-fluid" alt=""/>
+                                <img src={Bear2} class="img-fluid" alt=""/>
                             </div>
                                 <div class="member-info">
-                                    <h4>PolaRoids</h4>
-                                    <span>Developer</span>
+                                    <h4>POLARoids</h4>
+                                    <span>Marketing/Artist</span>
                                 </div>
                             </div>
                         </Col>
@@ -50,33 +55,33 @@ function Team() {
                         <Col>
                             <div class="member">
                             <div class="member-img">
-                                <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg" class="img-fluid" alt=""/>
+                                <img src={Bear3} class="img-fluid" alt=""/>
                             </div>
                                 <div class="member-info">
-                                    <h4>Gena lee</h4>
-                                    <span>SEO Expert</span>
+                                    <h4>POLARised</h4>
+                                    <span>Business Development</span>
                                 </div>
                             </div>
                         </Col>
                         <Col>
                             <div class="member">
                             <div class="member-img">
-                                <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg" class="img-fluid" alt=""/>
+                                <img src={Bear4} class="img-fluid" alt=""/>
                             </div>
                                 <div class="member-info">
-                                    <h4>Noel Flantier</h4>
-                                    <span>ISO Developer</span>
+                                    <h4>POLARoyal</h4>
+                                    <span>Developer</span>
                                 </div>
                             </div>
                         </Col>
                         <Col>
                             <div class="member">
                             <div class="member-img">
-                                <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg" class="img-fluid" alt=""/>
+                                <img src={Bear5} class="img-fluid" alt=""/>
                             </div>
                                 <div class="member-info">
-                                    <h4>Noel Flantier</h4>
-                                    <span>ISO Developer</span>
+                                    <h4>POLARich</h4>
+                                    <span>Developer</span>
                                 </div>
                             </div>
                         </Col>

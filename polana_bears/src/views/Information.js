@@ -10,12 +10,12 @@ import {
 function Information() {
   const cardStyling = {
       container: {
-          height:"100vh",
-          backgroundColor:"#222",
-          width:"80vw",
+          height:"20vh",
+          width:"20vw",
           display:"flex",
           alignItems:"center",
           flexWrap:"wrap",
+          marginBottom:"10%",
           justifyContent:"center",
           
     },
@@ -31,7 +31,7 @@ function Information() {
         margin:"15px 15px",
         color:"#fff",
         padding:"40px",
-        justifyContent:"center"
+        justifyContent:"center",
     }, line: {
         width:"100%",
         height:"5px",
@@ -44,23 +44,18 @@ function Information() {
         fontSize:"130%",
         marginTop:"15px",
     }, img: {
+        display:"flex",
         width:"400px",
         height:"400px",
-        justifyContent:"center",
+        alignContent:"center",
         margin:"10px 10px",
         flexWrap:"wrap"
     }
   }
   return (
     <>
-      <Container>
-          <div style={cardStyling.div}>
-          <div style={cardStyling.line}></div>
-              <p>
-                  <h3>10,000 deflationary Polana Bears breaking dawn in January 2021</h3>
-              </p>
-              <img style={cardStyling.img} src={Gif} alt="teaser"/>
-          </div>
+      <Container style={cardStyling.container}>
+        <img style={cardStyling.img} src={Gif} alt="teaser"/>
       </Container>
     </>
   );
