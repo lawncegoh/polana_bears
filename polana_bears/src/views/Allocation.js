@@ -6,8 +6,9 @@ import {
 } from "reactstrap";
 
 function Allocation() {
-  const containerStyleGeneral= {
+  const containerStyleGeneral = {
     container: {
+      marginTop: "10px",
       display: "flex",
       flexDirection: "column",
       gap: "10px",
@@ -79,7 +80,10 @@ function Allocation() {
     return (
       <div>
         <Container style={containerStyleMobile.container}>
-        <table style={tableStyle.table}>
+          <div style={titleStyling.title}>
+            <h1>Allocation Pool</h1>
+          </div>
+          <table style={tableStyle.table}>
             <thead>
               <tr>
                 <th style={tableStyle.th}>Stakeholder</th>
@@ -110,7 +114,10 @@ function Allocation() {
   const displayDesktop = () => {
     return (
       <div>
-        <Container>
+        <Container style={containerStyleGeneral.container}>
+          <div style={titleStyling.title}>
+            <h1>Allocation Pool</h1>
+          </div>
           <table style={tableStyle.table}>
             <thead>
               <tr>
@@ -140,14 +147,9 @@ function Allocation() {
   };
 
   return (
-    <>
-      <Container style={containerStyleGeneral.container}>
-        <div style={titleStyling.title}>
-          <h1>Allocation Pool</h1>
-        </div>
-        {mobileView ? displayMobile() : displayDesktop()}
-      </Container>
-    </>
+    <div>
+      {mobileView ? displayMobile() : displayDesktop()}
+    </div>
   );
 }
 

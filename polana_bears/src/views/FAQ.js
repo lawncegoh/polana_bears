@@ -127,7 +127,7 @@ function FAQ() {
                                 <div style={cardStyling.line} />
                                 <div style={cardStylingForMobile.content}>
                                     <h4>Will there be a whitelist and how do I join it?</h4>
-                                    <p>Further details given at later date when whitelist event launched.
+                                    <p>Further details will be released at a later date, when the whitelist event is launched.
                                         However, first 100 OG Polana Seekers will be automatically whitelisted so join our discord server before it's too late! </p>
                                 </div>
                             </div>
@@ -168,8 +168,8 @@ function FAQ() {
                                     <h4>What exactly is sweeping the floor?</h4>
                                     <p>
                                         We will use the funds from royalties earned to buy back floor priced bears so as to reduce the supply
-                                        in the market and drive price of the bears up with the same sustained demand. Of course, with strong marketing
-                                        that will be in play throughout, demand of the bears will go up which leads to an increase in price for the bears.
+                                        in the market and drive prices of the bears up with the same sustained demand. Of course, with strong marketing
+                                        that will be in play throughout, demand of the bears will increase, which subsequently leads to an increase in price for the bears as well!
                                     </p>
                                 </div>
                             </div>

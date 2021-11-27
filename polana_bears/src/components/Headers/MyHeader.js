@@ -79,6 +79,7 @@ function MyHeader() {
       right:"0",
       position:"absolute",
       cursor:"pointer",
+      float: "right",
     },
     row: {
       display:"flex",
@@ -122,7 +123,7 @@ function MyHeader() {
   }, []);
 
   const displayMobile = (open) => {
-    const hamIcon = <CgMenuRound className={headerStyling.hamburger} size="40px"
+    const hamIcon = <CgMenuRound className={headerStyling.hamburger} size="40px" 
     onClick={() => setOpen(!open)} 
     />
 

@@ -17,14 +17,12 @@ const titleStyling = {
 
 function Roadmap() {
   return (
-    <>
-    <div style={titleStyling.title}>
+    <Container>
+      <div style={titleStyling.title}>
         <h1>Roadmap</h1>
-    </div>
-    
-      <Container>
-      <div className="roadmap-image"
-    ></div>
+      </div>
+
+        <div className="roadmap-image"></div>
         <br />
         <VerticalTimeline className="time-line">
           <VerticalTimelineElement
@@ -36,8 +34,10 @@ function Roadmap() {
           // icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">The Beginnings</h3>
-              <small>Human hunters infiltrated PolanaLand and massacred several elderly Polana bears</small>
-              <small>Polana Bears go into isolation</small>
+            <ul>
+              <li>Human hunters infiltrated PolanaLand and massacred several elderly Polana bears</li>
+              <li>Polana Bears go into isolation</li>
+            </ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -109,20 +109,19 @@ function Roadmap() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: '#061133', color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid  #061133' }}
-            date="Phase 4"
+            date="Phase 5"
             iconStyle={{ background: '#061133', color: '#fff' }}
-            // icon={<WorkIcon />}
+          // icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">Expanding Polana Land</h3>
             <ul>
               <li>Introduction of growth serums in <u><b>Feb 2022</b></u></li>
               <li>Bears can take in serums to increase in rarity</li>
-              <li>This is dependent on community's opinions</li>
+              <li>This is dependent on the opinions of the community</li>
             </ul>
           </VerticalTimelineElement>
         </VerticalTimeline>
-      </Container>
-    </>
+    </Container>
   );
 }
 
