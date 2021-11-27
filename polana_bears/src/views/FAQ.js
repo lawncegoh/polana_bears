@@ -48,7 +48,7 @@ function FAQ() {
             padding: "40px",
             justifyContent: "center",
             marginTop: "15px"
-        }, 
+        },
         container: {
             width: "100%",
         }, content: {
@@ -90,7 +90,7 @@ function FAQ() {
         return (
             <div>
                 <div style={titleStyling.title}>
-                    {/* <h1>Frequently Asked Questions</h1> */}
+                    <h1>Frequently Asked Questions</h1>
                 </div>
                 <Container style={cardStylingForMobile.container}>
                     <Row>

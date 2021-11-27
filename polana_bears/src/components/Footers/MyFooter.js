@@ -5,26 +5,25 @@ import React from "react";
 function MyFooter() {
 
   const cardStyling = {
-    container: {
+    footer: {
       backgroundColor: "#647C90",
       borderradius: "0 !important",
-      marginbottom: "0px",
-      height: "30px",
+      height: "20px",
     }, copyright: {
-      float: "right",
-      marginRight: "20px",
       fontSize: "15px",
-      textAlignVertical: "center",
       color: "#FFFFFF",
+      padding: "0px 15px ",
+      textAlign: "right",
+      verticalAlign: "center",
     }
   }
 
   return (
-      <footer className="footer" style={cardStyling.container}>
-          <div id="copyright" style={cardStyling.copyright}>
-            © {new Date().getFullYear()}, Designed by Polana Bears Dev Team. All Rights Reserved.
-          </div>
-      </footer>
+    <footer className="footer" style={cardStyling.footer}>
+      <div style={cardStyling.copyright}>
+        © {new Date().getFullYear()}, Designed by Polana Bears Dev Team. All Rights Reserved.
+      </div>
+    </footer>
   );
 }
 

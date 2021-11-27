@@ -33,10 +33,8 @@ function Roadmap() {
           // icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">The Beginnings</h3>
-            <ul>
-              <li>Human hunters infiltrated PolanaLand and massacred several elderly Polana bears</li>
-              <li>Polana Bears go into isolation</li>
-            </ul>
+              <small>Human hunters infiltrated PolanaLand and massacred several elderly Polana bears</small>
+              <small>Polana Bears go into isolation</small>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
