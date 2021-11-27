@@ -37,8 +37,9 @@ function App() {
     }, []);
     
   return isLoading 
-  ? 
-    <SplashScreen />
+  ? <div className="wrapper">
+      <SplashScreen />
+    </div>
   : (
     <>
       <meta property="og:title" content="Polana Bears"/>

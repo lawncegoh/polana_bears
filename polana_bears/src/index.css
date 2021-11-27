@@ -387,3 +387,17 @@ code {
   font-size: 13px;
   color:white;
 }
+
+.roadmap-image {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.3;
+  background-image:linear-gradient(
+    to bottom, transparent, #040C25
+  ), url("./assets/img/roadmap.jpeg");
+}

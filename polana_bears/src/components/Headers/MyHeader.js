@@ -1,5 +1,6 @@
 /*eslint-disable*/
 import React, { useState, useEffect } from "react";
+import BearLogo from "../../assets/img/bear_logo.jpeg";
 
 // reactstrap components
 import { 
@@ -9,9 +10,7 @@ import {
 } from "reactstrap";
 import { CgMenuRound } from "react-icons/cg"
 import { RiCloseCircleFill } from "react-icons/ri"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import {
   faDiscord,
   faTwitter,
@@ -88,6 +87,16 @@ function MyHeader() {
       display:"flex",
       paddingLeft:"15%",
       opacity:"1"
+    },
+    img: {
+      display:"flex",
+      maxWidth:"30%",
+      maxHeight:"30%",
+      position:"absolute",
+      opacity:"0.5",
+      top:"0%",
+      left:"40%",
+      objectFit:"cover"
     }
   }
 
@@ -130,7 +139,7 @@ function MyHeader() {
               <Col style={headerStyling.col}>
               <a
                 style={cardStyling.discord}
-                href="https://discord.gg/tZbXWZFG">
+                href="https://discord.gg/Dczmgq5P">
                 <FontAwesomeIcon icon={faDiscord} size="2x" />
               </a>
               </Col>
@@ -164,7 +173,7 @@ function MyHeader() {
             <div class="col-xl">
               <a
                 style={cardStyling.discord}
-                href="https://discord.gg/tZbXWZFG">
+                href="https://discord.gg/Dczmgq5P">
                 <FontAwesomeIcon icon={faDiscord} size="2x" />
               </a>
             </div>
@@ -188,8 +197,12 @@ function MyHeader() {
     );
   }
 
-  const [open, setOpen] = useState(false)
-
+  const [open, setOpen] = useState(false);
+  const displayAlert = () => {
+    return (
+      alert("Minting is not available yet!")
+    );
+  }
   return (
     <div className="page-header clear-filter" filter-color="blue">
       <div className="page-header-image"
@@ -200,14 +213,18 @@ function MyHeader() {
         {mobileView ? displayMobile(open) : displayDesktop()}
       </AppBar>
       <Container style={cardStyling.container}>
+        <Container sx={{ flexGrow: 1 }}>
+          <img src={BearLogo} style={headerStyling.img} alt="logo"/>
+        </Container>
         <div className="content-center brand">
           <h1 style={cardStyling.fontSizeHeader}>Polana Bears</h1>
           <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>4,888 Hand-Drawn and Unique Polana Bears</h5>
           <br />
-          <button type="button" class="custom-btn btn-5" disabled='disabled'>Mint Now</button>
+          <button type="button" class="custom-btn btn-5"
+          onClick={() => displayAlert()}>Mint Now</button>
           <br />
           <div style={cardStyling.mintWords}>
-            <h6>Minting in January 2022. Stay tuned for more!</h6>
+            <h6>Launching in January 2022. Follow us on our marketing channels for updates</h6>
             {/* <Countdown date={Date.now() + 3110400000} /> */}
           </div>
           <br/>

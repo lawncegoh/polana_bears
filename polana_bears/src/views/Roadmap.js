@@ -18,10 +18,13 @@ const titleStyling = {
 function Roadmap() {
   return (
     <>
+    <div style={titleStyling.title}>
+        <h1>Roadmap</h1>
+    </div>
+    
       <Container>
-        <div style={titleStyling.title}>
-          <h1>Roadmap</h1>
-        </div>
+      <div className="roadmap-image"
+    ></div>
         <br />
         <VerticalTimeline className="time-line">
           <VerticalTimelineElement
