@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Bear1 from "../assets/img/13.png";
 import Bear2 from "../assets/img/14.jpg";
 import Bear3 from "../assets/img/16.png";
@@ -10,16 +10,178 @@ import {
     Col,
 } from "reactstrap";
 
-const titleStyling = {
-    title:{
-        color:"white",
-        alignContent:"center",
-        justifyContent:"center",
-        display:"flex"
-    }
-}
-
 function Team() {
+    const titleStyling = {
+        title: {
+            color: "white",
+            alignContent: "center",
+            justifyContent: "center",
+            display: "flex"
+        }
+    }
+
+    const cardStyling = {
+        card: {
+            height: "80px",
+            width: "80px",
+        }
+    }
+
+    const [state, setState] = useState({
+        mobileView: false,
+    });
+
+    const { mobileView } = state;
+
+    useEffect(() => {
+        const setResponsiveness = () => {
+            return window.innerWidth < 1199
+                ? setState((prevState) => ({ ...prevState, mobileView: true }))
+                : setState((prevState) => ({ ...prevState, mobileView: false }));
+        };
+
+        setResponsiveness();
+        window.addEventListener("resize", () => setResponsiveness());
+
+        return () => {
+            window.removeEventListener("resize", () => setResponsiveness());
+        }
+    }, []);
+
+    const displayMobile = () => {
+        return (
+            <div>
+                <Row>
+                    <Col>
+                        <div class="member" style={cardStyling.card}>
+                            <div class="member-img">
+                                <img src={Bear1} class="img-fluid" alt="" />
+                            </div>
+                            <div class="member-info">
+                                <h4>POLARCapt</h4>
+                                <span>Lead Developer</span>
+                            </div>
+                        </div>
+                    </Col>
+
+                    <Col>
+                        <div class="member" style={cardStyling.card}>
+                            <div class="member-img">
+                                <img src={Bear2} class="img-fluid" alt="" />
+                            </div>
+                            <div class="member-info">
+                                <h4>POLARoids</h4>
+                                <span>Marketing/Artist</span>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div class="member" style={cardStyling.card}>
+                            <div class="member-img">
+                                <img src={Bear3} class="img-fluid" alt="" />
+                            </div>
+                            <div class="member-info">
+                                <h4>POLARised</h4>
+                                <span>Business Development</span>
+                            </div>
+                        </div>
+                    </Col>
+                    <Row>
+                    </Row>
+                    <Col>
+                        <div class="member" style={cardStyling.card}>
+                            <div class="member-img" >
+                                <img src={Bear4} class="img-fluid" alt=""/>
+                            </div>
+                            <div class="member-info">
+                                <h4>POLARoyal</h4>
+                                <span>Developer</span>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div class="member" style={cardStyling.card}>
+                            <div class="member-img">
+                                <img src={Bear5} class="img-fluid" alt=""/>
+                            </div>
+                            <div class="member-info">
+                                <h4>POLARich</h4>
+                                <span>Developer</span>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col>
+                    </Col>
+                </Row>
+            </div>
+        );
+    }
+
+    const displayDesktop = () => {
+        return (
+            <div>
+                <Row>
+                    <Col>
+                        <div class="member">
+                            <div class="member-img">
+                                <img src={Bear1} class="img-fluid" alt="" />
+                            </div>
+                            <div class="member-info">
+                                <h4>POLARCapt</h4>
+                                <span>Lead Developer</span>
+                            </div>
+                        </div>
+                    </Col>
+
+                    <Col>
+                        <div class="member">
+                            <div class="member-img">
+                                <img src={Bear2} class="img-fluid" alt="" />
+                            </div>
+                            <div class="member-info">
+                                <h4>POLARoids</h4>
+                                <span>Marketing/Artist</span>
+                            </div>
+                        </div>
+                    </Col>
+
+                    <Col>
+                        <div class="member">
+                            <div class="member-img">
+                                <img src={Bear3} class="img-fluid" alt="" />
+                            </div>
+                            <div class="member-info">
+                                <h4>POLARised</h4>
+                                <span>Business Development</span>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div class="member">
+                            <div class="member-img">
+                                <img src={Bear4} class="img-fluid" alt="" />
+                            </div>
+                            <div class="member-info">
+                                <h4>POLARoyal</h4>
+                                <span>Developer</span>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div class="member">
+                            <div class="member-img">
+                                <img src={Bear5} class="img-fluid" alt="" />
+                            </div>
+                            <div class="member-info">
+                                <h4>POLARich</h4>
+                                <span>Developer</span>
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
+            </div>
+        );
+    }
     return (
         <div>
             <div style={titleStyling.title}>
@@ -27,71 +189,13 @@ function Team() {
             </div>
             <section id="team">
                 <div class="container">
-                    <Row>
-                        <Col>
-                            <div class="member">
-                            <div class="member-img">
-                                <img src={Bear1} class="img-fluid" alt=""/>
-                            </div>
-                                <div class="member-info">
-                                    <h4>POLARCapt</h4>
-                                    <span>Lead Developer</span>
-                                </div>
-                            </div>
-                        </Col>
-
-                        <Col>
-                            <div class="member">
-                            <div class="member-img">
-                                <img src={Bear2} class="img-fluid" alt=""/>
-                            </div>
-                                <div class="member-info">
-                                    <h4>POLARoids</h4>
-                                    <span>Marketing/Artist</span>
-                                </div>
-                            </div>
-                        </Col>
-
-                        <Col>
-                            <div class="member">
-                            <div class="member-img">
-                                <img src={Bear3} class="img-fluid" alt=""/>
-                            </div>
-                                <div class="member-info">
-                                    <h4>POLARised</h4>
-                                    <span>Business Development</span>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col>
-                            <div class="member">
-                            <div class="member-img">
-                                <img src={Bear4} class="img-fluid" alt=""/>
-                            </div>
-                                <div class="member-info">
-                                    <h4>POLARoyal</h4>
-                                    <span>Developer</span>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col>
-                            <div class="member">
-                            <div class="member-img">
-                                <img src={Bear5} class="img-fluid" alt=""/>
-                            </div>
-                                <div class="member-info">
-                                    <h4>POLARich</h4>
-                                    <span>Developer</span>
-                                </div>
-                            </div>
-                        </Col>
-                    </Row>
+                    {mobileView ? displayMobile() : displayDesktop()}
                 </div>
-            </section> 
+            </section>
         </div>
-        
+
     );
-  }
-  
-  export default Team;
+}
+
+export default Team;
 

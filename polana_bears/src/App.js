@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { useState, useEffect } from 'react';
+import React/*, { useState, useEffect }*/ from 'react';
 
 //views
 // import Information from "./views/Information";
@@ -9,7 +9,7 @@ import Story from "./views/Story";
 import Team from "./views/Team";
 import FAQ from "./views/FAQ";
 import Allocation from "./views/Allocation";
-import RoyalPolanas from "./views/RoyalPolanas";
+// import RoyalPolanas from "./views/RoyalPolanas";
 import Information from "./views/Information";
 
 
@@ -21,28 +21,28 @@ import MyFooter from './components/Footers/MyFooter';
 import {
   Row,
 } from "reactstrap";
-import SplashScreen from './components/SplashScreen';
+// import SplashScreen from './components/SplashScreen';
 
 
 function App() {
-    // Loading state 
-    const [isLoading, setIsLoading] = useState(true);
+  // Loading state 
+  // const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-    
-      // Wait for 3 seconds
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 1000);
-    }, []);
-    
-  return isLoading 
-  ? <div className="wrapper">
-      <SplashScreen />
-    </div>
-  : (
+  // useEffect(() => {
+
+  //   // Wait for 3 seconds
+  //   setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 1000);
+  // }, []);
+
+  return (/*isLoading*/
+    // ? <div className="wrapper">
+    //     <SplashScreen />
+    //   </div>
+    // : (
     <>
-      <meta property="og:title" content="Polana Bears"/>
+      <meta property="og:title" content="Polana Bears" />
       <MyHeader />
       <div className="wrapper">
         <div className="main">
@@ -52,9 +52,9 @@ function App() {
           <Row className="component-row">
             <Story />
           </Row>
-          <Row className="component-row">
+          {/* <Row className="component-row">
             <RoyalPolanas />
-          </Row>
+          </Row> */}
           <Row>
             <Allocation />
           </Row>
