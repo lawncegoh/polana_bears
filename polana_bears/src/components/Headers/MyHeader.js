@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import BearLogo from "../../assets/img/bear_logo.png";
 
 // reactstrap components
-import { 
+import {
   Container,
   Row,
   Col
@@ -33,10 +33,10 @@ function MyHeader() {
   const cardStyling = {
     fontSizeHeader: {
       fontSize: "500%",
-      marginTop: "5%",
-      "@media (max-width: 1199px)": {
+      marginTop: "10%",
+      "@media (max-width: 768px)": {
         marginTop: "5px",
-       }
+      }
     }, fontSizeBody: {
       fontSize: "110%",
     }, discord: {
@@ -48,7 +48,7 @@ function MyHeader() {
     }, appBar: {
       background: "transparent",
       boxShadow: "none",
-      "@media (max-width: 1199px)": {
+      "@media (max-width: 768px)": {
         paddingLeft: 0,
       },
     }, row: {
@@ -68,43 +68,54 @@ function MyHeader() {
     header: {
       backgroundImage:
         "url(" + require("../../assets/img/northernlights.jpeg").default + ")"
-    }, 
+    },
     div: {
-      display:"flex",
-      backgroundColor:"black",
-      alignItems:"center"
+      display: "flex",
+      backgroundColor: "black",
+      alignItems: "center"
     },
     hamburger: {
       display: "flex",
-      right:"0",
-      position:"absolute",
-      cursor:"pointer",
+      right: "0",
+      position: "absolute",
+      cursor: "pointer",
     },
     row: {
-      display:"flex",
+      display: "flex",
     },
     col: {
-      display:"flex",
-      paddingLeft:"15%",
-      opacity:"1"
+      display: "flex",
+      paddingLeft: "15%",
+      opacity: "1"
     },
-    img: {
-      display:"block",
-      width:"300px",
-      height:"300px",
-      position:"absolute",
-      opacity:"0.5",
-      marginLeft:"auto",
-      marginRight:"auto",
-      top:"0%",
-      objectFit:"cover"
+    imgDesktop: {
+      display: "block",
+      width: "300px",
+      height: "300px",
+      opacity: "0.5",
+      marginLeft: "auto",
+      marginRight: "auto",
+      top: "0%",
+      objectFit: "cover",
+      marginTop: "-25px"
     },
-    imgDiv: {
-      width:"70%",
-      height:"70%",
-      paddingBottom:"10%",
-      marginLeft:"auto",
-      marginRight:"auto",
+    imgDivDesktop: {
+      width: "70%",
+      height: "70%",
+      paddingBottom: "10%",
+      marginLeft: "auto",
+      marginRight: "auto",
+    },
+    imgMobile: {
+      display: "block",
+      width: "200px",
+      height: "200px",
+      opacity: "0.5",
+      marginLeft: "auto",
+      marginRight: "auto",
+      top: "0%",
+      objectFit: "cover",
+
     }
   }
 
@@ -116,7 +127,7 @@ function MyHeader() {
 
   useEffect(() => {
     const setResponsiveness = () => {
-      return window.innerWidth < 1199
+      return window.innerWidth < 768
         ? setState((prevState) => ({ ...prevState, mobileView: true }))
         : setState((prevState) => ({ ...prevState, mobileView: false }));
     };
@@ -129,13 +140,13 @@ function MyHeader() {
     }
   }, []);
 
-  const displayMobile = (open) => {
+  const displayMobileAppBar = (open) => {
     const hamIcon = <CgMenuRound className={headerStyling.hamburger} size="40px"
-    onClick={() => setOpen(!open)} 
+      onClick={() => setOpen(!open)}
     />
 
     const closeIcon = <RiCloseCircleFill className={headerStyling.hamburger} size="40px"
-    onClick={() => setOpen(!open)}
+      onClick={() => setOpen(!open)}
     />
 
     return (
@@ -145,34 +156,34 @@ function MyHeader() {
           <div>
             <Row style={headerStyling.row}>
               <Col style={headerStyling.col}>
-              <a
-                style={cardStyling.discord}
-                href="https://discord.gg/Dczmgq5P">
-                <FontAwesomeIcon icon={faDiscord} size="2x" />
-              </a>
+                <a
+                  style={cardStyling.discord}
+                  href="https://discord.gg/gFAbQrSYM5">
+                  <FontAwesomeIcon icon={faDiscord} size="2x" />
+                </a>
               </Col>
               <Col style={headerStyling.col}>
-              <a
-                style={cardStyling.instagram}
-                href="https://www.instagram.com/polanabears/">
-                <FontAwesomeIcon icon={faInstagram} size="2x" />
-              </a>
+                <a
+                  style={cardStyling.instagram}
+                  href="https://www.instagram.com/polanabearsnft/">
+                  <FontAwesomeIcon icon={faInstagram} size="2x" />
+                </a>
               </Col>
               <Col style={headerStyling.col}>
-              <a
-                style={cardStyling.twitter}
-                href="https://twitter.com/PolanaBears">
-                <FontAwesomeIcon icon={faTwitter} size="2x" />
-              </a>
+                <a
+                  style={cardStyling.twitter}
+                  href="https://twitter.com/PolanaBears">
+                  <FontAwesomeIcon icon={faTwitter} size="2x" />
+                </a>
               </Col>
-              </Row>
+            </Row>
           </div>
-        } 
+        }
       </nav>
     );
   }
 
-  const displayDesktop = () => {
+  const displayDesktopAppBar = () => {
     return (
       <div style={cardStyling.container}>
         <Toolbar style={cardStyling.appBar}>
@@ -181,14 +192,14 @@ function MyHeader() {
             <div class="col-xl">
               <a
                 style={cardStyling.discord}
-                href="https://discord.gg/Dczmgq5P">
+                href="https://discord.gg/gFAbQrSYM5">
                 <FontAwesomeIcon icon={faDiscord} size="2x" />
               </a>
             </div>
             <div class="col-xl">
               <a
                 style={cardStyling.instagram}
-                href="https://www.instagram.com/polanabears/">
+                href="https://www.instagram.com/polanabearsnft/">
                 <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
             </div>
@@ -205,6 +216,22 @@ function MyHeader() {
     );
   }
 
+  const displayMobileBearLogo = () => {
+    return (
+      <div>
+        <img src={BearLogo} style={headerStyling.imgMobile} alt="logo" />
+      </div>
+    )
+  }
+
+  const displayDesktopBearLogo = () => {
+    return (
+      <div>
+        <img src={BearLogo} style={headerStyling.imgDesktop} alt="logo" />
+      </div>
+    )
+  }
+
   const [open, setOpen] = useState(false);
   const displayAlert = () => {
     return (
@@ -218,24 +245,22 @@ function MyHeader() {
       ></div>
       <Snow />
       <AppBar position="static" style={cardStyling.appBar}>
-        {mobileView ? displayMobile(open) : displayDesktop()}
+        {mobileView ? displayMobileAppBar(open) : displayDesktopAppBar()}
       </AppBar>
       <Container style={cardStyling.container}>
-        <Container style={headerStyling.imgDiv}>
-          <img src={BearLogo} style={headerStyling.img} alt="logo"/>
-        </Container>
+        {mobileView ? displayMobileBearLogo(open) : displayDesktopBearLogo()}
         <div className="content-center brand">
           <h1 style={cardStyling.fontSizeHeader}>Polana Bears</h1>
           <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>4,888 Hand-Drawn and Unique Polana Bears</h5>
           <br />
           <button type="button" class="custom-btn btn-5"
-          onClick={() => displayAlert()}>Mint Now</button>
+            onClick={() => displayAlert()}>Mint Now</button>
           <br />
           <div style={cardStyling.mintWords}>
             <h6>Launching in January 2022. Follow us on our marketing channels for updates</h6>
             {/* <Countdown date={Date.now() + 3110400000} /> */}
           </div>
-          <br/>
+          <br />
           {/* <Clocks style="display: inline-flex" /> */}
         </div>
       </Container>
