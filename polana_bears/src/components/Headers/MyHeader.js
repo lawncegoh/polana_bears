@@ -213,9 +213,9 @@ function MyHeader() {
         {mobileView ? displayMobile(open) : displayDesktop()}
       </AppBar>
       <Container style={cardStyling.container}>
-        <Container sx={{ flexGrow: 1 }}>
+        {/* <Container sx={{ flexGrow: 1 }}>
           <img src={BearLogo} style={headerStyling.img} alt="logo"/>
-        </Container>
+        </Container> */}
         <div className="content-center brand">
           <h1 style={cardStyling.fontSizeHeader}>Polana Bears</h1>
           <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>4,888 Hand-Drawn and Unique Polana Bears</h5>
