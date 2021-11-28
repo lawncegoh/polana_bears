@@ -172,7 +172,7 @@ function MyHeader() {
               <Col style={headerStyling.col}>
                 <a
                   style={cardStyling.twitter}
-                  href="https://twitter.com/PolanaBears">
+                  href="https://twitter.com/PolanaBearsnft">
                   <FontAwesomeIcon icon={faTwitter} size="2x" />
                 </a>
               </Col>
@@ -206,7 +206,7 @@ function MyHeader() {
             <div class="col-xl">
               <a
                 style={cardStyling.twitter}
-                href="https://twitter.com/PolanaBears">
+                href="https://twitter.com/PolanaBearsnft">
                 <FontAwesomeIcon icon={faTwitter} size="2x" />
               </a>
             </div>
