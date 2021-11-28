@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React, { useState, useEffect } from "react";
-import BearLogo from "../../assets/img/bear_logo.jpeg";
+import BearLogo from "../../assets/img/bear_logo.png";
 
 // reactstrap components
 import { 
@@ -79,7 +79,6 @@ function MyHeader() {
       right:"0",
       position:"absolute",
       cursor:"pointer",
-      float: "right",
     },
     row: {
       display:"flex",
@@ -90,14 +89,22 @@ function MyHeader() {
       opacity:"1"
     },
     img: {
-      display:"flex",
-      maxWidth:"30%",
-      maxHeight:"30%",
+      display:"block",
+      width:"300px",
+      height:"300px",
       position:"absolute",
       opacity:"0.5",
+      marginLeft:"auto",
+      marginRight:"auto",
       top:"0%",
-      left:"40%",
       objectFit:"cover"
+    },
+    imgDiv: {
+      width:"70%",
+      height:"70%",
+      paddingBottom:"10%",
+      marginLeft:"auto",
+      marginRight:"auto",
     }
   }
 
@@ -123,7 +130,7 @@ function MyHeader() {
   }, []);
 
   const displayMobile = (open) => {
-    const hamIcon = <CgMenuRound className={headerStyling.hamburger} size="40px" 
+    const hamIcon = <CgMenuRound className={headerStyling.hamburger} size="40px"
     onClick={() => setOpen(!open)} 
     />
 
@@ -214,9 +221,9 @@ function MyHeader() {
         {mobileView ? displayMobile(open) : displayDesktop()}
       </AppBar>
       <Container style={cardStyling.container}>
-        {/* <Container sx={{ flexGrow: 1 }}>
+        <Container style={headerStyling.imgDiv}>
           <img src={BearLogo} style={headerStyling.img} alt="logo"/>
-        </Container> */}
+        </Container>
         <div className="content-center brand">
           <h1 style={cardStyling.fontSizeHeader}>Polana Bears</h1>
           <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>4,888 Hand-Drawn and Unique Polana Bears</h5>
