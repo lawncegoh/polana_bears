@@ -24,6 +24,17 @@ function Team() {
         card: {
             height: "80px",
             width: "80px",
+        },
+        teamRoles: {
+            fontSize: "small",
+            color: "white"
+        },
+        h4: {
+            fontSize: "x-small",
+            color: "white",
+            marginTop: "-10px",
+            marginLeft: "-10px",
+            padding: "5px"
         }
     }
 
@@ -57,10 +68,10 @@ function Team() {
                             <div class="member-img">
                                 <img src={Bear1} class="img-fluid" alt="" />
                             </div>
-                            <div class="member-info">
-                                <h4>POLARCapt</h4>
-                                <span>Lead Developer</span>
-                            </div>
+                        </div>
+                        <div style={cardStyling.teamRoles}>
+                            <h4 style={cardStyling.h4}>POLARCapt</h4>
+                            <h4 style={cardStyling.h4}>Lead Developer</h4>
                         </div>
                     </Col>
 
@@ -69,10 +80,10 @@ function Team() {
                             <div class="member-img">
                                 <img src={Bear2} class="img-fluid" alt="" />
                             </div>
-                            <div class="member-info">
-                                <h4>POLARoids</h4>
-                                <span>Marketing/Artist</span>
-                            </div>
+                        </div>
+                        <div style={cardStyling.teamRoles}>
+                            <h4 style={cardStyling.h4}>POLARoids</h4>
+                            <h4 style={cardStyling.h4}>Marketing/Artist</h4>
                         </div>
                     </Col>
                     <Col>
@@ -85,29 +96,33 @@ function Team() {
                                 <span>Business Development</span>
                             </div>
                         </div>
+                        <div style={cardStyling.teamRoles}>
+                            <h4 style={cardStyling.h4}>POLARised</h4>
+                            <h4 style={cardStyling.h4}>Business Development</h4>
+                        </div>
                     </Col>
                     <Row>
                     </Row>
                     <Col>
                         <div class="member" style={cardStyling.card}>
                             <div class="member-img" >
-                                <img src={Bear4} class="img-fluid" alt=""/>
+                                <img src={Bear4} class="img-fluid" alt="" />
                             </div>
-                            <div class="member-info">
-                                <h4>POLARoyal</h4>
-                                <span>Developer</span>
-                            </div>
+                        </div>
+                        <div style={cardStyling.teamRoles}>
+                            <h4 style={cardStyling.h4}>POLARoyal</h4>
+                            <h4 style={cardStyling.h4}>Developer</h4>
                         </div>
                     </Col>
                     <Col>
                         <div class="member" style={cardStyling.card}>
                             <div class="member-img">
-                                <img src={Bear5} class="img-fluid" alt=""/>
+                                <img src={Bear5} class="img-fluid" alt="" />
                             </div>
-                            <div class="member-info">
-                                <h4>POLARich</h4>
-                                <span>Developer</span>
-                            </div>
+                        </div>
+                        <div style={cardStyling.teamRoles}>
+                            <h4 style={cardStyling.h4}>POLARich</h4>
+                            <h4 style={cardStyling.h4}>Developer</h4>
                         </div>
                     </Col>
                     <Col>

@@ -89,33 +89,14 @@ function MyHeader() {
       opacity: "1"
     },
     imgDesktop: {
-      display: "block",
-      width: "300px",
-      height: "300px",
+      width: "20%",
+      height: "auto",
       opacity: "0.5",
-      marginLeft: "auto",
-      marginRight: "auto",
-      top: "0%",
-      objectFit: "cover",
-      marginTop: "-25px"
-    },
-    imgDivDesktop: {
-      width: "70%",
-      height: "70%",
-      paddingBottom: "10%",
-      marginLeft: "auto",
-      marginRight: "auto",
     },
     imgMobile: {
-      display: "block",
-      width: "200px",
-      height: "200px",
+      width: "50%",
+      height: "auto",
       opacity: "0.5",
-      marginLeft: "auto",
-      marginRight: "auto",
-      top: "0%",
-      objectFit: "cover",
-
     }
   }
 
@@ -219,7 +200,7 @@ function MyHeader() {
   const displayMobileBearLogo = () => {
     return (
       <div>
-        <img src={BearLogo} style={headerStyling.imgMobile} alt="logo" />
+          <img src={BearLogo} class="img-fluid" style={headerStyling.imgMobile} alt="logo" />
       </div>
     )
   }
