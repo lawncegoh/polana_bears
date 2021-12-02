@@ -108,7 +108,7 @@ function MyHeader() {
 
   useEffect(() => {
     const setResponsiveness = () => {
-      return window.innerWidth < 768
+      return window.innerWidth < 1200
         ? setState((prevState) => ({ ...prevState, mobileView: true }))
         : setState((prevState) => ({ ...prevState, mobileView: false }));
     };

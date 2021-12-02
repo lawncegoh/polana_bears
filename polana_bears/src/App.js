@@ -1,75 +1,25 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React/*, { useState, useEffect }*/ from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 //views
-// import Information from "./views/Information";
-import Roadmap from "./views/Roadmap";
-import Story from "./views/Story";
-import Team from "./views/Team";
-import FAQ from "./views/FAQ";
-import Allocation from "./views/Allocation";
-// import RoyalPolanas from "./views/RoyalPolanas";
-import Information from "./views/Information";
+import Rarity from "./views/Rarity";
+import LandingPage from "./views/LandingPage";
 
-
-//components
-import MyHeader from "./components/Headers/MyHeader";
-import MyFooter from './components/Footers/MyFooter';
-// import SplashScreen from './components/SplashScreen';
-
-import {
-  Row,
-} from "reactstrap";
-// import SplashScreen from './components/SplashScreen';
 
 
 function App() {
-  // Loading state 
-  // const [isLoading, setIsLoading] = useState(true);
 
-  // useEffect(() => {
-
-  //   // Wait for 3 seconds
-  //   setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 1000);
-  // }, []);
-
-  return (/*isLoading*/
-    // ? <div className="wrapper">
-    //     <SplashScreen />
-    //   </div>
-    // : (
+  return (
     <>
       <meta property="og:title" content="Polana Bears" />
-      <MyHeader />
-      <div className="wrapper">
-        <div className="main">
-          <Row className="component-row">
-            <Information />
-          </Row>
-          <Row className="component-row">
-            <Story />
-          </Row>
-          {/* <Row className="component-row">
-            <RoyalPolanas />
-          </Row> */}
-          <Row>
-            <Allocation />
-          </Row>
-          <Row className="component-row">
-            <Roadmap />
-          </Row>
-          <Row className="component-row">
-            <FAQ />
-          </Row>
-          <Row className="component-row">
-            <Team />
-          </Row>
-        </div>
-      </div>
-      <MyFooter />
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<LandingPage />} />
+          <Route exact path="/rarity" element={<Rarity />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
