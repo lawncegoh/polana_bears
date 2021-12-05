@@ -1,0 +1,13 @@
+body {
+    background-color:#040C25;
+}
+
+.jigsaw-puzzle {
+    display:block;
+    text-align:center;
+    width:700px;
+    height:700px;
+    border-style:dashed;
+    border-color: goldenrod;
+    margin: auto;
+}

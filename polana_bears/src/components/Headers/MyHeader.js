@@ -2,6 +2,12 @@
 import React, { useState, useEffect } from "react";
 import BearLogo from "../../assets/img/bear_logo.png";
 
+import {
+  Link
+} from "react-router-dom"
+
+import styled, { css } from 'styled-components'
+
 // reactstrap components
 import {
   Container,
@@ -85,7 +91,8 @@ function MyHeader() {
     },
     col: {
       display: "flex",
-      paddingLeft: "15%",
+      paddingTop: "2%",
+      paddingLeft: "3%",
       opacity: "1"
     },
     imgDesktop: {
@@ -157,12 +164,28 @@ function MyHeader() {
                   <FontAwesomeIcon icon={faTwitter} size="2x" />
                 </a>
               </Col>
+              <Col style={headerStyling.col}>
+                  <NavLink to="/puzzles">Puzzle</NavLink>
+              </Col>
+              <Col style={headerStyling.col}>
+                  <NavLink to="/rarity">Rarities</NavLink>
+              </Col>
             </Row>
           </div>
         }
       </nav>
     );
   }
+
+  const NavLink = styled(Link)`
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+  &:hover {
+    color: grey;
+    background: navy;
+  }
+`;
 
   const displayDesktopAppBar = () => {
     return (
@@ -190,6 +213,12 @@ function MyHeader() {
                 href="https://twitter.com/PolanaBearsnft">
                 <FontAwesomeIcon icon={faTwitter} size="2x" />
               </a>
+            </div>
+            <div class="col-xl">
+              <NavLink to="/puzzles">Puzzle</NavLink>
+            </div>
+            <div class="col-xl">
+              <NavLink to="/rarity">Rarities</NavLink>
             </div>
           </div>
         </Toolbar>
