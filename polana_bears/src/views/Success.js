@@ -1,30 +1,70 @@
-// import Crossword from 'react-crossword';
+import React, { Component } from "react";
+import { Button, Form } from "react-bootstrap";
+import {
+    Container
+} from "reactstrap";
+import axios from 'axios';
 
-// function WordPuzzle() {
-//     const data = {
-//         across: {
-//             1: {
-//               clue: 'one plus one',
-//               answer: 'TWO',
-//               row: 0,
-//               col: 0,
-//             },
-//         },
-//         down: {
-//         2: {
-//             clue: 'three minus two',
-//             answer: 'ONE',
-//             row: 0,
-//             col: 2,
-//         },
-//         },
-//     };
-//     return  (
-//         <div>
-//             <h1>Congrats on finishing the jigsaw puzzle!</h1>
-//             <h2>You're 1 step closer to the snowflake</h2>
-//         </div>
-//     );
-// }
+export default class Success extends Component {
+    constructor(props) {
+        super(props)
 
-// export default WordPuzzle;
+        this.state = {
+            walletAdd: '',
+            discordUser: '',
+        }
+    }
+
+    changeHandler = (e) => {
+        this.setState({ [e.target.name]: e.target.value })
+    }
+
+    submitHandler = e => {
+        e.preventDefault();
+        console.log(this.state);
+
+        axios.post('https://sheet.best/api/sheets/edc21d29-8abc-49b2-b3c0-7df6a3630da8', this.state) 
+        .then (response => {
+            console.log(response)
+        })
+    }
+
+    render() {
+
+        const form = {
+            container: {
+                textAlign: "center",
+                paddingTop: "2%",
+                width: "50%",
+            },
+            words: {
+                color: "white"
+            }
+        }
+
+        const { walletAdd, discordUser } = this.state;
+        return (
+            <Container style={form.container}>
+                <h1 style={form.words}>Congrats for completing the puzzle!</h1>
+                <h3 style={form.words}>Fill in the form below to get your snowflake!</h3>
+                <Form className="form" onSubmit={this.submitHandler}>
+                    <Form.Group className="mb-3" controlId="formWalletAdd">
+                        <Form.Label>Wallet Address</Form.Label>
+                        <Form.Control type="text" name="walletAdd" value={walletAdd} placeholder="Enter Wallet Address" onChange={this.changeHandler}/>
+                        <Form.Text className="text" style={form.words}>
+                            We'll never share your wallet address with anyone else.
+                        </Form.Text>
+                    </Form.Group>
+
+                    <Form.Group className="mb-3" controlId="formDiscordUser">
+                        <Form.Label>Discord Username</Form.Label>
+                        <Form.Control type="text" name="discordUser" value={discordUser} placeholder="Enter Discord Username" onChange={this.changeHandler}/>
+                    </Form.Group>
+                    <Button variant="primary" type="submit">
+                        Submit
+                    </Button>
+                </Form>
+            </Container>
+        )
+    }
+}
