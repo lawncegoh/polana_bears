@@ -32,8 +32,8 @@ function Puzzles() {
         <h3 style={puzzleStyle.words}>Solve the puzzle to get a snowflake :-)</h3>
         <JigsawPuzzle
         imageSrc={Puzzle}
-        rows={1}
-        columns={1}
+        rows={2}
+        columns={2}
         onSolved={() => success()}
         />
         <br />

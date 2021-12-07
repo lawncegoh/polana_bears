@@ -49,7 +49,7 @@ export default class Success extends Component {
                 <h3 style={form.words}>Fill in the form below to get your snowflake!</h3>
                 <Form className="form" onSubmit={this.submitHandler}>
                     <Form.Group className="mb-3" controlId="formWalletAdd">
-                        <Form.Label>Wallet Address</Form.Label>
+                        <Form.Label style={form.words}>Wallet Address</Form.Label>
                         <Form.Control type="text" name="walletAdd" value={walletAdd} placeholder="Enter Wallet Address" onChange={this.changeHandler}/>
                         <Form.Text className="text" style={form.words}>
                             We'll never share your wallet address with anyone else.
@@ -57,7 +57,7 @@ export default class Success extends Component {
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formDiscordUser">
-                        <Form.Label>Discord Username</Form.Label>
+                        <Form.Label style={form.words}>Discord Username</Form.Label>
                         <Form.Control type="text" name="discordUser" value={discordUser} placeholder="Enter Discord Username" onChange={this.changeHandler}/>
                     </Form.Group>
                     <Button variant="primary" type="submit">
