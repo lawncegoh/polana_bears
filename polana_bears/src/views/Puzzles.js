@@ -3,7 +3,7 @@ import 'react-jigsaw-puzzle/lib/jigsaw-puzzle.css'
 import Puzzle from "../assets/img/puzzle.jpeg"
 import "./puzzle.css"
 import {React, useState} from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import styled, { css } from 'styled-components'
 import Success from './Success';
 
