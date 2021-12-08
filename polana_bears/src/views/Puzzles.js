@@ -2,7 +2,7 @@ import { JigsawPuzzle } from 'react-jigsaw-puzzle/lib'
 import 'react-jigsaw-puzzle/lib/jigsaw-puzzle.css'
 import Puzzle from "../assets/img/puzzle.jpeg"
 import "./puzzle.css"
-import {React, useState, setState} from 'react';
+import {React, useState} from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 // import styled, { css } from 'styled-components'
 import Success from './Success';
@@ -24,7 +24,6 @@ function Puzzles() {
 
     const [solvedPuzzle, setSolvedPuzzle] = useState(false)
 
-    const navigate = useNavigate();
     const success = () => {
         setSolvedPuzzle(true)
     }
