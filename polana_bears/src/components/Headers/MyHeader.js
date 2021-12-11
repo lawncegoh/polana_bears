@@ -30,7 +30,6 @@ import Toolbar from '@mui/material/Toolbar';
 // import Countdown from 'react-countdown';
 // import Clocks from '../Clock/Clocks';
 
-
 // core components
 function MyHeader() {
 
@@ -166,10 +165,10 @@ function MyHeader() {
               </Col>
               {/* <Col style={headerStyling.col}>
                   <NavLink to="/puzzles">Puzzle</NavLink>
-              </Col>
+              </Col> */}
               <Col style={headerStyling.col}>
                   <NavLink to="/rarity">Rarities</NavLink>
-              </Col> */}
+              </Col>
             </Row>
           </div>
         }
@@ -216,10 +215,10 @@ function MyHeader() {
             </div>
             {/* <div class="col-xl">
               <NavLink to="/puzzles">Puzzle</NavLink>
-            </div>
+            </div> */}
             <div class="col-xl">
               <NavLink to="/rarity">Rarities</NavLink>
-            </div> */}
+            </div>
           </div>
         </Toolbar>
       </div>
