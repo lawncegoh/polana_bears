@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Rarity from "./views/Rarity";
 import LandingPage from "./views/LandingPage";
 import Puzzles from "./views/Puzzles";
+import MintForm from "./views/MintForm";
 
 function App() {
   // const navigate = useNavigate();
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/rarity" element={<Rarity />} />
           <Route exact path="/puzzles" element={<Puzzles />}/>
           <Route exact path='/success' element={<Puzzles />} />
+          <Route exact path='/mintform' element={<MintForm />}/>
           {/* <Route exact path="/mintsnow" element={<MintSnow />}/> */}
           {/* <Route exact path="/wordpuzzle" element={<WordPuzzle />}/> */}
         </Routes>
