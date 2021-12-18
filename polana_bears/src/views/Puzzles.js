@@ -132,7 +132,7 @@ function Puzzles() {
                     />
                     <br />
                     <h4 style={puzzleStyle.words}>Alternatively, you can mint a SnowFlake and bypass the puzzle </h4>
-                    <a href="http://snowflake-mint.polanabears.com" className="btn btn-primary">Mint Now</a>
+                    {/* <a href="http://snowflake-mint.polanabears.com" className="btn btn-primary">Mint Now</a> */}
                 </Container>
             </div>
     );
