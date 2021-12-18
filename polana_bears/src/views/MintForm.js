@@ -45,7 +45,7 @@ export default class Success extends Component {
         const { walletAdd, discordUser } = this.state;
         return (
             <Container style={form.container}>
-                <h1 style={form.words}>Congrats on successfully minting a snowflake!</h1>
+                <h1 style={form.words}>Congrats on successfully minting a snowflake! You can find your NFT in your phantom wallet :-)</h1>
                 <h3 style={form.words}>Fill in the form below</h3>
                 <Form className="form" onSubmit={this.submitHandler}>
                     <Form.Group className="mb-3" controlId="formWalletAdd">

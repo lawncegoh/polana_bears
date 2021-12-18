@@ -163,9 +163,9 @@ function MyHeader() {
                   <FontAwesomeIcon icon={faTwitter} size="2x" />
                 </a>
               </Col>
-              {/* <Col style={headerStyling.col}>
+              <Col style={headerStyling.col}>
                   <NavLink to="/puzzles">Puzzle</NavLink>
-              </Col> */}
+              </Col>
               <Col style={headerStyling.col}>
                   <NavLink to="/rarity">Rarities</NavLink>
               </Col>
@@ -213,9 +213,9 @@ function MyHeader() {
                 <FontAwesomeIcon icon={faTwitter} size="2x" />
               </a>
             </div>
-            {/* <div class="col-xl">
+            <div class="col-xl">
               <NavLink to="/puzzles">Puzzle</NavLink>
-            </div> */}
+            </div>
             <div class="col-xl">
               <NavLink to="/rarity">Rarities</NavLink>
             </div>

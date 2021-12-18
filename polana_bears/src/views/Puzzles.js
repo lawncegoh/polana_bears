@@ -123,10 +123,11 @@ function Puzzles() {
                 <Container style={puzzleStyle.div}>
                     <h1 style={puzzleStyle.words}>Puzzles for days!!</h1>
                     <h3 style={puzzleStyle.words}>Solve the puzzle to get a snowflake :-)</h3>
+                    <h5 style={puzzleStyle.words}>Puzzle will open on 20th December 2021 12PM GMT! Stay tuned! </h5>
                     <JigsawPuzzle
                         imageSrc={Puzzle}
-                        rows={2}
-                        columns={2}
+                        rows={0}
+                        columns={0}
                         onSolved={success}
                     />
                     <br />
