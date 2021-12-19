@@ -50,8 +50,8 @@ function LandingPage() {
                         <Story />
                     </Row>
                     {/* <Row className="component-row">
-              <RoyalPolanas />
-            </Row> */}
+                    <RoyalPolanas />
+                    </Row> */}
                     <Row>
                         <Allocation />
                     </Row>

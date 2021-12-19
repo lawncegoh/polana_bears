@@ -74,6 +74,7 @@ function Information() {
     return (
       <Container style={cardStylingForMobile.container}>
         <img style={cardStylingForMobile.img} src={Gif} alt="teaser" />
+
       </Container>
     );
   }
