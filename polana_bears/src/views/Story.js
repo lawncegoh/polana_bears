@@ -3,8 +3,11 @@ import React, { useState, useEffect } from "react";
 
 
 import {
-    Container
+    Container,
+    Card
 } from "reactstrap";
+
+import styled from "styled-components";
 
 function Story() {
     const cardStyling = {
@@ -80,29 +83,40 @@ function Story() {
         }
     }, []);
 
+      const StyledCard = styled(Card)`
+      margin: 5%;
+      font-size: 1.5em;
+      text-align: center;
+      color: black;
+    `;
+
     const displayMobile = () => {
         return (
             <Container>
-                <div>
-                    <div style={titleStyling.title}>
-                        <h1>How it all came about</h1>
-                    </div>
-                    <Container>
-                        <div style={cardStylingForMobile.div}>
-                            <div style={cardStyling.line}></div>
-                            <p style={cardStyling.p}>
-                                In 1921, a group of hunters infiltrated PolanaLand and massacred several elderly Polana Bears. Ever since then, the Polana Bears were never seen again.
-                                A brand new investigation was recently launched and UAV footage found that the Polana Bears have developed as a civilization and have biologically evolved to develop human-like features.
-                            </p>
-                            <p style={cardStyling.p}>
-                                It is estimated that there resides 10,000 Polana Bears in PolanaLand. We will release highly classified information on each of these 4,888 creatures in an attempt to gain a deeper understanding of the Polana civilization.
-                            </p>
-                            <p style={cardStyling.p}>
-                                Join our movement. Join our search. Join the #PolanaSeekers.
-                            </p>
-                        </div>
-                    </Container>
+                <div style={titleStyling.title}>
+                    <h1>How it all came about</h1>
                 </div>
+                <Container>
+                    <div style={cardStylingForMobile.div}>
+                        <div style={cardStyling.line}></div>
+                        <p style={cardStyling.p}>
+                            In 1921, a group of hunters infiltrated PolanaLand and massacred several elderly Polana Bears. Ever since then, the Polana Bears were never seen again.
+                            A brand new investigation was recently launched and UAV footage found that the Polana Bears have developed as a civilization and have biologically evolved to develop human-like features.
+                        </p>
+                        <p style={cardStyling.p}>
+                            It is estimated that there resides 10,000 Polana Bears in PolanaLand.  On December 28th 2021,
+                            we will release highly classified information on each of these 10,000 creatures in an attempt to gain a deeper understanding of the Polana civilization.
+                        </p>
+                        <p style={cardStyling.p}>
+                            Join our movement. Join our search. Join the #PolanaSeekers.
+                        </p>
+                    </div>
+                </Container>
+                <Container style={cardStyling.div}>
+                    <StyledCard>
+                    <h1>Teasers for Post-Mint</h1>
+                    </StyledCard>
+                </Container>
             </Container>
         );
     }
@@ -128,10 +142,58 @@ function Story() {
                             Join our movement. Join our search. Join the #PolanaSeekers.
                         </p>
                     </div>
+
+                    <br />
+                    <div style={titleStyling.title}>
+                            <h1>Pre-Mint events</h1>
+                    </div>
+                    <Container style={cardStyling.div}> 
+                        <StyledCard>
+                            <h3>SnowFlake</h3>
+                            <div style={cardStyling.line}></div>
+                            <p>Polana Seekers to complete a puzzle on this site to earn a SnowFlake NFT</p>
+                            <br />
+                            <p>SnowFlake owners are considered Polana Land VIPs and will gain access to exclusive Solana prize lucky draws, other projects as well as a guaranteed mint.</p>
+                        </StyledCard>
+                    </Container>
+                    <br/>
+                    <div style={titleStyling.title}>
+                            <h1>Teasers for Post-Mint</h1>
+                    </div>
+                    <Container style={cardStyling.div}> 
+                        <StyledCard>
+                            <h4>PvP</h4>
+                            <div style={cardStyling.line}></div>
+                            <p>
+                            Fight of the strongest Polana Bears, earning tokens in the process. This adds utility to each bear where the strength of the equipments come into play as you pit yourself against others to win tokens.
+                            </p>
+                            <br />
+                            <h4>Training Process</h4>
+                            <div style={cardStyling.line}></div>
+                            <p>
+                            The bears would gain experience points as battles are won and less so when battles are lost. But hard workers will get rewarded in the longer run as they gain stats through higher levels gained. Just like you’ll imagine, there will be random chances of gaining more skills to use as time goes by too.
+                            </p>
+                            <h4>Tokenised Rewards</h4>
+                            <div style={cardStyling.line}></div>
+                            <p>
+                            A weekly leaderboard would hold the current best players of the PvP round, in which the leaderboard would be reset every week. The top players would receive tiered rewards based on the token. Climb the leaderboard to show your worth to players all over the Solana chain.
+                            </p>
+                            <h4>Minting Upgrades</h4>
+                            <div style={cardStyling.line}></div>
+                            <p>
+                            Future rounds of mints would take place to allow for gachapon-based chances of minting special equipments and serums to morph your current Polana Bears
+                            </p>
+                            <h4>Combiner</h4>
+                            <div style={cardStyling.line}></div>
+                            <p>
+                            Going hand in hand with the point above, with equipments, we would implement a combiner where you are able to mint a bear and an accessory/serum NFT to form a stronger bear                            </p>                        
+                        </StyledCard>
+                    </Container>
                 </div>
             </Container>
         );
     }
+    
 
     return (
         <div>

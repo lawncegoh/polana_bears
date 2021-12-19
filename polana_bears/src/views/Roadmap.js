@@ -119,8 +119,8 @@ function Roadmap() {
         >
           <h3 className="vertical-timeline-element-title">Expanding Polana Land</h3>
           <br/>
-          <h6><FaHourglassHalf style={cardStyling.hourGlass}/> {' '} Introduction of growth serums in <u><b>Feb 2022</b></u> </h6>
-          <h6><FaHourglassHalf style={cardStyling.hourGlass}/> {' '} Bears can take in serums to increase in rarity </h6>
+          <h6><FaHourglassHalf style={cardStyling.hourGlass}/> {' '} Introduction of Player vs Player (PvP) in <u><b>Feb 2022</b></u> </h6>
+          <h6><FaHourglassHalf style={cardStyling.hourGlass}/> {' '} Tokens can be earned through this play-to-earn game, royalties would be spread to users</h6>
           <h6><FaHourglassHalf style={cardStyling.hourGlass}/> {' '} This is dependent on the opinions of the community </h6>
         </VerticalTimelineElement>
       </VerticalTimeline>

@@ -1,23 +1,16 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import RarityAttributes from './RarityAttributes'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandPointDown } from "@fortawesome/free-solid-svg-icons"
 
-import bg1 from '../assets/img/Rarity/Backgrounds/bg1.png'
-import bg2 from '../assets/img/Rarity/Backgrounds/bg2.png'
-import bg3 from '../assets/img/Rarity/Backgrounds/bg3.png'
-import bg4 from '../assets/img/Rarity/Backgrounds/bg4.png'
-import bg5 from '../assets/img/Rarity/Backgrounds/bg5.png'
-import bg6 from '../assets/img/Rarity/Backgrounds/bg6.png'
-import bg7 from '../assets/img/Rarity/Backgrounds/bg7.png'
-import bg8 from '../assets/img/Rarity/Backgrounds/bg8.png'
+import StarryNight from '../assets/img/Rarity/Backgrounds/starrynight.png'
 import Solana from '../assets/img/Rarity/Backgrounds/solana.png'
-import Rare2 from '../assets/img/Rarity/Backgrounds/rare2.png'
+import Epic2 from '../assets/img/Rarity/Backgrounds/epic_2.png'
 import GOTWinterFell from '../assets/img/Rarity/Backgrounds/GoTWinterfell.png'
 import CPFishingVillage from '../assets/img/Rarity/Backgrounds/clubpenguinfishingvillage.png'
-import Epic2 from '../assets/img/Rarity/Backgrounds/epic2.png'
-import Epic3 from '../assets/img/Rarity/Backgrounds/epic3.png'
+import rare2 from '../assets/img/Rarity/Backgrounds/rare_2.png'
+import rare3 from '../assets/img/Rarity/Backgrounds/rare_3.png'
 import Common1 from '../assets/img/Rarity/Backgrounds/common1.png'
 import Common2 from '../assets/img/Rarity/Backgrounds/common2.png'
 import Common3 from '../assets/img/Rarity/Backgrounds/common3.png'
@@ -42,6 +35,10 @@ import GreenBear from '../assets/img/Rarity/Bear/green.png'
 import CandyCane from '../assets/img/Rarity/Weapons/candycane.png'
 import Spear from '../assets/img/Rarity/Weapons/spear.png'
 import Sword from '../assets/img/Rarity/Weapons/sword.png'
+import MagicStaff from '../assets/img/Rarity/Weapons/magicstaff.png'
+import SpikedMace from '../assets/img/Rarity/Weapons/spikedmace.png'
+import Trident from '../assets/img/Rarity/Weapons/trident.png'
+import BattleAxe from '../assets/img/Rarity/Weapons/battleaxe.png'
 
 import Vape from '../assets/img/Rarity/Mouth/vape.png'
 import Cigar from '../assets/img/Rarity/Mouth/cigar.png'
@@ -74,122 +71,103 @@ import GunMetalChain from '../assets/img/Rarity/Necklace/gunmetalchain.png'
 
 const imageData = [
     {
-        id: 'bg1',
-        image: bg1,
+        ig: 'bg1',
+        image: Common1,
+        description: 'Black Sand',
         category: 'Background',
-        description: 'Background-1',
-        attribute: 'Uncommon',
-        rarity: '0.1',
+        attribute: 'Common',
+        rarity: '0.05',
         css: {backgroundColor: 'grey'}
     },
     {
-        id: 'bg2',
-        image: bg2,
+        ig: 'bg2',
+        image: Common2,
+        description: 'Snow',
         category: 'Background',
-        description: 'Background-2',
-        attribute: 'Uncommon',
-        rarity: '0.1',
+        attribute: 'Common',
+        rarity: '0.03',
         css: {backgroundColor: 'grey'}
     },
     {
-        id: 'bg3',
-        image: bg3,
+        ig: 'bg3',
+        image: Common3,
+        description: 'Pastel Jesmonite',
         category: 'Background',
-        description: 'Background-3',
+        attribute: 'Common',
+        rarity: '0.01',
+        css: {backgroundColor: 'grey'}
+    },
+    {
+        ig: 'bg4',
+        image: Common4,
+        description: 'Passion',
+        category: 'Background',
+        attribute: 'Common',
+        rarity: '0.06',
+        css: {backgroundColor: 'grey'}
+    },
+    {
+        ig: 'bg5',
+        image: CPFishingVillage,
+        description: 'CP Fishing Village',
+        category: 'Background',
         attribute: 'Rare',
-        rarity: '0.15',
+        rarity: '0.10',
         css: {backgroundColor: 'red'}
     },
     {
-        id: 'bg4',
-        image: bg4,
+        ig: 'bg6',
+        image: rare2,
+        description: 'Aurora Matrix',
         category: 'Background',
-        description: 'Background-4',
         attribute: 'Rare',
-        rarity: '0.17',
+        rarity: '0.06',
         css: {backgroundColor: 'red'}
     },
     {
-        id: 'bg5',
-        image: bg5,
+        ig: 'bg7',
+        image: rare3,
+        description: 'Snowflake Punch',
         category: 'Background',
-        description: 'Background-5',
-        attribute: 'Epic',
-        rarity: '0.23',
-        css: {backgroundColor: 'purple'}
-    },
-    {
-        id: 'bg6',
-        image: bg6,
-        category: 'Background',
-        description: 'Background-6',
-        attribute: 'Epic',
-        rarity: '0.26',
-        css: {backgroundColor: 'purple'}
-    },
-    {
-        id: 'bg7',
-        image: bg7,
-        category: 'Background',
-        description: 'Background-7',
-        attribute: 'Legendary',
-        rarity: '0.35',
-        css: {backgroundColor: 'gold'}
+        attribute: 'Rare',
+        rarity: '0.06',
+        css: {backgroundColor: 'red'}
     },
     {
         ig: 'bg8',
-        image: bg8,
-        category: 'Background'
+        image: GOTWinterFell,
+        description: 'Winterfell',
+        category: 'Background',
+        attribute: 'Epic',
+        rarity: '0.06',
+        css: {backgroundColor: 'purple'}
     },
     {
         ig: 'bg9',
-        image: CPFishingVillage,
-        category: 'Background'
+        image: Epic2,
+        description: 'Flames',
+        category: 'Background',
+        attribute: 'Epic',
+        rarity: '0.06',
+        css: {backgroundColor: 'purple'}
     },
     {
         ig: 'bg10',
-        image: Epic2,
-        category: 'Background'
+        image: Solana,
+        description: 'Solana',
+        category: 'Background',
+        attribute: 'Legendary',
+        rarity: '0.06',
+        css: {backgroundColor: 'yellow'}
     },
     {
         ig: 'bg11',
-        image: Epic3,
-        category: 'Background'
-    },
-    {
-        ig: 'bg12',
-        image: Solana,
-        category: 'Background'
-    },
-    {
-        ig: 'bg13',
-        image: GOTWinterFell,
-        category: 'Background'
-    },
-    {
-        ig: 'bg14',
-        image: Rare2,
-        category: 'Background'
-    },
-    {
-        ig: 'bg15',
-        image: Common1,
-        category: 'Background'
-    },
-    {
-        ig: 'bg16',
-        image: Common2,
-        category: 'Background'
-    },
-    {
-        ig: 'bg17',
-        image: Common3,
-        category: 'Background'
-    },
-    {
-        ig: 'bg18',
-        image: Common4,
-        category: 'Background'
+        image: StarryNight,
+        description: 'Starry Night Matrix',
+        category: 'Background',
+        attribute: 'Legendary',
+        rarity: '0.06',
+        css: {backgroundColor: 'yellow'}
     },
     {
         id: 'bear1',
@@ -221,57 +199,101 @@ const imageData = [
     {
         id: 'bear4',
         image: MetallicBear,
-        category: 'Bear'
+        category: 'Bear',
+        description: 'Metallic',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'bear5',
         image: YellowBear,
-        category: 'Bear'
+        category: 'Bear',
+        description: 'Yellow',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'bear6',
         image: WhiteBear,
-        category: 'Bear'
+        category: 'Bear',
+        description: 'White',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'bear7',
         image: SapphireBear,
-        category: 'Bear'
+        category: 'Bear',
+        description: 'Sapphire',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'bear8',
         image: RubyBear,
-        category: 'Bear'
+        category: 'Bear',
+        description: 'Ruby',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'bear9',
         image: RedBear,
-        category: 'Bear'
+        category: 'Bear',
+        description: 'Red',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'bear10',
         image: RainbowBear,
-        category: 'Bear'
+        category: 'Bear',
+        description: 'Rainbow',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'bear11',
         image: PurpleBear,
-        category: 'Bear'
+        category: 'Bear',
+        description: 'Purple',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'bear12',
         image: IridescentBear,
-        category: 'Bear'
+        category: 'Bear',
+        description: 'Iridescent',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'bear13',
         image: GreyBear,
-        category: 'Bear'
+        category: 'Bear',
+        description: 'Grey',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'bear14',
         image: GreenBear,
-        category: 'Bear'
+        category: 'Bear',
+        description: 'Green',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'weapon1',
@@ -301,132 +323,263 @@ const imageData = [
         css: {backgroundColor: 'gold'}
     },
     {
+        id: 'weapon4',
+        image: BattleAxe,
+        category: 'Weapons',
+        description: 'Battle Axe',
+        attribute: 'Legendary',
+        rarity: '0.13',
+        css: {backgroundColor: 'gold'}
+    },
+    {
+        id: 'weapon5',
+        image: MagicStaff,
+        category: 'Weapons',
+        description: 'Magic Staff',
+        attribute: 'Legendary',
+        rarity: '0.13',
+        css: {backgroundColor: 'gold'}
+    },
+    {
+        id: 'weapon6',
+        image: SpikedMace,
+        category: 'Weapons',
+        description: 'Spiked Mace',
+        attribute: 'Legendary',
+        rarity: '0.13',
+        css: {backgroundColor: 'gold'}
+    },
+    {
+        id: 'weapon7',
+        image: Trident,
+        category: 'Weapons',
+        description: 'Trident',
+        attribute: 'Legendary',
+        rarity: '0.13',
+        css: {backgroundColor: 'gold'}
+    },
+    {
         id: 'mouth1',
         image: Vape,
         category: 'Mouth',
+        description: 'Vape',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'mouth2',
         image: Cigar,
-        category: 'Mouth'
+        category: 'Mouth',
+        description: 'Cigar',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'mouth3',
         image: BubbleGum,
-        category: 'Mouth'
+        category: 'Mouth',
+        description: 'Bubble Gum',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'hat1',
         image: Beret,
         category: 'Hat',
+        description: 'Beret',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'hat2',
         image: Bandana,
         category: 'Hat',
+        description: 'Bandana',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'hat3',
         image: CowBoy,
         category: 'Hat',
+        description: 'Cowboy',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'hat4',
         image: Santa,
         category: 'Hat',
+        description: 'Santa',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'eye1',
         image: GreyEyes,
         category: 'Eyes',
+        description: 'Grey Eyes',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'eye2',
         image: BlueEyes,
         category: 'Eyes',
+        description: 'Blue Eyes',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'eye3',
         image: DiamondEyes,
         category: 'Eyes',
+        description: 'Diamond Eyes',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'eye4',
         image: Monocle,
         category: 'Eyes',
+        description: 'Monocle',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'eye5',
         image: PirateEyePatch,
         category: 'Eyes',
+        description: 'Pirate Eye Patch',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'eye6',
         image: YellowEyes,
         category: 'Eyes',
+        description: 'Yellow Eyes',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'clothing1',
         image: HoleShirt,
         category: 'Clothing',
+        description: 'Hole Shirt',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'clothing2',
         image: WhiteSinglet,
         category: 'Clothing',
+        description: 'White Singlet',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'clothing3',
         image: TShirt,
         category: 'Clothing',
+        description: 'T-Shirt',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'clothing4',
         image: Singlet,
         category: 'Clothing',
+        description: 'Singlet',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'clothing5',
         image: RedTShirt,
         category: 'Clothing',
+        description: 'Red T-Shirt',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'clothing6',
         image: LongSleeve,
         category: 'Clothing',
+        description: 'Long Sleeve',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'clothing7',
         image: BlueLongSleeve,
         category: 'Clothing',
+        description: 'Blue Long Sleeve',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'necklace1',
         image: SilverChain,
-        category: 'Necklace'
+        category: 'Necklace',
+        description: 'Silver Chain',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'necklace2',
         image: FullPearlPendant,
-        category: 'Necklace'
+        category: 'Necklace',
+        description: 'Full Pearl Pendant',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'necklace3',
         image: GunMetalChain,
-        category: 'Necklace'
+        category: 'Necklace',
+        description: 'Gun Metal Chain',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
     {
         id: 'necklace4',
         image: GoldChain,
-        category: 'Necklace'
+        category: 'Necklace',
+        description: 'Gold Chain',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
     },
 ]
 
 const styling = {
-    introduction: {
+    desktopIntroduction: {
         width: '80%',
         height: '300px',
-        maxWidth: '1400px',
         margin: '150px auto 20px',
         display: 'flex',
         flexDirection: 'column',
@@ -436,50 +589,130 @@ const styling = {
         border: 'solid 3px black',
         boxShadow: 'rgba(255,255,255, 0.4) 5px 5px, rgba(255,255,255, 0.3) 10px 10px, rgba(255,255,255, 0.2) 15px 15px, rgba(255,255,255, 0.1) 20px 20px, rgba(255,255,255, 0.05) 25px 25px',
     },
-    title: {
+    desktopTitle: {
         fontSize: '48px',
         margin: '40px auto 35px'
     },
-    description: {
+    desktopDescription: {
         fontSize: '18px',
         width: '50%',
         margin: '0px auto 0px'
     },
-    topBorder: {
+    desktopTopBorder: {
         height: '5px',
         width: '80%',
         backgroundColor: '#b5cae1',
         margin: '0px auto 0px'
     },
-    direction: {
+    desktopDirection: {
         color: 'white',
         width: '80%',
-        margin: '130px auto 190px',
+        margin: '150px auto 200px',
         fontSize: '24px',
         textAlign: 'center'
     },
-    animateBG: {
-        height: '420px',
-        width: '1920px'
-    }
+    mobileIntroduction: {
+        width: '90%',
+        height: 'auto',
+        margin: '150px auto 20px',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        textAlign: 'center',
+        color: 'white',
+        border: 'solid 3px black',
+        boxShadow: 'rgba(255,255,255, 0.3) 5px 5px, rgba(255,255,255, 0.2) 10px 10px',
+    },
+    mobileTitle: {
+        fontSize: '36px',
+        margin: '0px auto 35px'
+    },
+    mobileDescription: {
+        width: '80%',
+        margin: '0px auto 30px',
+        fontSize: '16px'
+    },
+    mobileTopBorder: {
+        height: '5px',
+        width: '80%',
+        backgroundColor: '#b5cae1',
+        margin: '35px auto 30px'
+    },
+    mobileDirection: {
+        color: 'white',
+        width: '80%',
+        margin: '130px auto 500px',
+        fontSize: '24px',
+        textAlign: 'center'
+    },
 }
 
-const Rarity = () => {
-    return (
-        <div>
-            <div style={styling.introduction}>
-                <div style={styling.topBorder}></div>
-                <h1 style={styling.title}>Polana Rarity</h1>
-                <p style={styling.description}>We have a total of 55 different attributes that a Polana Bear could have, with each individual attribute displaying it's own rarity
-                </p>
-            </div>
-            <div>
-                <p style={styling.direction}>Check out your Bear's rarity down below<FontAwesomeIcon icon={faHandPointDown}></FontAwesomeIcon></p> 
-                <RarityAttributes data={imageData}/>
-            </div>
-        </div>
 
+
+const Rarity = () => {
+
+    
+    const[state, setState] = useState({
+        mobileView: false,
+    })
+
+    const { mobileView } = state
+
+    useEffect(() => {
+        const resizeHandler = () => {
+            return window.innerWidth < 600
+            ? setState((prevState) => ({...prevState, mobileView: true}))
+            : setState((prevState) => ({...prevState, mobileView: false}))
+        }
+
+        resizeHandler()
+        window.addEventListener('resize', () => resizeHandler())
+
+        return () => {
+            window.removeEventListener('reisze', () => resizeHandler())
+        }
+    }, [])
+
+    const displayDesktop = () => {
+        return (
+            <div>
+                <div style={styling.desktopIntroduction}>
+                    <div style={styling.desktopTopBorder}></div>
+                    <h1 style={styling.desktopTitle}>Polana Rarity</h1>
+                    <p style={styling.desktopDescription}>We have a total of 55 different attributes that a Polana Bear could have, with each individual attribute displaying it's own rarity
+                    </p>
+                </div>
+                <div>
+                    <p style={styling.desktopDirection}>Check out your Bear's rarity down below<FontAwesomeIcon icon={faHandPointDown}></FontAwesomeIcon></p> 
+
+                    <RarityAttributes data={imageData}/>
+                </div>
+            </div>
+        )
+    }
+    
+    const displayMobile = () => {
+        return (
+            <div>
+                <div style={styling.mobileIntroduction}>
+                    <div style={styling.mobileTopBorder}></div>
+                    <h1 style={styling.mobileTitle}>Polana Rarity</h1>
+                    <p style={styling.mobileDescription}>We have a total of 55 different attributes that a Polana Bear could have, with each individual attribute displaying it's own rarity
+                    </p>
+                </div>
+                <div>
+                    <p style={styling.mobileDirection}>Check out your Bear's rarity down below<FontAwesomeIcon icon={faHandPointDown}></FontAwesomeIcon></p> 
+
+                    <RarityAttributes data={imageData}/>
+                </div>
+            </div>
+        )
+    }
+
+    return (
+        <div>{mobileView ? displayMobile() : displayDesktop()}</div>
     )
+
 }
 
 export default Rarity

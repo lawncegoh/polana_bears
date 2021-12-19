@@ -166,9 +166,9 @@ function MyHeader() {
               <Col style={headerStyling.col}>
                   <NavLink to="/puzzles">Puzzle</NavLink>
               </Col>
-              <Col style={headerStyling.col}>
+              {/* <Col style={headerStyling.col}>
                   <NavLink to="/rarity">Rarities</NavLink>
-              </Col>
+              </Col> */}
             </Row>
           </div>
         }
@@ -216,9 +216,9 @@ function MyHeader() {
             <div class="col-xl">
               <NavLink to="/puzzles">Puzzle</NavLink>
             </div>
-            <div class="col-xl">
+            {/* <div class="col-xl">
               <NavLink to="/rarity">Rarities</NavLink>
-            </div>
+            </div> */}
           </div>
         </Toolbar>
       </div>
