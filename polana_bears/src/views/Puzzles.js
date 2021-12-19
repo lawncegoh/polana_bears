@@ -126,8 +126,8 @@ function Puzzles() {
                     <h5 style={puzzleStyle.words}>Puzzle will open on 20th December 2021 12PM GMT! Stay tuned! </h5>
                     <JigsawPuzzle
                         imageSrc={Puzzle}
-                        rows={0}
-                        columns={0}
+                        rows={2}
+                        columns={2}
                         onSolved={success}
                     />
                     <br />
