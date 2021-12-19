@@ -11,7 +11,7 @@ const styling = {
     imageContainer: {
         width: '220px',
         height: '200px',
-        margin: '0px auto 50px',
+        margin: '20px auto 50px',
     },
     attribute: {
         display: 'inline-flex',
@@ -20,8 +20,8 @@ const styling = {
         textAlign: 'center',
         borderRadius: '0.25rem',
         fontWeight: '700',
-        width: '40%',
-        margin: '10px auto 50px'
+        width: 'auto',
+        margin: '10px auto 60px'
     },
     captions: {
         display: 'flex',
