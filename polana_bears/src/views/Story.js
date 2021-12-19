@@ -104,8 +104,8 @@ function Story() {
                             A brand new investigation was recently launched and UAV footage found that the Polana Bears have developed as a civilization and have biologically evolved to develop human-like features.
                         </p>
                         <p style={cardStyling.p}>
-                            It is estimated that there resides 10,000 Polana Bears in PolanaLand.  On December 28th 2021,
-                            we will release highly classified information on each of these 10,000 creatures in an attempt to gain a deeper understanding of the Polana civilization.
+                            It is estimated that there resides 10,000 Polana Bears in PolanaLand.
+                            We will release highly classified information on each of these 4,888 creatures in an attempt to gain a deeper understanding of the Polana civilization.
                         </p>
                         <p style={cardStyling.p}>
                             Join our movement. Join our search. Join the #PolanaSeekers.
