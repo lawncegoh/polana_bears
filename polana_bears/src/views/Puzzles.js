@@ -32,6 +32,20 @@ function Puzzles() {
     }
 
     const cardStyling = {
+        div: {
+            width: "100%",
+            height: "100%",
+            backgroundColor: "#061133",
+            boxSizing: "bordex-box",
+            border: "solid",
+            boxShadow: "rgba(255,255,255, 0.4) 5px 5px, rgba(255,255,255, 0.3) 10px 10px, rgba(255,255,255, 0.2) 15px 15px, rgba(255,255,255, 0.1) 20px 20px, rgba(255,255,255, 0.05) 25px 25px",
+            borderColor: "#05080f",
+            borderRadius: "2px",
+            margin: "15px 15px",
+            color: "#fff",
+            padding: "40px",
+            justifyContent: "center"
+        },
         fontSizeHeader: {
             fontSize: "500%",
             marginTop: "10%",
@@ -62,7 +76,7 @@ function Puzzles() {
             marginTop: "10px",
         }, container: {
             textAlignVertical: "center",
-        }, navLink : {
+        }, navLink: {
             color: "white"
         }
     }
@@ -123,13 +137,21 @@ function Puzzles() {
                 <Container style={puzzleStyle.div}>
                     <h1 style={puzzleStyle.words}>Puzzles for days!!</h1>
                     <h3 style={puzzleStyle.words}>Solve the puzzle to get a snowflake :-)</h3>
-                    <h5 style={puzzleStyle.words}>Puzzle will open on 20th December 2021 12PM GMT! Stay tuned! </h5>
+                    <Container style={cardStyling.div}>
+                        <h4 style={puzzleStyle.words}>Benfits of minting a snowflake: </h4>
+                        <h6 style={puzzleStyle.words}>1. As an owner of the Snowflake NFT, you will be considered a VIP of Polana Land </h6>
+                        <h6 style={puzzleStyle.words}>2. You will automatically enter a VIP-exclusive lucky draw for a mega Solana giveaway on Boxing Day (26 Dec) </h6>
+                        <h6 style={puzzleStyle.words}>3. For upcoming giveaways (where a lucky draw is required), you will have double the number of entries (provided you complete all requirements of the giveaway).</h6>
+                        <h6 style={puzzleStyle.words}>4. Discounted pre-sale minting of Polana Bears NFT when launched in early January.</h6>
+                    </Container>
+                    <br/>
                     <JigsawPuzzle
                         imageSrc={Puzzle}
-                        rows={2}
-                        columns={2}
+                        rows={1}
+                        columns={1}
                         onSolved={success}
                     />
+                    <h5 style={puzzleStyle.words}>Puzzle will open on 20th December 2021 12PM GMT! Stay tuned! </h5>
                     <br />
                     <h4 style={puzzleStyle.words}>Alternatively, you can mint a SnowFlake and bypass the puzzle </h4>
                     <a href="http://snowflake-mint.polanabears.com" className="btn btn-primary">Mint Now</a>

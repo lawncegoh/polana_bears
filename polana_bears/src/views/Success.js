@@ -25,7 +25,7 @@ export default class Success extends Component {
 
         axios.post('https://sheet.best/api/sheets/edc21d29-8abc-49b2-b3c0-7df6a3630da8', this.state) 
         .then (response => {
-            console.log(response)
+            window.location.href = "https://polanabears.com/puzzles"
         })
     }
 
