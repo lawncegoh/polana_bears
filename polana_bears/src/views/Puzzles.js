@@ -147,8 +147,8 @@ function Puzzles() {
                     <br/>
                     <JigsawPuzzle
                         imageSrc={Puzzle}
-                        rows={2}
-                        columns={2}
+                        rows={10}
+                        columns={10}
                         onSolved={success}
                     />
                     <br />
