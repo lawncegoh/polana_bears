@@ -147,11 +147,10 @@ function Puzzles() {
                     <br/>
                     <JigsawPuzzle
                         imageSrc={Puzzle}
-                        rows={0}
-                        columns={0}
+                        rows={10}
+                        columns={10}
                         onSolved={success}
                     />
-                    <h5 style={puzzleStyle.words}>Puzzle will open on 20th December 2021 12PM GMT! Stay tuned! </h5>
                     <br />
                     <h4 style={puzzleStyle.words}>Alternatively, you can mint a SnowFlake and bypass the puzzle </h4>
                     <a href="http://snowflake-mint.polanabears.com" className="btn btn-primary">Mint Now</a>

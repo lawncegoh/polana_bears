@@ -34,6 +34,7 @@ export default class Success extends Component {
 
         axios.post('https://sheet.best/api/sheets/b21d6909-1cf5-4c02-83d5-750d44bc3eb3', this.state)
             .then(response => {
+                alert("Form successfully submitted!")
                 window.location.href = "https://polanabears.com/puzzles"
             })
     }
