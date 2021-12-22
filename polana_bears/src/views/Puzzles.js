@@ -147,10 +147,11 @@ function Puzzles() {
                     <br/>
                     <JigsawPuzzle
                         imageSrc={Puzzle}
-                        rows={10}
-                        columns={10}
+                        rows={0}
+                        columns={0}
                         onSolved={success}
                     />
+                     <h4 style={puzzleStyle.words}>Thank you for participating in our Snowflake Event. Unfortunately, our event has closed!</h4>
                     <br />
                     <h4 style={puzzleStyle.words}>Alternatively, you can mint a SnowFlake and bypass the puzzle </h4>
                     <a href="http://snowflake-mint.polanabears.com" className="btn btn-primary">Mint Now</a>
