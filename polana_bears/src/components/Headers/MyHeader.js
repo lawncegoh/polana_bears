@@ -104,10 +104,10 @@ function MyHeader() {
       width: "50%",
       height: "auto",
       opacity: "0.5",
-    }, 
+    },
     solanaLogoDesktop: {
-      width: '6%',
-      height: '3%'
+      width: '35%',
+      height: '17%'
     }
   }
 
@@ -169,7 +169,7 @@ function MyHeader() {
                 </a>
               </Col>
               <Col style={headerStyling.col}>
-                  <NavLink to="/puzzles">Puzzle</NavLink>
+                <NavLink to="/puzzles">Puzzle</NavLink>
               </Col>
               {/* <Col style={headerStyling.col}>
                   <NavLink to="/rarity">Rarities</NavLink>
@@ -195,7 +195,9 @@ function MyHeader() {
     return (
       <div style={cardStyling.container}>
         <Toolbar style={cardStyling.appBar}>
-          <img src={SolanaLogo} style={headerStyling.solanaLogoDesktop} alt="logo"/>
+          <a href="https://nftsolana.io/">
+            <img src={SolanaLogo} style={headerStyling.solanaLogoDesktop} alt="logo" />
+          </a>
           <Box sx={{ flexGrow: 1 }} />
           <div class="row" style={cardStyling.row}>
             <div class="col-xl">
@@ -234,7 +236,7 @@ function MyHeader() {
   const displayMobileBearLogo = () => {
     return (
       <div>
-          <img src={BearLogo} class="img-fluid" style={headerStyling.imgMobile} alt="logo" />
+        <img src={BearLogo} class="img-fluid" style={headerStyling.imgMobile} alt="logo" />
       </div>
     )
   }
