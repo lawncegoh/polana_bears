@@ -1,6 +1,7 @@
 /*eslint-disable*/
 import React, { useState, useEffect } from "react";
 import BearLogo from "../../assets/img/bear_logo.png";
+import SolanaLogo from "../../assets/img/nft-solana-logo.png";
 
 import {
   Link
@@ -103,6 +104,10 @@ function MyHeader() {
       width: "50%",
       height: "auto",
       opacity: "0.5",
+    }, 
+    solanaLogoDesktop: {
+      width: '6%',
+      height: '3%'
     }
   }
 
@@ -190,6 +195,7 @@ function MyHeader() {
     return (
       <div style={cardStyling.container}>
         <Toolbar style={cardStyling.appBar}>
+          <img src={SolanaLogo} style={headerStyling.solanaLogoDesktop} alt="logo"/>
           <Box sx={{ flexGrow: 1 }} />
           <div class="row" style={cardStyling.row}>
             <div class="col-xl">
