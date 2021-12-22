@@ -151,7 +151,7 @@ function Puzzles() {
                         columns={0}
                         onSolved={success}
                     />
-                     <h4 style={puzzleStyle.words}>Thank you for participating in our Snowflake Event. Unfortunately, our event has closed!</h4>
+                     <h4 style={puzzleStyle.words}>Unfortunately, the puzzle has close BUT you can still mint a Snowflake for 0.1 sol to gain access to VIP benefits!</h4>
                     <br />
                     <h4 style={puzzleStyle.words}>Alternatively, you can mint a SnowFlake and bypass the puzzle </h4>
                     <a href="http://snowflake-mint.polanabears.com" className="btn btn-primary">Mint Now</a>
