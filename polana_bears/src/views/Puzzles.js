@@ -145,12 +145,6 @@ function Puzzles() {
                         <h6 style={puzzleStyle.words}>4. Discounted pre-sale minting of Polana Bears NFT when launched in early January.</h6>
                     </Container>
                     <br/>
-                    <JigsawPuzzle
-                        imageSrc={Puzzle}
-                        rows={0}
-                        columns={0}
-                        onSolved={success}
-                    />
                      <h4 style={puzzleStyle.words}>Unfortunately, the puzzle has close BUT you can still mint a Snowflake for 0.1 sol to gain access to VIP benefits!</h4>
                     <br />
                     <h4 style={puzzleStyle.words}>Alternatively, you can mint a SnowFlake and bypass the puzzle </h4>
