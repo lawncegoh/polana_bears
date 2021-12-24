@@ -6,8 +6,8 @@ import { BrowserRouter, Route, Routes} from 'react-router-dom';
 //views
 // import Rarity from "./views/Rarity";
 import LandingPage from "./views/LandingPage";
-import Puzzles from "./views/Puzzles";
-import MintForm from "./views/MintForm";
+// import Puzzles from "./views/Puzzles";
+// import MintForm from "./views/MintForm";
 
 function App() {
   // const navigate = useNavigate();
