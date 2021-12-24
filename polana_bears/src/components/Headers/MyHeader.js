@@ -28,8 +28,6 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 // import { ClassNames } from "@emotion/react";
-// import Countdown from 'react-countdown';
-// import Clocks from '../Clock/Clocks';
 
 // core components
 function MyHeader() {
