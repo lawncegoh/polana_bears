@@ -221,9 +221,9 @@ function MyHeader() {
                 <FontAwesomeIcon icon={faTwitter} size="2x" />
               </a>
             </div>
-            <div class="col-xl">
+            {/* <div class="col-xl">
               <NavLink to="/puzzles">Puzzle</NavLink>
-            </div>
+            </div> */}
             {/* <div class="col-xl">
               <NavLink to="/rarity">Rarities</NavLink>
             </div> */}
