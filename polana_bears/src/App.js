@@ -21,9 +21,9 @@ function App() {
         <Routes>
           <Route exact path="/" element={<LandingPage />} />
           {/* <Route exact path="/rarity" element={<Rarity />} /> */}
-          <Route exact path="/puzzles" element={<Puzzles />}/>
+          {/* <Route exact path="/puzzles" element={<Puzzles />}/>
           <Route exact path='/success' element={<Puzzles />} />
-          <Route exact path='/mintform' element={<MintForm />}/>
+          <Route exact path='/mintform' element={<MintForm />}/> */}
           {/* <Route exact path="/mintsnow" element={<MintSnow />}/> */}
           {/* <Route exact path="/wordpuzzle" element={<WordPuzzle />}/> */}
         </Routes>

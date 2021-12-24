@@ -168,9 +168,9 @@ function MyHeader() {
                   <FontAwesomeIcon icon={faTwitter} size="2x" />
                 </a>
               </Col>
-              <Col style={headerStyling.col}>
+              {/* <Col style={headerStyling.col}>
                 <NavLink to="/puzzles">Puzzle</NavLink>
-              </Col>
+              </Col> */}
               {/* <Col style={headerStyling.col}>
                   <NavLink to="/rarity">Rarities</NavLink>
               </Col> */}
