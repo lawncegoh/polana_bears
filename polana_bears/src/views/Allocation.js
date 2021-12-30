@@ -102,7 +102,7 @@ function Allocation() {
               </tr>
               <tr>
                 <td style={tableStyle.td}>Public Sale</td>
-                <td style={tableStyle.td}>4558</td>
+                <td style={tableStyle.td}>1158</td>
               </tr>
             </tbody>
           </table>

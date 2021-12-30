@@ -61,7 +61,7 @@ function Roadmap() {
           <br/>
           <h6><FaCheck style={cardStyling.check}/> {' '} Social Media platforms established </h6>
           <h6><FaCheck style={cardStyling.check}/> {' '} Website coded and backend linkage to Solana chain set up </h6>
-          <h6><FaCheck style={cardStyling.check}/> {' '} UAV footage found a 4,888 strong Polana Bears civilization </h6>
+          <h6><FaCheck style={cardStyling.check}/> {' '} UAV footage found a 1,488 strong Polana Bears civilization </h6>
           <h6><FaCheck style={cardStyling.check}/> {' '} Rarity tool developed internally to gather further intelligence on this group of bears </h6>
         </VerticalTimelineElement>
         <VerticalTimelineElement

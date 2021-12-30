@@ -266,7 +266,7 @@ function MyHeader() {
         {mobileView ? displayMobileBearLogo(open) : displayDesktopBearLogo()}
         <div className="content-center brand">
           <h1 style={cardStyling.fontSizeHeader}>Polana Bears</h1>
-          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>4,888 Hand-Drawn and Unique Polana Bears</h5>
+          <h5 className="category category-absolute" style={cardStyling.fontSizeBody}>1,488 Hand-Drawn and Unique Polana Bears</h5>
           <br />
           <button type="button" class="custom-btn btn-5"
             onClick={() => displayAlert()}>Mint Now</button>
