@@ -1,0 +1,46 @@
+.Information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Attribute {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Select {
+    width: 35%;
+    height: 60px;
+    background-color: white;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+    .Information {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    
+    .Attribute {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .Select {
+        width: 100%;
+        height: 45px;
+        background-color: white;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+}
