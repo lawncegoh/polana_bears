@@ -1,0 +1,115 @@
+
+.Introduction {
+    width: 80%;
+    height: 300px;
+    margin: 80px auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border: solid 3px black;
+    box-shadow: rgba(255,255,255, 0.4) 5px 5px, rgba(255,255,255, 0.3) 10px 10px, rgba(255,255,255, 0.2) 15px 15px, rgba(255,255,255, 0.1) 20px 20px, rgba(255,255,255, 0.05) 25px 25px;
+}
+
+.TopBorder {
+    height: 5px;
+    width: 80%;
+    background-color: #b5cae1;
+    margin: 0px auto 0px;
+}
+
+.Title {
+    font-size: 38px;
+    margin: 40px auto 35px;
+}
+
+.Description {
+    font-size: 18px;
+    width: 50%;
+    margin: 0px auto 0px;
+}
+
+.Direction {
+    color: white;
+    width: 80%;
+    margin: 150px auto 250px;
+    font-size: 28px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .Introduction {
+        width: 90%;
+        height: auto;
+        margin: 80px auto 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        border: solid 3px black;
+        box-shadow: rgba(255,255,255, 0.3) 5px 5px, rgba(255,255,255, 0.2) 10px 10px;
+    }
+    .TopBorder {
+        height: 5px;
+        width: 80%;
+        background-color: #b5cae1;
+        margin: 35px auto 30px;
+    }
+    .Title {
+        font-size: 36px;
+        margin: 0px auto 35px;
+    }
+    .Description {
+        width: 80%;
+        margin: 0px auto 30px;
+        font-size: 16px;
+        color: white;
+    }
+    .Direction {
+        color: white;
+        width: 80%;
+        margin: 150px auto 600px;
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1550px) {
+    .Introduction {
+        width: 80%;
+        height: 300px;
+        margin: 100px auto 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        border: solid 3px black;
+        box-shadow: rgba(255,255,255, 0.3) 5px 5px, rgba(255,255,255, 0.2) 10px 10px;
+    }
+    .TopBorder {
+        height: 5px;
+        width: 80%;
+        background-color: #b5cae1;
+        margin: 35px auto 30px;
+    }
+    .Title {
+        font-size: 36px;
+        margin: 0px auto 35px;
+    }
+    .Description {
+        width: 80%;
+        margin: 0px auto 30px;
+        font-size: 16px;
+        color: white;
+    }
+    .Direction {
+        color: white;
+        width: 80%;
+        margin: 130px auto 250px;
+        font-size: 28px;
+        text-align: center;
+    }
+}
