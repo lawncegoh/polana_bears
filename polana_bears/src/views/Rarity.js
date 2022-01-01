@@ -19,18 +19,19 @@ import Common2 from '../assets/img/Rarity/Backgrounds/common2.png'
 import Common3 from '../assets/img/Rarity/Backgrounds/common3.png'
 import Common4 from '../assets/img/Rarity/Backgrounds/common4.png'
 
-import NightBear from '../assets/img/Rarity/Bear/night.png'
-import MetallicBear from '../assets/img/Rarity/Bear/metallic.png'
-import YellowBear from '../assets/img/Rarity/Bear/yellow.png'
-import WhiteBear from '../assets/img/Rarity/Bear/white.png'
-import RedBear from '../assets/img/Rarity/Bear/red.png'
-import RainbowBear from '../assets/img/Rarity/Bear/rainbow.png'
-import PurpleBear from '../assets/img/Rarity/Bear/purple.png'
-import IridescentBear from '../assets/img/Rarity/Bear/iridescent.png'
-import GreyBear from '../assets/img/Rarity/Bear/grey.png'
-import GreenBear from '../assets/img/Rarity/Bear/green.png'
-import BlueBear from '../assets/img/Rarity/Bear/blue.png'
-import BrownBear from '../assets/img/Rarity/Bear/brown.png'
+
+import NightBear from '../assets/img/Rarity/Bear/nightbear.png'
+import MetallicBear from '../assets/img/Rarity/Bear/metallicbear.png'
+import YellowBear from '../assets/img/Rarity/Bear/yellowbear.png'
+import WhiteBear from '../assets/img/Rarity/Bear/whitebear.png'
+import RedBear from '../assets/img/Rarity/Bear/redbear.png'
+import RainbowBear from '../assets/img/Rarity/Bear/rainbowbear.png'
+import PurpleBear from '../assets/img/Rarity/Bear/purplebear.png'
+import IridescentBear from '../assets/img/Rarity/Bear/iridescentbear.png'
+import GreyBear from '../assets/img/Rarity/Bear/greybear.png'
+import GreenBear from '../assets/img/Rarity/Bear/greenbear.png'
+import BlueBear from '../assets/img/Rarity/Bear/bluebear.png'
+import BrownBear from '../assets/img/Rarity/Bear/brownbear.png'
 
 
 import CandyCane from '../assets/img/Rarity/Weapons/candycane.png'
@@ -41,6 +42,7 @@ import SpikedMace from '../assets/img/Rarity/Weapons/spikedmace.png'
 import Trident from '../assets/img/Rarity/Weapons/trident.png'
 import BattleAxe from '../assets/img/Rarity/Weapons/battleaxe.png'
 import Crossbow from '../assets/img/Rarity/Weapons/crossbow.png'
+import Gun from '../assets/img/Rarity/Weapons/gun.png'
 
 import Vape from '../assets/img/Rarity/Mouth/vape.png'
 import Cigar from '../assets/img/Rarity/Mouth/cigar.png'
@@ -72,6 +74,7 @@ import TShirt from '../assets/img/Rarity/Clothing/tshirt.png'
 import WhiteSinglet from '../assets/img/Rarity/Clothing/whitesinglet.png'
 import SantaOutfit from '../assets/img/Rarity/Clothing/santaoutfit.png'
 import RoyalRobes from '../assets/img/Rarity/Clothing/royalrobes.png'
+import KnightArmour from '../assets/img/Rarity/Clothing/knightarmour.png'
 
 import SilverChain from '../assets/img/Rarity/Necklace/silverchain.png'
 import FullPearlPendant from '../assets/img/Rarity/Necklace/fullpearlpendant.png'
@@ -79,6 +82,10 @@ import GoldChain from '../assets/img/Rarity/Necklace/goldchain.png'
 import GunMetalChain from '../assets/img/Rarity/Necklace/gunmetalchain.png'
 import ArrowHeadPendant from '../assets/img/Rarity/Necklace/arrowheadpendant.png'
 import SkullPendant from '../assets/img/Rarity/Necklace/skullpendant.png'
+import ToothPendant from '../assets/img/Rarity/Necklace/toothpendant.png'
+import KeyPendant from '../assets/img/Rarity/Necklace/keypendant.png'
+import RingPendant from '../assets/img/Rarity/Necklace/ringpendant.png'
+import DiamondPendant from '../assets/img/Rarity/Necklace/diamondpendant.png'
 
 const imageData = [
     {
@@ -352,6 +359,15 @@ const imageData = [
         css: {backgroundColor: 'purple'}
     },
     {
+        id: 'weapon9',
+        image: Gun,
+        category: 'Weapons',
+        description: 'Gun',
+        attribute: 'Epic',
+        rarity: '0.13',
+        css: {backgroundColor: 'purple'}
+    },
+    {
         id: 'weapon7',
         image: Trident,
         category: 'Weapons',
@@ -604,6 +620,15 @@ const imageData = [
         css: {backgroundColor: 'gold'}
     },
     {
+        id: 'clothing11',
+        image: KnightArmour,
+        category: 'Clothing',
+        description: "Knight's Armour",
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
+    },
+    {
         id: 'necklace3',
         image: GunMetalChain,
         category: 'Necklace',
@@ -640,6 +665,15 @@ const imageData = [
         css: {backgroundColor: 'red'}
     },
     {
+        id: 'necklace10',
+        image: ToothPendant,
+        category: 'Necklace',
+        description: 'Tooth Pendant',
+        attribute: 'Rare',
+        rarity: '0.27',
+        css: {backgroundColor: 'red'}
+    },
+    {
         id: 'necklace5',
         image: ArrowHeadPendant,
         category: 'Necklace',
@@ -649,10 +683,37 @@ const imageData = [
         css: {backgroundColor: 'purple'}
     },
     {
+        id: 'necklace8',
+        image: KeyPendant,
+        category: 'Necklace',
+        description: 'Key Pendant',
+        attribute: 'Epic',
+        rarity: '0.27',
+        css: {backgroundColor: 'purple'}
+    },
+    {
+        id: 'necklace9',
+        image: RingPendant,
+        category: 'Necklace',
+        description: 'Ring Pendant',
+        attribute: 'Epic',
+        rarity: '0.27',
+        css: {backgroundColor: 'purple'}
+    },
+    {
         id: 'necklace6',
         image: SkullPendant,
         category: 'Necklace',
         description: 'Skull Chain',
+        attribute: 'Legendary',
+        rarity: '0.27',
+        css: {backgroundColor: 'gold'}
+    },
+    {
+        id: 'necklace7',
+        image: DiamondPendant,
+        category: 'Necklace',
+        description: 'Diamond Pendant',
         attribute: 'Legendary',
         rarity: '0.27',
         css: {backgroundColor: 'gold'}

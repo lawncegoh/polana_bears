@@ -5,7 +5,7 @@ import './rarityattributes.css'
 import transparentbg from '../assets/img/Rarity/transparentbg.png'
 
 import common1 from '../assets/img/Rarity/Backgrounds/common1.png'
-import Night from '../assets/img/Rarity/Bear/night.png'
+import Night from '../assets/img/Rarity/Bear/nightbear.png'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faHandPointDown } from "@fortawesome/free-solid-svg-icons"
 // import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'
