@@ -64,7 +64,7 @@
         flex-direction: column;
         height: auto;
         margin-bottom: 60px;
-        margin-top: 535px;
+        margin-top: 450px;
     }
     
     .RContainer {
@@ -96,12 +96,12 @@
     }
 
     .RAInstructions {
-        width: 70%;
+        width: 90%;
         text-align: center;
         margin: 0px auto 0px;
         height: auto;
         color: white;
-        font-size: 18px;
+        font-size: 22px !important;
     }
 }
 
