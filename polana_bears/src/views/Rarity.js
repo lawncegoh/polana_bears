@@ -728,7 +728,7 @@ const Rarity = () => {
             <div className='Introduction'>
                 <div className='TopBorder'></div>
                 <h1 className='Title'>Polana Rarity</h1>
-                <p className='Description'>We have a total of 55 different attributes that a Polana Bear could have, with each individual attribute displaying it's own rarity
+                <p className='Description'>24,948,000 Unique Bears. 1,488 Released. 1 Polana Community
                 </p>
             </div>
             <div>
