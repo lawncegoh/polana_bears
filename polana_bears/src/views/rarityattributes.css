@@ -43,6 +43,14 @@
     margin-top: 35px;
 }
 
+.RAInstructions {
+    width: 80%;
+    text-align: center;
+    margin: 0px auto 50px;
+    color: white;
+    font-size: 18px;
+}
+
 @media (max-width: 800px) {
     .bearImage {
         position: absolute;
@@ -85,6 +93,15 @@
     
     .FaqContent {
         margin: 35px auto 0px;
+    }
+
+    .RAInstructions {
+        width: 70%;
+        text-align: center;
+        margin: 0px auto 0px;
+        height: auto;
+        color: white;
+        font-size: 18px;
     }
 }
 
@@ -131,6 +148,15 @@
     
     .FaqContent {
         margin-top: 35px;
+    }
+
+    .RAInstructions {
+        width: 70%;
+        text-align: center;
+        margin: 0px auto 50px;
+        height: auto;
+        color: white;
+        font-size: 18px;
     }
 }
 
@@ -180,5 +206,13 @@
     
     .FaqContent {
         margin-top: 35px;
+    }
+    .RAInstructions {
+        width: 70%;
+        text-align: center;
+        margin: 0px auto 30px;
+        height: auto;
+        color: white;
+        font-size: 18px;
     }
 }

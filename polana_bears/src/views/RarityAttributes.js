@@ -137,6 +137,10 @@ const RarityAttributes = (props) => {
 
     return (
         <div>
+            <div className='RAInstructions'>
+                <p>Click on the images to equip it onto your bear!</p>
+                <p>View other layers by using the menu below.</p>
+            </div>
             <div className='RAContainer'>
                 <div>
                     <img src={currentBG} className='bearImage' alt='bg'></img>
