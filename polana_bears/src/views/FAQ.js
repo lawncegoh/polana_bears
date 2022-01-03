@@ -113,7 +113,6 @@ function FAQ() {
                                 <div style={cardStylingForMobile.content}>
                                     <h4>What secondary markets are we listing on?</h4>
                                     <ul>
-                                        <li>magiceden.io</li>
                                         <li>digitaleyes.market</li>
                                     </ul>
                                 </div>
