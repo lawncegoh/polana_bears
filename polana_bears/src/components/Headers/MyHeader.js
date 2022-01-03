@@ -27,6 +27,7 @@ import {
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
+import Countdown from 'react-countdown';
 // import { ClassNames } from "@emotion/react";
 
 // core components
@@ -65,6 +66,8 @@ function MyHeader() {
       marginTop: "10px",
     }, container: {
       textAlignVertical: "center",
+    }, countdown: {
+      fontSize: "150%",
     }
   }
 
@@ -253,6 +256,12 @@ function MyHeader() {
       alert("Minting is not available yet!")
     );
   }
+
+  const renderer = ({ days, hours, minutes, seconds, }) => {
+      // Render a countdown
+      return <span>{days} days : {hours} hours : {minutes} minutes : {seconds} seconds</span>;
+  };
+
   return (
     <div className="page-header clear-filter" filter-color="blue">
       <div className="page-header-image"
@@ -272,8 +281,8 @@ function MyHeader() {
             onClick={() => displayAlert()}>Mint Now</button>
           <br />
           <div style={cardStyling.mintWords}>
-            <h6>Launching in January 2022. Follow us on our marketing channels for updates</h6>
-            {/* <Countdown date={Date.now() + 3110400000} /> */}
+            {/* <h6>Launching in January 2022. Follow us on our marketing channels for updates</h6> */}
+            <Countdown date={'2022-01-08T11:00:00'} renderer={renderer}/>
           </div>
           <br />
           {/* <Clocks style="display: inline-flex" /> */}
