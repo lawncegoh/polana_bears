@@ -98,11 +98,11 @@ function Allocation() {
               </tr>
               <tr>
                 <td style={tableStyle.td}>Whitelist</td>
-                <td style={tableStyle.td}>300</td>
+                <td style={tableStyle.td}>100</td>
               </tr>
               <tr>
                 <td style={tableStyle.td}>Public Sale</td>
-                <td style={tableStyle.td}>1158</td>
+                <td style={tableStyle.td}>1358</td>
               </tr>
             </tbody>
           </table>
@@ -133,11 +133,11 @@ function Allocation() {
               </tr>
               <tr>
                 <td style={tableStyle.td}>Whitelist</td>
-                <td style={tableStyle.td}>300</td>
+                <td style={tableStyle.td}>100</td>
               </tr>
               <tr>
                 <td style={tableStyle.td}>Public Sale</td>
-                <td style={tableStyle.td}>1158</td>
+                <td style={tableStyle.td}>1358</td>
               </tr>
             </tbody>
           </table>
