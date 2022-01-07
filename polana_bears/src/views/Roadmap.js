@@ -77,8 +77,8 @@ function Roadmap() {
           <h6><FaCheck style={cardStyling.check}/> {' '} #seekweshall, we need to know more about the bears </h6>
           <h6><FaCheck style={cardStyling.check}/> {' '} The bears make their first appearance on Instagram, Twitter and Discord channels </h6>
           <h6><FaCheck style={cardStyling.check}/> {' '} Giveaways will commence </h6>
-          <h6><FaCheck style={cardStyling.hourGlass}/> {' '} Onboarding influencers to #PolanaSeekers </h6>
-          <h6><FaCheck style={cardStyling.hourGlass}/> {' '} Rollout of referral programs to join whitelist </h6>
+          <h6><FaCheck style={cardStyling.check}/> {' '} Onboarding influencers to #PolanaSeekers </h6>
+          <h6><FaCheck style={cardStyling.check}/> {' '} Rollout of referral programs to join whitelist </h6>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
