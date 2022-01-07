@@ -188,19 +188,28 @@ const imageData = [
         css: {backgroundColor: 'yellow'}
     },
     {
-        id: 'bear14',
-        image: GreenBear,
+        id: 'bear17',
+        image: BlueBear,
         category: 'Bear',
-        description: 'Green',
+        description: 'Blue',
         attribute: 'Common',
         rarity: '0.27',
         css: {backgroundColor: 'grey'}
     },
     {
-        id: 'bear9',
-        image: RedBear,
+        id: 'bear18',
+        image: BrownBear,
         category: 'Bear',
-        description: 'Red',
+        description: 'Brown',
+        attribute: 'Common',
+        rarity: '0.27',
+        css: {backgroundColor: 'grey'}
+    },
+    {
+        id: 'bear13',
+        image: GreyBear,
+        category: 'Bear',
+        description: 'Grey',
         attribute: 'Common',
         rarity: '0.27',
         css: {backgroundColor: 'grey'}
@@ -215,46 +224,37 @@ const imageData = [
         css: {backgroundColor: 'grey'}
     },
     {
+        id: 'bear14',
+        image: GreenBear,
+        category: 'Bear',
+        description: 'Green',
+        attribute: 'Rare',
+        rarity: '0.27',
+        css: {backgroundColor: 'red'}
+    },
+    {
+        id: 'bear9',
+        image: RedBear,
+        category: 'Bear',
+        description: 'Red',
+        attribute: 'Rare',
+        rarity: '0.27',
+        css: {backgroundColor: 'red'}
+    },
+    {
         id: 'bear5',
         image: YellowBear,
         category: 'Bear',
         description: 'Yellow',
-        attribute: 'Common',
+        attribute: 'Rare',
         rarity: '0.27',
-        css: {backgroundColor: 'grey'}
+        css: {backgroundColor: 'red'}
     },
     {
         id: 'bear11',
         image: PurpleBear,
         category: 'Bear',
         description: 'Purple',
-        attribute: 'Common',
-        rarity: '0.27',
-        css: {backgroundColor: 'grey'}
-    },
-    {
-        id: 'bear17',
-        image: BlueBear,
-        category: 'Bear',
-        description: 'Blue',
-        attribute: 'Rare',
-        rarity: '0.27',
-        css: {backgroundColor: 'red'}
-    },
-    {
-        id: 'bear18',
-        image: BrownBear,
-        category: 'Bear',
-        description: 'Brown',
-        attribute: 'Rare',
-        rarity: '0.27',
-        css: {backgroundColor: 'red'}
-    },
-    {
-        id: 'bear13',
-        image: GreyBear,
-        category: 'Bear',
-        description: 'Grey',
         attribute: 'Rare',
         rarity: '0.27',
         css: {backgroundColor: 'red'}
@@ -278,21 +278,21 @@ const imageData = [
         css: {backgroundColor: 'purple'}
     },
     {
+        id: 'bear1',
+        image: NightBear,
+        category: 'Bear',
+        description: 'Night',
+        attribute: 'Epic',
+        rarity: '0.11',
+        css: {backgroundColor: 'purple'}
+    },
+    {
         id: 'bear12',
         image: IridescentBear,
         category: 'Bear',
         description: 'Iridescent',
         attribute: 'Legendary',
         rarity: '0.27',
-        css: {backgroundColor: 'gold'}
-    },
-    {
-        id: 'bear1',
-        image: NightBear,
-        category: 'Bear',
-        description: 'Night',
-        attribute: 'Legendary',
-        rarity: '0.11',
         css: {backgroundColor: 'gold'}
     },
     {
