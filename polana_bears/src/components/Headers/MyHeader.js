@@ -282,7 +282,7 @@ function MyHeader() {
           <br />
           <div style={cardStyling.mintWords}>
             {/* <h6>Launching in January 2022. Follow us on our marketing channels for updates</h6> */}
-            <Countdown date={'2022-01-08T11:00:00'} renderer={renderer}/>
+            <Countdown date={'2022-01-08T03:00:00.00+00:00'} renderer={renderer}/>
           </div>
           <br />
           {/* <Clocks style="display: inline-flex" /> */}
