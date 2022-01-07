@@ -253,7 +253,7 @@ function MyHeader() {
   const [open, setOpen] = useState(false);
   const displayAlert = () => {
     return (
-      alert("Minting is not available yet!")
+      location.replace("https://polanas-mint.polanabears.com")
     );
   }
 
